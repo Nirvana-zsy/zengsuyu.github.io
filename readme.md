@@ -1,0 +1,1 @@
+[ScarSuHexoBlog](https://scarsu.github.io)
