@@ -40,7 +40,7 @@ self_search: true ## Use a jQuery-based local search engine, true/false.
 # website analytics 网站统计
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: 1b9de68c6c54bf67809481ba2b5e8052 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
-busuanzi: false ## 是否使用不蒜子页面访问计数 If you want to use Busuanzi page views please set the value to true.
+busuanzi: true ## 是否使用不蒜子页面访问计数 If you want to use Busuanzi page views please set the value to true.
 ## (busuanzi已经配置好 但是为了节省300ms左右页面响应时间 关闭)
 
 # others 其他
