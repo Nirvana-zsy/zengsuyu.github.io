@@ -12,8 +12,9 @@ description: MongoDB被我选来做毕设的数据库，在此记录配置过程
     （我版本3.0.15
     [官网下载地址](https://www.mongodb.com/download-center?jmp=nav)
 
+
 ## 安装路径
-    将C:\MongoDB\bin添加到环境变量
+    将C:\Program Files\MongoDB\Server\3.0\bin(windows下的默认路径)添加到环境变量
     即可在任何位置使用
     mongo   使用数据库
     mongod  开机

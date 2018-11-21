@@ -64,10 +64,13 @@ donate: ## 是否启用捐赠按钮
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+
+# 文章结尾版权信息
 post_copyright: ## 是否展示版权信息
   enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
   author: ScarSu ## Your author name, e.g. tufu9441
   copyright_text: 转载需署名-非商业性使用 3.0 未本地化版本 (CC BY-NC 3.0)  ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+  licenses_link: https://creativecommons.org/licenses/by-nc/3.0/  ## Your licenses link
 
 
 # 自定义页面及菜单

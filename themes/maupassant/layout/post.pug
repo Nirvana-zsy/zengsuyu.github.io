@@ -50,8 +50,8 @@ block content
             a(href='/' + page.path)= page.permalink
           li.post-copyright-license
             strong= __('copyright_declare_prefix')
-            if theme.post_copyright.copyright_text
-              != theme.post_copyright.copyright_text
+            if theme.post_copyright.copyright_text && theme.post_copyright.licenses_link
+              a(href=theme.post_copyright.licenses_link title="Licenses-点击查看协议" )=theme.post_copyright.copyright_text
             else
               != __('copyright_default_text')
       br
