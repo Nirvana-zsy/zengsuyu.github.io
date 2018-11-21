@@ -22,6 +22,7 @@ html(lang=config.language)
     #header
       .site-name
         h1.hidden= current_title
+        img#logo_profile_photo(src='/images/profile.jpg')
         a#logo(href=url_for('.'))= config.title
         p.description= config.subtitle
       #nav-menu

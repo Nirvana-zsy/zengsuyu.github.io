@@ -1464,3 +1464,27 @@ em.search-keyword {
   list-style: none; }
   .post-copyright li {
     margin: 8px 0; }
+
+#footer #busuanzi_value_site_pv, #footer #busuanzi_value_site_uv {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold; }
+
+#slogan_img {
+  height: 300px;
+  box-shadow: 5px 4px 8px 2px #cec8c8;
+  border-radius: 5px; }
+
+#header .site-name #logo_profile_photo {
+  width: 42px;
+  line-height: 45px;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+#header .site-name #logo {
+  line-height: 45px;
+  vertical-align: middle; }
+
+#header .site-name .description {
+  padding: 10px 0 10px 0px; }

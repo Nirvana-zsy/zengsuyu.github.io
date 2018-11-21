@@ -1,5 +1,5 @@
 ---
-title: 古老神奇的<table>
+title: 古老神奇的table
 categories: 
 - html # 一级分类
 tags: 

@@ -1,9 +1,14 @@
-#footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
-  a(href=url_for('.'), rel='nofollow')= config.title + '.'
-  |  Powered by
-  a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
-  a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
-  |  by
-  a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
-  #busuanzi_container_site_pv= '本站总访问量' + ' '
-    #busuanzi_value_site_pv= '次'
+#footer
+  //- a(href=url_for('.'), rel='nofollow')= config.title + '.'
+  //- |  Powered by
+  //- a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
+  //- a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
+  //- |  by
+  //- a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+  div(id=busuanzi_container_site_pv)
+    span='本站总访问量：pv-' 
+    span#busuanzi_value_site_pv= ' '
+    span='次;   uv-'
+    span#busuanzi_value_site_uv= ' '
+    span='次   ( Data from Busuanzi )'
+  div='Copyright © ' + date(Date.now(), 'YYYY') + ' '

@@ -3,7 +3,9 @@ blog: 博客
 albums: 相册
 categories: 分类
 tags: 标签
-archive: 时间线
+archive: 全部文章
+self_regulation: 自律打卡
+book_notes: 读书笔记
 links: 链接
 about: 关于
 recent: 最近文章
