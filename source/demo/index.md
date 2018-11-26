@@ -13,4 +13,4 @@ title: demo
 
 #### [6.ife课程](https://github.com/scarsu/code_lib/tree/master/exercise/ife_baidu/01html.css)
 
-#### 7.我的毕设(想要链接？等我买的起服务器再说吧)
+#### 7.我的毕设(等我买的起服务器再放链接吧)

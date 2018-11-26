@@ -89,7 +89,10 @@ menu:
     icon: fa-archive
   - page: self_regulation
     directory: self_regulation/
-    icon: fa-calendar
+    icon: fa-check-square-o
+  - page: cognition
+    directory: cognition/
+    icon: fa-eye
   - page: book_notes
     directory: book_notes/
     icon: fa-book
