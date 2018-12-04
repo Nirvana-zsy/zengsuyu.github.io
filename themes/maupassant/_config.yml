@@ -1,33 +1,32 @@
 # Comment 评论相关
-disqus: ## Disqus评论 Your disqus_shortname, e.g. username
+disqus: scarsu ## Disqus评论 Your disqus_shortname, e.g. username
 uyan: ## Your uyan_id. e.g. 1234567
 livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
-  enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner: ## Your GitHub ID, e.g. username
-  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+    enable: false ## If you want to use Gitment comment system please set the value to true.
+    owner: ## Your GitHub ID, e.g. username
+    repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+    client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+    client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
-  enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner:  ## Your GitHub ID, e.g. username
-  repo:  ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-  client_id:  ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret:  ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-  admin:  ## Github repo owner and collaborators, only these guys can initialize github issues.
+    enable: false ## If you want to use Gitment comment system please set the value to true.
+    owner: ## Your GitHub ID, e.g. username
+    repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+    client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+    client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+    admin: ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
-  enable: false ## If you want to use Valine comment system, please set the value to true.
-  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
-  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
-  verify: false ## Validation code.
-  placeholder: Just so so ## Comment box placeholders.
-  avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
-  pageSize: 10 ## Number of comments per page.
-  guest_info: nick,mail,link ## Attributes of reviewers.
-
+    enable: false ## If you want to use Valine comment system, please set the value to true.
+    appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+    appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+    notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+    verify: false ## Validation code.
+    placeholder: Just so so ## Comment box placeholders.
+    avatar: "mm" ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
+    pageSize: 10 ## Number of comments per page.
+    guest_info: nick,mail,link ## Attributes of reviewers.
 
 # search 搜索相关
 google_search: false ## Use Google search, true/false.
@@ -35,7 +34,6 @@ baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key swift站内搜索key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key 为搜索key, e.g. 4ac092ad8d749fdc6293
 self_search: true ## Use a jQuery-based local search engine, true/false.
-
 
 # website analytics 网站统计
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
@@ -51,89 +49,87 @@ shareto: true ## 是否使用分享按鈕，需要安装hexo-helper-qrcode插件
 wordcount: true ## 是否开启文章紫薯和阅读时间统计，要安装hexo-wordcount插件  If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: true ##  是否在移动设备屏幕底部显示侧边栏 Set to true to enable widgets on small screens.
 canvas_nest: ## 是否使用canvas动态背景
-  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
-  color: ## RGB value of the color, e.g. "100,99,98"
-  opacity: ## Transparency of lines, e.g. "0.7"
-  zIndex: ## The z-index property of the background, e.g. "-1"
-  count: ## Quantity of lines, e.g. "150"
+    enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
+    color: ## RGB value of the color, e.g. "100,99,98"
+    opacity: ## Transparency of lines, e.g. "0.7"
+    zIndex: ## The z-index property of the background, e.g. "-1"
+    count: ## Quantity of lines, e.g. "150"
 donate: ## 是否启用捐赠按钮
-  enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
-  github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
-  alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
-  wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
-  btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
-  btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
-  paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+    enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+    github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+    alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+    wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+    btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
+    btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
+    paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
 
 # 文章结尾版权信息
 post_copyright: ## 是否展示版权信息
-  enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
-  author: ScarSu ## Your author name, e.g. tufu9441
-  copyright_text: 转载需署名-非商业性使用 3.0 未本地化版本 (CC BY-NC 3.0)  ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
-  licenses_link: https://creativecommons.org/licenses/by-nc/3.0/  ## Your licenses link
-
+    enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
+    author: ScarSu ## Your author name, e.g. tufu9441
+    copyright_text: 转载需署名-非商业性使用 3.0 未本地化版本 (CC BY-NC 3.0) ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+    licenses_link: https://creativecommons.org/licenses/by-nc/3.0/ ## Your licenses link
 
 # 自定义页面及菜单
 ## 自定义页面及菜单，依照已有格式填写。
 ## 填写后请在source目录下建立相应名称的文件夹，并包含index.md文件，以正确显示页面。
 ## 导航菜单中集成了FontAwesome图标字体，可以在这里选择新的图标，并按照相关说明使用。
 menu:
-  - page: home
-    directory: .
-    icon: fa-home
-  - page: Demo
-    directory: demo/
-    icon: fa-code
-  - page: archive
-    directory: archives/
-    icon: fa-archive
-  - page: self_regulation
-    directory: self_regulation/
-    icon: fa-check-square-o
-  - page: cognition
-    directory: cognition/
-    icon: fa-eye
-  - page: book_notes
-    directory: book_notes/
-    icon: fa-book
-  - page: about
-    directory: about/
-    icon: fa-user
-  # - page: rss
-  #   directory: atom.xml
-  #   icon: fa-rss
-
+    - page: home
+      directory: .
+      icon: fa-home
+    - page: Demo
+      directory: demo/
+      icon: fa-code
+    - page: archive
+      directory: archives/
+      icon: fa-archive
+    - page: self_regulation
+      directory: self_regulation/
+      icon: fa-check-square-o
+    - page: cognition
+      directory: cognition/
+      icon: fa-eye
+    - page: book_notes
+      directory: book_notes/
+      icon: fa-book
+    - page: about
+      directory: about/
+      icon: fa-user
+    # - page: rss
+    #   directory: atom.xml
+    #   icon: fa-rss
 
 # Widget : Sidebar tool 选择和排列希望使用的侧边栏小工具
 ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
-widgets: 
-  - search
-  - category
-  - tag
-  - recent_posts
-  # - recent_comments
-  - links
+widgets:
+    - search
+    - category
+    - tag
+    - recent_posts
+    # - recent_comments
+    - links
 
 # relative links 友情链接
 links:
-  - title: 齐舞团
-    url: https://75team.com/
-  - title: FEX
-    url: http://fex.baidu.com/
-  - title: 前任Blog
-    url: http://www.cnblogs.com/ScarSu/
+    - title: 齐舞团
+      url: https://75team.com/
+    - title: FEX
+      url: http://fex.baidu.com/
+    - title: 前任Blog
+      url: http://www.cnblogs.com/ScarSu/
 
 # 网站历史时间线
 ## 在页面front-matter（scaffolds）中设置layout: timeline可显示
 timeline:
-  - num: 1
-    word: 2014/06/12-Start
-  - num: 2
-    word: 2014/11/29-XXX
-  - num: 3
-    word: 2015/02/18-DDD
-  - num: 4
-    word: More
+    - num: 1
+      word: 2014/06/12-Start
+    - num: 2
+      word: 2014/11/29-XXX
+    - num: 3
+      word: 2015/02/18-DDD
+    - num: 4
+      word: More
 
 # Static files 静态文件存储路径，方便设置CDN缓存。
 js: js
