@@ -38,4 +38,19 @@ head
     if theme.busuanzi == true
         script(src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)
         //- script(src=url_for(theme.js) + '/busuanzi.pure.mini.js', async)
-          
+
+    script.
+      window.onload=function(){
+        var tocLinkArray=jQuery("ol.toc li a");
+        for(var i=0;i<tocLinkArray.length;i++){
+          var a = tocLinkArray[i];
+          var id = a.href.substr(a.href.indexOf("#")+1);
+          a["data-id"] = id;
+          a.href="javascript:void(0)";
+          a.addEventListener("click",function(e){
+            var link = e.currentTarget;
+            var id = link["data-id"];
+            window.scrollTo(0,document.getElementById(decodeURI(id)).offsetTop-220);
+          })
+        }
+      }

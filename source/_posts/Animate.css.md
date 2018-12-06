@@ -1,50 +1,60 @@
 ---
 title: Animate.css
-categories: 
-- css # 一级分类
-tags: 
-- css
+categories:
+    - css # 一级分类
+tags:
+    - css
 date: 2018-02-01
 description: Animate.css是一个来自国外的 CSS3 动画库。
+toc: 1
 ---
+
 ## 功能
-- 它预设了抖动（shake）
-- 闪烁（flash）
-- 弹跳（bounce）
-- 翻转（flip）
-- 旋转（rotateIn/rotateOut）
-- 淡入淡出（fadeIn/fadeOut）
-- 等多达 60 多种动画效果
+
+-   它预设了抖动（shake）
+-   闪烁（flash）
+-   弹跳（bounce）
+-   翻转（flip）
+-   旋转（rotateIn/rotateOut）
+-   淡入淡出（fadeIn/fadeOut）
+-   等多达 60 多种动画效果
 
 ## 浏览器兼容：
-	只兼容支持 CSS3 animate 属性的浏览器，
-	分别是：IE10+、Firefox、Chrome、Opera、Safari。
+
+    只兼容支持 CSS3 animate 属性的浏览器，
+    分别是：IE10+、Firefox、Chrome、Opera、Safari。
 
 ## 引入文件
-	<link rel="stylesheet" href="animate.min.css">
+
+    <link rel="stylesheet" href="animate.min.css">
 
 ## 官网
-	[Animate.css](https://daneden.github.io/animate.css/)
-	
-	[Github](https://github.com/daneden/animate.css)
-	
+
+    [Animate.css](https://daneden.github.io/animate.css/)
+
+    [Github](https://github.com/daneden/animate.css)
+
 ## 使用
+
 ```
 	<h1 class="animated infinite bounce delay-2s">Example</h1>
 ```
-* 首先给元素加上animated类
-* 第二个infinate使动画无限播放，可选
-* 第三个bounce是具体的动画效果名称，[全部动效演示](https://daneden.github.io/animate.css/)
-* 第四个delay-2s是动效延迟播放2s，可选
+
+-   首先给元素加上 animated 类
+-   第二个 infinate 使动画无限播放，可选
+-   第三个 bounce 是具体的动画效果名称，[全部动效演示](https://daneden.github.io/animate.css/)
+-   第四个 delay-2s 是动效延迟播放 2s，可选
 
 ## 通过 Js,Jq 给元素添加 class：
+
 ```
 	$(function(){
     	$('#dowebok').addClass('animated bounce');
 	});
 ```
 
-## 更改animate.css的默认设置：
+## 更改 animate.css 的默认设置：
+
 ```
 	#dowebok {
 	    animate-duration: 2s;    //动画持续时间
@@ -74,7 +84,9 @@ description: Animate.css是一个来自国外的 CSS3 动画库。
           animation-iteration-count: 5;
 	}
 ```
+
 ## 动画结束触发函数：
+
 ```js
 	$(".test").click(function(){
           $(this).addClass('animated fadeOut');
@@ -96,7 +108,8 @@ description: Animate.css是一个来自国外的 CSS3 动画库。
 	//$.one():为元素的特定事件绑定一个一次性的事件处理函数。
 ```
 
-## 将以上过程整合为Jq扩展函数
+## 将以上过程整合为 Jq 扩展函数
+
 ```
 jq自定义函数
 $.fn.extend({
@@ -131,5 +144,6 @@ $('#yourElement').animateCss('bounce', function () {
 ```
 
 ---
+
     为什么不自己写动画？
     别人比你写的好啊小辣鸡。

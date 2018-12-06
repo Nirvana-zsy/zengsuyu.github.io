@@ -1,31 +1,36 @@
 ---
 title: Fullpage.js
-categories: 
-- js # 一级分类
-tags: 
-- js
-- FullPage.js
+categories:
+    - js # 一级分类
+tags:
+    - js
+    - FullPage.js
 date: 2018-04-19
 description: fullPage.js 是一个基于 jQuery 的插件。
+toc: 1
 ---
+
 ## 主要功能有：
-* 支持鼠标滚动
-* 支持前进后退和键盘控制
-* 多个回调函数
-* 支持手机、平板触摸事件
-* 支持 CSS3 动画
-* 支持窗口缩放
-* 窗口缩放时自动调整
-* 可设置滚动宽度、背景颜色、滚动速度、 循环选项、回调、文本对齐方式等等
+
+-   支持鼠标滚动
+-   支持前进后退和键盘控制
+-   多个回调函数
+-   支持手机、平板触摸事件
+-   支持 CSS3 动画
+-   支持窗口缩放
+-   窗口缩放时自动调整
+-   可设置滚动宽度、背景颜色、滚动速度、 循环选项、回调、文本对齐方式等等
 
 ## 兼容性
-	jQuery 兼容:
-	兼容 jQuery 1.7+。
 
-	浏览器兼容:
-	IE8+ ✔	Chrome ✔	Firefox ✔	Opera ✔	Safari ✔
+    jQuery 兼容:
+    兼容 jQuery 1.7+。
+
+    浏览器兼容:
+    IE8+ ✔	Chrome ✔	Firefox ✔	Opera ✔	Safari ✔
 
 ## 引入文件
+
 ```
 <link rel="stylesheet" href="css/jquery.fullPage.css">
 <script src="js/jquery.fullPage.js"></script>
@@ -35,7 +40,9 @@ description: fullPage.js 是一个基于 jQuery 的插件。
 <!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 -->
 <script src="js/jquery.slimscroll.min.js"></script>
 ```
+
 ## HTML
+
 ```
 	<div id="dowebok">
 	    <div class="section">
@@ -75,8 +82,11 @@ description: fullPage.js 是一个基于 jQuery 的插件。
 	    $('#dowebok').fullpage();
 	});
 ```
+
 ## 详细配置见官方文档
+
 [Fullpage.js-Github](https://github.com/alvarotrigo/fullPage.js/tree/master/lang/chinese#fullpagejs)
 
 ---
-	皮不动了...
+
+    皮不动了...

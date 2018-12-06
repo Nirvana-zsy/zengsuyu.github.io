@@ -3,6 +3,7 @@ blog: Blog
 albums: Albums
 categories: Categories
 tags: Tags
+fe_nav: FENav
 archive: Archive
 self_regulation: Self Regulation
 cognition: Cognition
