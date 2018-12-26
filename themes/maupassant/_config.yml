@@ -78,15 +78,15 @@ menu:
     - page: home
       directory: .
       icon: fa-home
+    - page: archive
+      directory: archives/
+      icon: fa-list
     - page: fe_nav
       directory: fe_nav/
       icon: fa-rss-square
     - page: Demo
       directory: demo/
       icon: fa-code
-    - page: archive
-      directory: archives/
-      icon: fa-list
     - page: self_regulation
       directory: self_regulation/
       icon: fa-check-square-o
