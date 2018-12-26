@@ -44,7 +44,7 @@ busuanzi: true ## 是否使用不蒜子页面访问计数 If you want to use Bus
 # others 其他
 fancybox: false ## 是否启用Fancybox图片灯箱效果.
 show_category_count: true ## 是否显示侧边栏分类数目If you want to show the count of categories in the sidebar widget please set the value to true.
-toc_number: true ## 是否显示文章中目录列表自动编号 If you want to add list number to toc please set the value to true.
+toc_number: false ## 是否显示文章中目录列表自动编号 If you want to add list number to toc please set the value to true.
 shareto: true ## 是否使用分享按鈕，需要安装hexo-helper-qrcode插件使用 If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
 wordcount: true ## 是否开启文章紫薯和阅读时间统计，要安装hexo-wordcount插件  If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: true ##  是否在移动设备屏幕底部显示侧边栏 Set to true to enable widgets on small screens.

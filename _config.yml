@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://scarsu.github.io/
+url: https://www.scarsu.com/
 root: /
 permalink: :year/:month/:day/:title/ ## 文章的 永久链接 格式
 permalink_defaults: ## 永久链接中各部分的默认值
@@ -50,7 +50,7 @@ highlight: ## 代码块的设置
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
     path: ""
-    per_page: 10
+    per_page: 20
     order_by: -date
 
 # Category & Tag
@@ -66,7 +66,7 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination 分页
-per_page: 10 ## 每页显示的文章量 (0 = 关闭分页功能)
+per_page: 30 ## 每页显示的文章量 (0 = 关闭分页功能)
 pagination_dir: page ## 分页目录
 
 # Extensions 扩展
@@ -77,8 +77,8 @@ theme: maupassant ## 当前主题名称。值为false时禁用主题
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-    type: git
-    repo: https://github.com/scarsu/scarsu.github.io.git ## 就是存放博客的仓库地址
-    branch: master ## 如果使用的是 GitHub 或 GitCafe 的话，程序会尝试自动检测。
-    message: "" ## 自定义提交信息 (默认为 Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})
+# deploy:
+#     type: git
+#     repo: https://github.com/scarsu/scarsu.github.io.git ## 就是存放博客的仓库地址
+#     branch: master ## 如果使用的是 GitHub 或 GitCafe 的话，程序会尝试自动检测。
+#     message: "" ## 自定义提交信息 (默认为 Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})
