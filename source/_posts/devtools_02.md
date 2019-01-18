@@ -81,8 +81,8 @@ Properties 面板会列出元素 DOM 底层相关属性
 # 相关
 
 -   本文作者：ScarSu
--   本文原文链接：xxx
+-   [本文原文链接](https://www.scarsu.com/devtools_02/)
 -   本文基于最新版 chrome 浏览器总结,大多数特性也适用于其他主流浏览器
 -   本文目的：新手入门 & 给已经了解 Devtools 的人建立完善的知识结构
--   参考 1：官方文档 https://developers.google.com/web/tools/chrome-devtools/
--   参考 2：来自作者 Tomek Sułkowski 在 medium 的系列文章 https://medium.com/@tomsu
+-   [参考 1:官方文档](https://developers.google.com/web/tools/chrome-devtools/)
+-   [参考 2：来自作者 Tomek Sułkowski 在 medium 的系列文章](https://medium.com/@tomsu)
