@@ -3,7 +3,7 @@ title: 2018年度javascript行业报告
 categories:
     - FED # 一级分类
 tags:
-    - stateogjs:https://2018.stateofjs.com/
+    - stateogjs
 date: 2018-12-31
 description: JavaScript生态圈总是在变化。新的库，新的框架，新的语言..这有时是有乐趣的，但有时也会让人感到压力。
 toc: 1
