@@ -87,9 +87,9 @@ menu:
     - page: Demo
       directory: demo/
       icon: fa-code
-    - page: self_regulation
-      directory: self_regulation/
-      icon: fa-check-square-o
+    # - page: self_regulation
+    #   directory: self_regulation/
+    #   icon: fa-check-square-o
     - page: cognition
       directory: cognition/
       icon: fa-eye
