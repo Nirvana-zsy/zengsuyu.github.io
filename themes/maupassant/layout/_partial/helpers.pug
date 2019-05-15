@@ -1,11 +1,12 @@
 mixin a_with_current(href, content, id)
   - var url = url_for(href)
+  - if (href == 'archives/') content += '(' + site.posts.length + ')'
   if (href == '.' && (is_home() || is_post())) || is_current(href)
     a.current(href=url)
-      i(class='fa' + ' ' + id)= ' ' + (content + '(' + site.posts.length + ')')
+      i(class='fa' + ' ' + id)= ' ' + content
   else if (href == 'archives/' && is_tag())
     a.current(href=url)
-      i(class='fa' + ' ' + id)= ' ' + (content + '(' + site.posts.length + ')')
+      i(class='fa' + ' ' + id)= ' ' + content
   else if (href == 'archives/' && is_category())
     a.current(href=url)
       i(class='fa' + ' ' + id)= ' ' + content
