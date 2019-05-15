@@ -24,7 +24,12 @@ html(lang=config.language)
         h1.hidden= current_title
         img#logo_profile_photo(src='/images/profile.jpg')
         a#logo(href=url_for('.'))= config.title
-        p.description= config.subtitle
+        .description
+          span.subtitle=config.subtitle
+          - for (var i in theme.headLinks)
+            .head-link
+              i(class='fa '+theme.headLinks[i].icon)
+              a(href=theme.headLinks[i].url title=theme.headLinks[i].title target='_blank') #{theme.headLinks[i].title}
       #nav-menu
         - for (var i in theme.menu)
           +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)

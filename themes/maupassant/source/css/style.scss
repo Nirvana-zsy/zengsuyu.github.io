@@ -26,7 +26,7 @@ textarea,
 }
 
 .pure-g {
-    padding-top: 200px;
+    padding-top: 140px;
 }
 
 body {
@@ -77,7 +77,7 @@ div {
 }
 
 #header {
-    min-height: 200px;
+    min-height: 160px;
     box-sizing: border-box;
     background: #fff;
     z-index: 99;
@@ -86,7 +86,7 @@ div {
     border-bottom: 1px solid #ddd;
     position: fixed;
     .site-name {
-        margin: 60px 0 20px 0;
+        margin: 20px 0 20px 0;
         height: 80px;
         h1 {
             padding: 0;
@@ -1862,5 +1862,16 @@ em.search-keyword {
     }
     .description {
         padding: 10px 0 10px 0px;
+    }
+    .subtitle {
+        margin-right: 30px;
+    }
+    .head-link {
+        display: inline-block;
+        margin: 0 15px;
+        color: #222;
+        i {
+            margin-right: 3px;
+        }
     }
 }

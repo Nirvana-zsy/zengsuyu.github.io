@@ -11,7 +11,7 @@ block content
     .post
       h1.post-title
         include _partial/helpers.pug
-        a(href=url_for(post.path))
+        a(href=url_for(post.path),target='_blank')
           +title(post)
       .post-meta= post.date.format(config.date_format)
       if theme.disqus

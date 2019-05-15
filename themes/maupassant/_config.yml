@@ -39,10 +39,9 @@ self_search: true ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: 1b9de68c6c54bf67809481ba2b5e8052 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 busuanzi: true ## 是否使用不蒜子页面访问计数 If you want to use Busuanzi page views please set the value to true.
-## (busuanzi已经配置好 但是为了节省300ms左右页面响应时间 关闭)
 
 # others 其他
-fancybox: false ## 是否启用Fancybox图片灯箱效果.
+fancybox: true ## 是否启用Fancybox图片灯箱效果.
 show_category_count: true ## 是否显示侧边栏分类数目If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: false ## 是否显示文章中目录列表自动编号 If you want to add list number to toc please set the value to true.
 shareto: true ## 是否使用分享按鈕，需要安装hexo-helper-qrcode插件使用 If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
@@ -81,24 +80,24 @@ menu:
     - page: archive
       directory: archives/
       icon: fa-list
-    - page: fe_nav
-      directory: fe_nav/
-      icon: fa-rss-square
-    - page: Demo
-      directory: demo/
-      icon: fa-code
-    # - page: self_regulation
-    #   directory: self_regulation/
-    #   icon: fa-check-square-o
+    - page: GitBook
+      directory: gitbook/
+      icon: fa-book
     - page: cognition
       directory: cognition/
       icon: fa-eye
-    - page: book_notes
-      directory: book_notes/
-      icon: fa-book
+    - page: fe_nav
+      directory: fe_nav/
+      icon: fa-rss-square
     - page: about
       directory: about/
       icon: fa-user
+    # - page: Demo
+    #   directory: demo/
+    #   icon: fa-code
+    # - page: self_regulation
+    #   directory: self_regulation/
+    #   icon: fa-check-square-o
     # - page: rss
     #   directory: atom.xml
     #   icon: fa-rss
@@ -109,7 +108,7 @@ widgets:
     - search
     - category
     - tag
-    - recent_posts
+    # - recent_posts
     # - recent_comments
     - links
 
@@ -119,8 +118,8 @@ links:
       url: https://75team.com/
     - title: FEX
       url: http://fex.baidu.com/
-    - title: 前任Blog
-      url: http://www.cnblogs.com/ScarSu/
+    # - title: 前任Blog
+    #   url: http://www.cnblogs.com/ScarSu/
 
 # 网站历史时间线
 ## 在页面front-matter（scaffolds）中设置layout: timeline可显示
@@ -140,3 +139,12 @@ css: css
 
 # Theme version 主题版本，便于静态文件更新后刷新CDN缓存。
 version: 0.0.0
+
+# 自定义head link
+headLinks:
+    - title: GitHub
+      url: https://github.com/scarsu
+      icon: fa-github
+    # - title: GitBook
+    #   url: https://github.com/scarsu
+    #   icon: fa-book
