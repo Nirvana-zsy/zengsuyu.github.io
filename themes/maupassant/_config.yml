@@ -148,3 +148,5 @@ headLinks:
     # - title: GitBook
     #   url: https://github.com/scarsu
     #   icon: fa-book
+
+date_format: YYYY-MM-DD
