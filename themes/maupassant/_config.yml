@@ -80,9 +80,9 @@ menu:
     - page: archive
       directory: archives/
       icon: fa-list
-    - page: GitBook
-      directory: gitbook/
-      icon: fa-book
+    # - page: GitBook
+    #   directory: gitbook/
+    #   icon: fa-book
     - page: cognition
       directory: cognition/
       icon: fa-eye
@@ -145,8 +145,8 @@ headLinks:
     - title: GitHub
       url: https://github.com/scarsu
       icon: fa-github
-    # - title: GitBook
-    #   url: https://github.com/scarsu
-    #   icon: fa-book
+    - title: GitBook
+      url: https://doc.scarsu.com
+      icon: fa-book
 
 date_format: YYYY-MM-DD
