@@ -1,9 +1,25 @@
-extends base
+include _partial/helpers.pug
 
-block title
-  title= page.title + ' | ' + config.title
+if page.title
+  - var current_title = page.title
+else
+  - var current_title = config.title
 
-block content
+if config.feed
+  case config.feed.type
+    when 'rss2'
+      - var feed_type='application/rss+xml'
+    when 'atom'
+    default
+      - var feed_type='application/atom+xml'
+
+doctype html
+html(lang=config.language)
+
+  include _partial/head.pug
+
+  body: .body_container
+    
   .post
     h1.post-title= page.title
     .post-meta= page.date.format(config.date_format)
@@ -65,3 +81,7 @@ block content
 
     if page.comments
       include _partial/comments.pug
+
+
+    include _partial/totop.pug
+    include _partial/after_footer.pug
