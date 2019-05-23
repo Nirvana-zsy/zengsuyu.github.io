@@ -8,6 +8,7 @@ tags:
 date: 2018-04-19
 description: fullPage.js 是一个基于 jQuery 的插件。
 toc: 1
+top: 0
 ---
 
 ## 主要功能有：

@@ -7,6 +7,7 @@ tags:
 date: 2019-01-01
 description: 如果提前了解，你要面对的人生，不知你是否，还会有勇气前来？
 toc: 1
+top: 0
 ---
 
 ![](/images/post/000.png)

@@ -51,7 +51,9 @@ highlight: ## 代码块的设置
 index_generator:
     path: ""
     per_page: 20
-    order_by: -date
+    order_by:
+        top: -1
+        date: -1
 
 # Category & Tag
 default_category: uncategorized
@@ -82,3 +84,4 @@ theme: maupassant ## 当前主题名称。值为false时禁用主题
 #     repo: https://github.com/scarsu/scarsu.github.io.git ## 就是存放博客的仓库地址
 #     branch: master ## 如果使用的是 GitHub 或 GitCafe 的话，程序会尝试自动检测。
 #     message: "" ## 自定义提交信息 (默认为 Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})
+

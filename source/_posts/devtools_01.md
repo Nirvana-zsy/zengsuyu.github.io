@@ -7,6 +7,7 @@ tags:
 date: 2019-01-06
 description: 为了提高前端Debug效率，最近补全了Devtools的知识，决定把笔记分享出来，今天第一篇，介绍一下这次分享的相关计划和内容。
 toc: 1
+top: 0
 ---
 
 # Devtools 老司机养成-第一篇-介绍

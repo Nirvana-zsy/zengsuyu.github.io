@@ -8,6 +8,7 @@ tags:
 date: 2018-08-29
 description: 凭什么table能兼容IE6？
 toc: 1
+top: 0
 ---
 
 # 结构

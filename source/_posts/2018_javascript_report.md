@@ -7,6 +7,7 @@ tags:
 date: 2018-12-31
 description: JavaScript生态圈总是在变化。新的库，新的框架，新的语言..这有时是有乐趣的，但有时也会让人感到压力。
 toc: 1
+top: 0
 ---
 
 ![](/images/stateofjs/000.png)

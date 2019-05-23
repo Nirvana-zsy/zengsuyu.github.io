@@ -7,6 +7,7 @@ tags:
 date: 2019-01-27
 description: 上一篇，熟悉了Devtools的灵魂人物-Console面板。今天这一篇，一起来发掘Sources面板的全部潜能
 toc: 1
+top: 0
 ---
 
 # Sources 源代码面板

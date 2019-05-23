@@ -8,6 +8,7 @@ tags:
 date: 2018-03-06
 description: MongoDB被我选来做毕设的数据库，在此记录配置过程。
 toc: 1
+top: 0
 ---
 
 ## 官网下载安装

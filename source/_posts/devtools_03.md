@@ -7,6 +7,7 @@ tags:
 date: 2019-01-20
 description: 上一篇，学习了Elements面板的内容。今天这一篇，了解一下Devtools的灵魂人物：Console
 toc: 1
+top: 0
 ---
 
 # Console 控制台面板
