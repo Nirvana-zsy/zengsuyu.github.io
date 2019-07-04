@@ -15,5 +15,5 @@ title: 关于
 - 数据库：Oracle | SQL | PL/SQL
 - 服务端：Node | J2EE | ASP.net 
 
-### 微信公众号：自律神仙ScarSu
-<img id="slogan_img" src="/images/Slogan.png" title="微信公众号：自律神仙ScarSu"/>
+<!-- ### 微信公众号：自律神仙ScarSu
+<img id="slogan_img" src="/images/Slogan.png" title="微信公众号：自律神仙ScarSu"/> -->
