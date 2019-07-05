@@ -1816,7 +1816,6 @@ table {
 
 
 /* article-share*/
-
 .article-share-link {
     cursor: pointer;
     float: right;
@@ -1824,6 +1823,18 @@ table {
     &:before {
         font-family: "FontAwesome";
         content: "\f064";
+        padding-right: 6px;
+    }
+}
+
+/* back-home-link*/
+.back-home-link {
+    cursor: pointer;
+    float: right;
+    margin-left: 20px;
+    &:before {
+        font-family: "FontAwesome";
+        content: "\f015";
         padding-right: 6px;
     }
 }

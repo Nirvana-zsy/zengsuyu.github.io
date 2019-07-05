@@ -13,6 +13,9 @@ if config.feed
     default
       - var feed_type='application/atom+xml'
 
+block title
+    title= current_title
+
 doctype html
 html(lang=config.language)
 
@@ -71,6 +74,8 @@ html(lang=config.language)
             else
               != __('copyright_default_text')
       br
+
+    a.back-home-link(href=url_for('.'))=__('backtohome')
 
     if theme.shareto == true
       script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
