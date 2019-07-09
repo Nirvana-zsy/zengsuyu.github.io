@@ -37,6 +37,9 @@ title: 前端导航
 #### 高质量的前端公号
 - 前端桃园
 
+#### 前端工具资源
+- <a href="https://devhints.io/">fed cheatsheet</a> - all in one，前端snippets速查
+
 #### rss
 
 <!-- #### FE Conf -->
