@@ -1816,6 +1816,7 @@ table {
 
 
 /* article-share*/
+
 .article-share-link {
     cursor: pointer;
     float: right;
@@ -1827,7 +1828,9 @@ table {
     }
 }
 
+
 /* back-home-link*/
+
 .back-home-link {
     cursor: pointer;
     float: right;
@@ -2050,6 +2053,16 @@ em.search-keyword {
         color: #222;
         i {
             margin-right: 3px;
+        }
+    }
+    #blog-timer {
+        display: inline-block;
+        margin: 0 15px;
+        color: #999;
+        display: none;
+        i {
+            margin-right: 3px;
+            color: #222;
         }
     }
 }

@@ -37,8 +37,8 @@ self_search: true ## Use a jQuery-based local search engine, true/false.
 
 # website analytics 网站统计
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
-baidu_analytics: 1b9de68c6c54bf67809481ba2b5e8052 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
-busuanzi: true ## 是否使用不蒜子页面访问计数 If you want to use Busuanzi page views please set the value to true.
+baidu_analytics: 652643ccce8310366e3ea65528fb9290 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+busuanzi: false ## 是否使用不蒜子页面访问计数 If you want to use Busuanzi page views please set the value to true.
 
 # others 其他
 fancybox: true ## 是否启用Fancybox图片灯箱效果.
@@ -61,6 +61,7 @@ donate: ## 是否启用捐赠按钮
     btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
     btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
     paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+blogtimer: true ##计时器
 
 # 文章结尾版权信息
 post_copyright: ## 是否展示版权信息

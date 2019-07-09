@@ -54,3 +54,22 @@ head
           })
         }
       }
+
+    if theme.blogtimer == true
+      script.
+        window.onload=function(){
+          var $timer=jQuery("#blog-timer");
+          var $desc=jQuery("#blog-timer .desc");
+          $timer.show();
+          setInterval(function(){
+            var now = new Date();
+            var start = new Date('2018/07/11');
+            var secs = Math.abs(now - start)/1000;
+            var day = Math.floor(secs/(24*60*60));
+            var hour = Math.floor((secs%(24*60*60))/3600);
+            var min = Math.floor(((secs%(24*60*60))%3600)/60);
+            var sec = Math.floor(((secs%(24*60*60))%3600)%60);
+            var str = "在路上："+day+"天"+hour+"小时"+min+"分钟"+sec+"秒";
+            $desc.html(str);
+          },1000);
+        }
