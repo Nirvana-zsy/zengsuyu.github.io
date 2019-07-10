@@ -26,6 +26,7 @@ title: 前端导航
 - <a href="http://www.jstips.co/">jstips</a>
 
 #### 前端大佬
+- <a href="https://me.getify.com/">getify - Kyle Simpson </a> - you dont know js作者
 - <a href="https://www.h5jun.com/">十年踪迹 / 月影</a> - 齐舞团团长，360前端
 - <a href="http://dr-axel.de/">Dr. Axel Rauschmayer</a> - 《Speaking JavaScript (ES1–ES5)》等js书籍作者
 - <a href="https://www.zhangxinxu.com/">张鑫旭</a> - 知名CSS专家、《CSS世界作者》
@@ -39,6 +40,7 @@ title: 前端导航
 
 #### 前端工具资源
 - <a href="https://devhints.io/">fed cheatsheet</a> - all in one，前端snippets速查
+- <a href="https://github.com/30-seconds/30-seconds-of-code">精选的JavaScript代码段集合</a> - 开发者可以在30秒或更短的时间内理解这些代码段
 
 #### rss
 
