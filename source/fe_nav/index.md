@@ -19,8 +19,9 @@ title: 前端导航
 - 你不知道的Javascript
 
 #### 稳定的前端阅读源
-- <a href="https://75team.com/">齐舞周刊</a>
 - <a href="https://javascriptweekly.com/issues">javascriptweekly</a>
+- <a href="https://75team.com/">齐舞周刊</a>
+- <a href="https://github.com/Tnfe/TNFE-Weekly">腾讯TNFE团队-weekly</a>
 
 #### 优质的开发者社区/阅读源
 - <a href="http://www.jstips.co/">jstips</a>
