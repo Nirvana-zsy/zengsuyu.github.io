@@ -50,9 +50,11 @@ html(lang=config.language)
         span= ' ' + __('Comment')
     if page.toc
       div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content, {list_number: theme.toc_number})
+        div(class="toc-icon")
+          i(class="fa fa-list")
+          div(id='toc' class='toc-article')
+            div(class='toc-title')= __('contents')
+            != toc(page.content, {list_number: theme.toc_number})
     .post-content
       != page.content
     if theme.donate.enable == true

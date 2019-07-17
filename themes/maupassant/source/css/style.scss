@@ -439,9 +439,9 @@ div {
         padding: 0;
         margin: 15px 0 0;
         color: #6E7173;
-        float: right;
         display: inline;
         text-indent: .15em;
+        float: right;
         &:before {
             font-family: "FontAwesome";
             content: "\f0e5";
@@ -1760,6 +1760,27 @@ figure.highlight,
 
 /* toc*/
 
+.toc-icon{
+    line-height: 1em;
+    position: fixed;
+    top: 120px;
+    right: 155px;
+    color: #6E7173;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    padding: 10px 10px;
+  }
+  .toc-icon:hover > i{
+    visibility: hidden;
+  }
+  .toc-icon:hover > #toc{
+    visibility: visible;
+  }
+
 .toc-article {
     border: 1px solid #bbb;
     border-radius: 7px;
@@ -1775,6 +1796,14 @@ figure.highlight,
 #toc {
     line-height: 1em;
     float: right;
+    position: fixed;
+    top: 104px;
+    right: 154px;
+    visibility: hidden;
+    color: #6E7173;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-radius: 1px;
     .toc {
         padding: 0;
         margin: 0.5em;
