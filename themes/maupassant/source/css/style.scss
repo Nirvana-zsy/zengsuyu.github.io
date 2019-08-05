@@ -2095,3 +2095,15 @@ em.search-keyword {
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .realPost {
+        margin: 20px 10px;
+    }
+    .toc-icon{
+        right: 10px;
+    }
+    #toc{
+        right: 10px;
+    }
+}
