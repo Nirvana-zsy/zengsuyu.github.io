@@ -64,7 +64,7 @@ top: 0
 
 ## 成长系统
 
-![maupassant](/images/continuous_action.png)
+![](/images/continuous_action.png)
 
 ## 如何行动
 
