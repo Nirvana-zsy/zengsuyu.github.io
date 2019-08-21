@@ -1,5 +1,5 @@
 ---
-title: 《刻意学习》读书输出
+title: 如何更高效的成长 ——《刻意学习》读书输出
 categories:
     - book # 一级分类
 tags:
