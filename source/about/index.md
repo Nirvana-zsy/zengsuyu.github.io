@@ -8,8 +8,8 @@ title: 关于
 - <i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    907866991
 
 
-#### Note
-- <a href="https://www.scarsu.com/escape_from_the_world/" target="_blank">【我与这世界的距离】</a>一些胡言乱语。
+<!-- #### Note
+- <a href="https://www.scarsu.com/escape_from_the_world/" target="_blank">【我与这世界的距离】</a>一些胡言乱语。 -->
 
 
 #### ~~Tags Me~~  No Tags Anymore 🚫
