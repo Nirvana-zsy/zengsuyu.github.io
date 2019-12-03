@@ -2,13 +2,13 @@
 title: 关于
 ---
 
-### 找到我
+#### About
 - <i class="fa fa-github"></i>   <a href="https://github.com/scarsu">scarsu</a>
 - <i class="fa fa-envelope"></i>     scarsu001@gmail.com
 - <i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    907866991
 
 
-#### 笔记本
+#### Note
 - <a href="https://www.scarsu.com/excape_from_the_world/" target="_blank">【我与这世界的距离】</a>一些胡言乱语。
 
 
