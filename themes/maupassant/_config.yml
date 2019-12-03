@@ -90,9 +90,9 @@ menu:
     - page: fe_nav
       directory: fe_nav/
       icon: fa-rss-square
-    - page: Demo
-      directory: demo/
-      icon: fa-code
+    # - page: Demo
+    #   directory: demo/
+    #   icon: fa-code
     - page: about
       directory: about/
       icon: fa-user

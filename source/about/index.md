@@ -1,10 +1,16 @@
 ---
 title: 关于
 ---
-### Contact
-- 【github】<i class="fa fa-github"></i>   scarsu
-- 【mail】<i class="fa fa-envelope"></i>     scarsu001@gmail.com
-- 【qq/wechat】<i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    907866991
+
+### 找到我
+- <i class="fa fa-github"></i>   <a href="https://github.com/scarsu">scarsu</a>
+- <i class="fa fa-envelope"></i>     scarsu001@gmail.com
+- <i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    907866991
+
+
+#### 笔记本
+- <a href="https://www.scarsu.com/excape_from_the_world/">【我与这世界的距离】</a>一些胡言乱语。
+
 
 #### ~~Tags Me~~  No Tags Anymore 🚫
 - ~~HNU|BD🎓~~
@@ -20,5 +26,5 @@ title: 关于
 - 数据库：Oracle | SQL | PL/SQL
 - 服务端：Node | J2EE | ASP.net  -->
 
-### 微信公众号：自律神仙ScarSu
+<!-- ### 微信公众号：自律神仙ScarSu -->
 <!-- <img id="slogan_img" src="/images/Slogan.png" title="微信公众号：自律神仙ScarSu"/> -->

@@ -1,5 +1,5 @@
 ---
-title: 【置顶】本博客搭建指南[ Hexo + Netlify ] # 文章标题
+title: 本博客搭建指南[ Hexo + Netlify ] # 文章标题
 categories:
     - daily # 一级分类
     - blog # 一级分类
@@ -7,7 +7,7 @@ tags:
     - daily
     - blog
 comments: true #开启评论
-date: 2099-12-12
+date: 2000-01-01
 description: 免费 高效 自动部署 markdown友好。
 toc: 0
 top: 1
