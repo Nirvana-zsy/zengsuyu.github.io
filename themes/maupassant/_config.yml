@@ -108,7 +108,7 @@ menu:
 widgets:
     - search
     - category
-    - tag
+    # - tag
     # - recent_posts
     # - recent_comments
     # - links

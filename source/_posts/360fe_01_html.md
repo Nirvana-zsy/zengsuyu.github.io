@@ -1,10 +1,9 @@
 ---
 title: 360FED课程——HTML
 categories:
-    - html # 一级分类
+    - HTML # 一级分类
 tags:
     - 360fed
-    - html
 date: 2018-09-02
 description: 这么穷为什么还花钱买HTML学？
 toc: 1

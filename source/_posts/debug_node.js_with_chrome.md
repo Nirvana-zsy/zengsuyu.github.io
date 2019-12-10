@@ -1,10 +1,8 @@
 ---
 title: 用chrome调试node.js服务端代码
 categories:
-    - node # 一级分类
+    - 调试 # 一级分类
 tags:
-    - chrome
-    - node.js
 date: 2018-07-30
 description: 不然你想用什么调试？
 toc: 1

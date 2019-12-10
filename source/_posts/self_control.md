@@ -1,9 +1,8 @@
 ---
 title: 《自控力》读书输出
 categories:
-    - book # 一级分类
+    - 课外输入 # 一级分类
 tags:
-    - 自控力
 date: 2019-09-19
 description: 了解意志力/欲望的生理心理精神学原理，从而更好的掌控自己
 toc: 1

@@ -1,9 +1,8 @@
 ---
 title: 高可定+低维护的博客搭建指南
 categories:
-    - hexo # 一级分类
+    - ScarSu # 一级分类
 tags:
-    - blog
 date: 2018-12-08
 description: Markdown赛高d=====(￣▽￣*)b
 toc: 1

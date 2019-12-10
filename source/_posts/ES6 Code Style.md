@@ -1,7 +1,7 @@
 ---
 title: ES6编程风格&最佳实践
 categories:
-    - ES # 一级分类
+    - JavaScript # 一级分类
 tags:
     - ES
 date: 2019-11-06

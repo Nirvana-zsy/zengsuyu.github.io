@@ -58,6 +58,17 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map: ## 分类别名
+    01.HTML: html
+    02.CSS: css
+    03.JavaScript: javascript
+    04.ScarSu: ScarSu
+    05.课外输入: read
+    06.构建工具: build-tools
+    07.工具库: utility-libraries
+    08.调试: debug
+    09.Build Tools: build-tools
+    10.DataBase: database
+    11.Tools: tools
 tag_map: ## 标签别名
 
 # Date / Time format 日期时间格式

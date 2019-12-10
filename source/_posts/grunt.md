@@ -1,9 +1,8 @@
 ---
 title: Grunt 学习总结
 categories:
-    - tool # 一级分类
+    - 构建工具 # 一级分类
 tags:
-    - grunt
 date: 2019-06-01
 description: 自动化 压缩（minification）、编译、单元测试、linting等
 toc: 1
