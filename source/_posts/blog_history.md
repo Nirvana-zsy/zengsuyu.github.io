@@ -57,6 +57,7 @@ description: 腾讯404公益页面
 ## 博客评论控件
 
 #### **Gitment**
+[gitment repo](https://github.com/imsun/gitment)
 
 去[Github Auth Applications](https://github.com/settings/applications/new)为你的网站注册一个应用：
 ```
