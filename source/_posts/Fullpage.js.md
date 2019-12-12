@@ -1,7 +1,7 @@
 ---
 title: Fullpage.js
 categories:
-    - 工具库 # 一级分类
+    - 07 工具库 # 一级分类
 tags:
 date: 2018-04-19
 description: fullPage.js 是一个基于 jQuery 的插件。

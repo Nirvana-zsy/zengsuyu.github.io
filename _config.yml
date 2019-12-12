@@ -56,19 +56,18 @@ index_generator:
         date: -1
 
 # Category & Tag
-default_category: uncategorized
-category_map: ## 分类别名
-    01.HTML: html
-    02.CSS: css
-    03.JavaScript: javascript
-    04.ScarSu: ScarSu
-    05.课外输入: read
-    06.构建工具: build-tools
-    07.工具库: utility-libraries
-    08.调试: debug
-    09.Build Tools: build-tools
-    10.DataBase: database
-    11.Tools: tools
+default_category: ScarSu
+category_map: ## 分类别名(路由)
+    00 ScarSu: ScarSu
+    01 HTML: html
+    02 CSS: css
+    03 JavaScript: javascript
+    05 课外输入: read
+    06 构建工具: build-tools
+    07 工具库: utility-libraries
+    08 调试: debug
+    10 DataBase: database
+    11 Tools: tools
 tag_map: ## 标签别名
 
 # Date / Time format 日期时间格式
@@ -84,6 +83,7 @@ pagination_dir: page ## 分页目录
 
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
+# all_minifier: true ## 压缩插件
 ## Themes: https://hexo.io/themes/
 theme: maupassant ## 当前主题名称。值为false时禁用主题
 ## maupassant主题配置文档： https://www.haomwei.com/technology/maupassant-hexo.html

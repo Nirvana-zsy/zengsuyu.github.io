@@ -1,7 +1,7 @@
 ---
 title: 本博客搭建指南[ Hexo + Netlify ] # 文章标题
 categories:
-    - ScarSu # 一级分类
+    - 00 ScarSu # 一级分类
 tags:
 comments: true #开启评论
 date: 2000-01-01

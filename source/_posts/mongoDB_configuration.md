@@ -1,7 +1,7 @@
 ---
 title: MongoDB配置
 categories:
-    - DataBase
+    - 10 DataBase
 tags:
 date: 2018-03-06
 description: MongoDB被我选来做毕设的数据库，在此记录配置过程。
