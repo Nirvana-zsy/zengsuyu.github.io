@@ -83,7 +83,7 @@ pagination_dir: page ## 分页目录
 
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
-# plugins:
+# plugins:   !!!!不要显示声明plugins。会导致找不到hexo server命令
 # - hexo-generator-feed
     # all_minifier: true ## 压缩插件
 ## Themes: https://hexo.io/themes/
