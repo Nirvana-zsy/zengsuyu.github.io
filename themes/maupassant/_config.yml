@@ -101,9 +101,9 @@ menu:
     # - page: self_regulation
     #   directory: self_regulation/
     #   icon: fa-check-square-o
-    # - page: rss
-    #   directory: atom.xml
-    #   icon: fa-rss
+    - page: rss
+      directory: atom.xml
+      icon: fa-rss
 
 # Widget : Sidebar tool 选择和排列希望使用的侧边栏小工具
 ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.

@@ -83,10 +83,24 @@ pagination_dir: page ## 分页目录
 
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
-# all_minifier: true ## 压缩插件
+# plugins:
+# - hexo-generator-feed
+    # all_minifier: true ## 压缩插件
 ## Themes: https://hexo.io/themes/
 theme: maupassant ## 当前主题名称。值为false时禁用主题
 ## maupassant主题配置文档： https://www.haomwei.com/technology/maupassant-hexo.html
+
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content:
+    content_limit: 140
+    content_limit_delim: ' '
+    order_by: -date
+    icon: icon.png
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
