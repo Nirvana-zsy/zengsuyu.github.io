@@ -94,6 +94,12 @@ disqus: uaername ## Disqus评论 Your disqus_shortname, e.g. username
 
 ## SEO
 #### 神马搜索站长平台 https://zhanzhang.sm.cn/
+配置的时候遇到了一个坑，神马搜索站长平台需要验证对提交的网站的所有权 怎么也验证不通过：
+![神马验证](/images/blog/shenma.pngs)
+
+后来才检索到，是神马不支持对https的站点进行验证，。
+
+由于我的站点部署在netlify上，因此我的解决方案就是先把配置改为http，验证通过后再改回去
 
 
 #### 百度链接提交工具 https://ziyuan.baidu.com/linksubmit/url
@@ -104,6 +110,11 @@ disqus: uaername ## Disqus评论 Your disqus_shortname, e.g. username
 如：我提交自己的www.scarsu.com和doc.scarsu.com后，在百度首页搜索scarsu，即可在前几条结果看到我的站点如图：
 
 ![scarsu seo](/images/blog/scarsu-baidu.jpg)
+
+#### 提交至 “中文独立博客列表” https://github.com/timqian/chinese-independent-blogs
+
+fork[此仓库](https://github.com/timqian/chinese-independent-blogs)，blogs-original.csv中维护自己的博客后，提pull request即可。
+
 
 ---
 以下待更新
