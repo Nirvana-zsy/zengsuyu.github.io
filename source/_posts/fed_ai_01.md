@@ -1,5 +1,5 @@
 ---
-title: 机器学习入门
+title: 机器学习&神经网络简介
 categories:
     - 03 AI # 一级分类
 tags:
