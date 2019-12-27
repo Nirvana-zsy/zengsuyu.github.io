@@ -68,6 +68,7 @@ category_map: ## 分类别名(路由)
     08 调试: debug
     10 DataBase: database
     11 Tools: tools
+    12 AI: ai
 tag_map: ## 标签别名
 
 # Date / Time format 日期时间格式
