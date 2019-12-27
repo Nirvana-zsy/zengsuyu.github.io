@@ -19,20 +19,20 @@ top: 0
 ## 机器学习例子：线性回归
 - 只包括一个自变量和一个因变量，且二者的关系可用一条直线近似表示，这种回归分析称为一元线性回归分析。
 
-![image](http://note.youdao.com/yws/res/26592/F718507147034C21BB9433F0A99B9A69)
+![image](/images/ai/01.png)
 
 - 如果回归分析中包括两个或两个以上的自变量，且因变量和自变量之间是线性关系，则称为多元线性回归分析。
 
-![image](http://note.youdao.com/yws/res/26596/0B9CB261F08A43F6A30CB1D85C995892)
+![image](/images/ai/02.png)
 
 ## 机器学习例子：逻辑回归
 - 输入连续的（多个）值，输出0-1之间的概率，可以用于解决分类/是非判断问题
 
-![image](http://note.youdao.com/yws/res/26600/D83BDCD57BEB4F828D8C029EC3BB702A)
+![image](/images/ai/03.png)
 
 - 例子：图片分类、语音助手
 
-![image](http://note.youdao.com/yws/res/26602/EB705AEA84924716A57DB842FEF086F5)
+![image](/images/ai/04.png)
 
 
 ## 为什么要用机器学习
