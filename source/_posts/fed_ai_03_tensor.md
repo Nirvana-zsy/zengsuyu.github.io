@@ -15,30 +15,30 @@ top: 0
 - 相当于多维数组
 
 ### 0维
-![image](/images/05.png)
+![image](/images/ai/05.png)
 
-![image](/images/06.png)
+![image](/images/ai/06.png)
 
 ### 1维
-![image](/images/07.png)
+![image](/images/ai/07.png)
 
-![image](/images/08.png)
+![image](/images/ai/08.png)
 
 ### 2维
-![image](/images/09.png)
+![image](/images/ai/09.png)
 
-![image](/images/10.png)
+![image](/images/ai/10.png)
 
 ### 2 维
-![image](/images/11.png)
+![image](/images/ai/11.png)
 
-![image](/images/12.png)
+![image](/images/ai/12.png)
 
 
 ### 3维
-![image](/images/13.png)
+![image](/images/ai/13.png)
 
-![image](/images/14.png)
+![image](/images/ai/14.png)
 
 
 ## Tensor和机器学习有什么关系？
@@ -49,6 +49,6 @@ top: 0
 ## Tensor的运算 十分符合 神经网络的运算
 - eg.用TensorFlow.js提供的**点乘dotAPI**能够简化复杂的for循环运算：
 
-![image](/images/15.png)
+![image](/images/ai/15.png)
 
-![image](/images/16.png)
+![image](/images/ai/16.png)
