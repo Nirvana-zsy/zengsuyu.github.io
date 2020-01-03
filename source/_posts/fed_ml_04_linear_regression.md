@@ -1,7 +1,7 @@
 ---
 title: 线性回归训练
 categories:
-    - 03 AI # 一级分类
+    - 12 MachineLearning # 一级分类
 tags:
 date: 2019-0102
 description: Javascript玩转机器学习04

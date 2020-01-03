@@ -1,7 +1,7 @@
 ---
 title: 【Tensor-张量】简介
 categories:
-    - 03 AI # 一级分类
+    - 12 MachineLearning # 一级分类
 tags:
 date: 2019-12-31
 description: Javascript玩转机器学习03
