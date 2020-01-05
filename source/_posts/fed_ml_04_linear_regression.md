@@ -1,9 +1,9 @@
 ---
-title: 线性回归训练
+title: 04线性回归训练
 categories:
     - 12 MachineLearning # 一级分类
 tags:
-date: 2019-0102
+date: 2019-01-02
 description: Javascript玩转机器学习04
 toc: 1
 top: 0
