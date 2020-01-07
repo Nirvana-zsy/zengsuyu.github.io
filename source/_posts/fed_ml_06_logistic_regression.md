@@ -3,7 +3,7 @@ title: 06逻辑回归训练
 categories:
     - 12 MachineLearning # 一级分类
 tags:
-date: 2019-01-06
+date: 2020-01-06
 description: Javascript玩转机器学习06
 toc: 1
 top: 0

@@ -3,7 +3,7 @@ title: 05归一化
 categories:
     - 12 MachineLearning # 一级分类
 tags:
-date: 2019-01-05
+date: 2020-01-05
 description: Javascript玩转机器学习05
 toc: 1
 top: 0
