@@ -50,8 +50,8 @@ top: 0
 - 一种运算模型（输入输出的映射）
 - 由大量的节点（神经元）之间相互连接构成
 
-eg. 相亲
-![image](http://note.youdao.com/yws/res/26525/FDAB01287A58444E9C6205F65EE8A164)
+<!-- eg. 相亲
+![image](http://note.youdao.com/yws/res/26525/FDAB01287A58444E9C6205F65EE8A164) -->
 
 - 神经网路包括：一个输入层，若干隐藏层，一个输出层。
 - 每条线的权重可能不同
