@@ -1,5 +1,5 @@
 ---
-title: 05归一化
+title: ML05 归一化
 categories:
     - 12 MachineLearning # 一级分类
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 07-XOR回归训练：多层神经网络
+title: ML07 XOR回归训练：多层神经网络
 categories:
     - 12 MachineLearning # 一级分类
 tags:

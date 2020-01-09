@@ -1,5 +1,5 @@
 ---
-title: 06逻辑回归训练
+title: ML06 逻辑回归训练
 categories:
     - 12 MachineLearning # 一级分类
 tags:

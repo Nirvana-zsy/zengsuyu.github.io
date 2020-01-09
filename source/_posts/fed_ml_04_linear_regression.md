@@ -1,5 +1,5 @@
 ---
-title: 04线性回归训练
+title: ML04 线性回归训练
 categories:
     - 12 MachineLearning # 一级分类
 tags:
