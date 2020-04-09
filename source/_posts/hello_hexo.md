@@ -28,6 +28,7 @@ toc: 0
 2. `提交代码 自动构建部署`：每次写完笔记只需要把 md 文件丢在项目路径里，然后提交代码到github，就会触发Netlify自动构建部署，快速更新，只关注于笔记本身。
 3. `自定义域名 无需服务器 HTTPS`：不需要买服务器，可以使用Netlify的子域名，也可以自己买域名配置(例如我的scarsu.com和doc.scarsu.com这两个域名，都是托管在NetlifyDNS服务器上，与我在github上的博客仓库和gitbook仓库关联即可)。
 4. `可定制`：hexo默认/hexo主题中又很多可配置项，另外主题的源码是用pug模板写的，前端er易于上手更改
+5. 作为参考，`vuejs.org`官方文档构建的解决方案也是hexo+netlify
 
 ## 相关配置
 
