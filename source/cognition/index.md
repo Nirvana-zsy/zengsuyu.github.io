@@ -17,6 +17,7 @@ subtitle: 睁开眼睛看看这世界吧
 - <a target="_blank" href="https://book.douban.com/subject/27071913/">《自控力》by Kelly McGonigal</a> - 斯坦福大学最受欢迎心理学课程
 - <a target="_blank" href="https://book.douban.com/subject/24749465/">《断舍离》by 山下英子</a> - 透过整理物品了解自己，整理心中的混沌，让人生舒适的行动技术。
 - <a target="_blank" href="https://book.douban.com/subject/25882638/">《轻断食》</a>
+- <a target="_blank" href="https://book.douban.com/subject/1874488/">《别做正常的傻瓜》</a>行为决策学入门
 
 #### 笔记本
 - <a target="_blank" href="https://www.scarsu.com/excape_from_the_world/">【我与这世界的距离】</a>一些胡言乱语。
