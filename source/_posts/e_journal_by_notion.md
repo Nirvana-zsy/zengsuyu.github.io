@@ -36,7 +36,7 @@ top: 0
 
 页面之间的灵活链接，使Notion跳出了“以文件夹格式逐层管理“的固定模式，用户完全可以创建一张灵活排布的目录Page，任意设计分类、排版、跳转。例如我的手帐主页：
 
-![Notion/Untitled%201.png](images/notion/home.png)
+![Notion/Untitled%201.png](/images/notion/home.png)
 
 ---
 
