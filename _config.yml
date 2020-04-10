@@ -91,7 +91,7 @@ pagination_dir: page ## 分页目录
 theme: maupassant ## 当前主题名称。值为false时禁用主题
 ## maupassant主题配置文档： https://www.haomwei.com/technology/maupassant-hexo.html
 
-#Feed Atom
+#Feed Atom 0
 feed:
     type: atom
     path: atom.xml
