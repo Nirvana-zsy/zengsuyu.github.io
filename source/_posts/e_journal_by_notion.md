@@ -12,7 +12,7 @@ top: 0
 今天在逛今日热榜的时候，看到了一篇知乎的文章[“我的最后一款笔记应用-Notion”](https://zhuanlan.zhihu.com/p/49263306)，是种草notion的。
 
 
-![Notion/header.png](images/notion/header.png)
+![Notion/header.png](/images/notion/header.png)
 
 一两年前notion刚火的时候，因为被其极简可爱的颜值吸引，我试用过一次，那时候我已经是“有道云笔记”的深度用户了，备份类、笔记类、小应用类、电子书类、代码类全都放在有道云笔记上，开了年会员加持，容量大、网速稳定、体验感功能性都没有缺陷，觉得notion仅仅适合做笔记、做管理，并不适合我从有道云笔记转型，而且刚刚起步的产品，还有这很多细节上体验不好的地方。
 
