@@ -30,6 +30,13 @@ textarea,
   padding-top: 140px;
 }
 
+html{
+  font-family:'Fira Code Medium',Microsoft Yahei,monospace;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif
+}
+
 body {
   background-color: #fff;
   color: #444;
@@ -209,7 +216,7 @@ div {
       left: 17px;
     }
     #lighter-btn:checked + label {
-      background-color: #1abc9c;
+      background-color: #ffc730;
       box-shadow: none;
     }
     input[type='checkbox']:checked + label,

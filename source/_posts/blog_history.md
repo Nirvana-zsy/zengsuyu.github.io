@@ -14,6 +14,7 @@ toc: 0
 - 从**emojipedia.org**添加全站emoji
 - 页首布局更改为一行，去除gitbook链接
 - 增加暗色模式
+- rss链接改为打开新页面
 - gitbook文章全部迁移至blog，gitbook废弃
 
 
