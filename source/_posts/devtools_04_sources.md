@@ -1,4 +1,13 @@
-# Devtools 老司机养成-第四篇-Sources 源文件面板
+---
+title: Devtools 老司机养成 - 第四篇Sources源文件面板
+categories:
+    - 08 调试 # 一级分类
+tags:
+date: 2020-03-15
+description: chrome重要的sources面板，可以做IDE？文件变更，覆盖调试...
+toc: 1
+top: 0
+---
 
 ## 概览
 

@@ -1,3 +1,14 @@
+---
+title: Devtools 老司机养成 - 番外篇 - Devtools中的”VM“
+categories:
+    - 08 调试 # 一级分类
+tags:
+date: 2020-04-06
+description: 为什么经常有脚本的“文件名”是"[VM](XXXX "？？
+toc: 1
+top: 0
+---
+
 ## 引言
 
 What are those strange and mysterious scripts titled "[VM](XXXX " and where do they come from?

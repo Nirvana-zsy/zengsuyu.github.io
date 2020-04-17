@@ -3,7 +3,7 @@ title: Notion为什么能让我放弃手帐
 categories:
     - 00 ScarSu # 一级分类
 tags:
-date: 2020-04-01
+date: 2020-04-12
 description: 自我管理,记录,自省,用意识控制生活，而非本能
 toc: 1
 top: 0

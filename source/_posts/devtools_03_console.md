@@ -1,5 +1,13 @@
-# Devtools 老司机养成-第三篇-Console 面板
-
+---
+title: Devtools 老司机养成 - 第三篇-Console 面板
+categories:
+    - 08 调试 # 一级分类
+tags:
+date: 2020-03-08
+description: Console 面板是浏览器的控制台，也是 Devtools 的灵魂，只会console.log就过分啦～
+toc: 1
+top: 0
+---
 ## 概览
 
 Console 面板是浏览器的控制台，也是 Devtools 的灵魂。

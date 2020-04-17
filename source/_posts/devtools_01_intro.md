@@ -1,4 +1,13 @@
-# Devtools 老司机养成-第一篇-介绍
+---
+title: Devtools 老司机养成 - 第一篇Devtools介绍
+categories:
+    - 08 调试 # 一级分类
+tags:
+date: 2020-02-23
+description: 前端开发调试第一利器，关于devtools的信息，都在这里
+toc: 1
+top: 0
+---
 
 ## 相关
 

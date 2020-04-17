@@ -1,3 +1,12 @@
+---
+title: 一些前端常用工具库～
+categories:
+    - 07 工具库 # 一级分类
+tags:
+date: 2018-01-01
+description: 分享一些用的顺手的前端效率工具～
+toc: 1
+---
 #### http-server 本地快速静态资源服务器
 - npm 全局安装
 - 执行`hs`命令
