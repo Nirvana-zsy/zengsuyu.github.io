@@ -9,6 +9,11 @@ description: 每日一折腾，不折腾难受。
 toc: 0
 ---
 
+## 2020年04月17日变更
+- **全部文章**tab页，文章标题下增加描述
+- 从**emojipedia.org**添加全站emoji
+
+
 ## 主题 & 个性化样式
 
 #### 1. Hexo 主题：[Maupassant Theme](https://github.com/tufu9441/maupassant-hexo/)

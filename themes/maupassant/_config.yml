@@ -79,31 +79,26 @@ post_copyright: ## 是否展示版权信息
 menu:
     - page: home
       directory: .
-      icon: fa-home
     - page: archive
       directory: archives/
-      icon: fa-list
     # - page: GitBook
     #   directory: gitbook/
     #   icon: fa-book
     - page: cognition
       directory: cognition/
-      icon: fa-eye
     - page: fe_nav
       directory: fe_nav/
-      icon: fa-rss-square
     # - page: Demo
     #   directory: demo/
     #   icon: fa-code
     - page: about
       directory: about/
-      icon: fa-user
     # - page: self_regulation
     #   directory: self_regulation/
     #   icon: fa-check-square-o
     - page: rss
       directory: atom.xml
-      icon: fa-rss
+      # icon: fa-rss
 
 # Widget : Sidebar tool 选择和排列希望使用的侧边栏小工具
 ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
