@@ -93,6 +93,8 @@ menu:
     #   icon: fa-code
     - page: about
       directory: about/
+    - page: apps
+      directory: apps/
     # - page: self_regulation
     #   directory: self_regulation/
     #   icon: fa-check-square-o
