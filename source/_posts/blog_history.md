@@ -1,18 +1,20 @@
 ---
-title: 博客折腾记录 # 文章标题
+title: [置顶]本博客折腾记录 # 文章标题
 categories:
     - 00 ScarSu # 一级分类
 tags:
 comments: true #开启评论
-date: 2000-01-01
+date: 2099-01-01
 description: 每日一折腾，不折腾难受。
 toc: 0
 ---
 ## TODO
 - gitbook文章全部迁移至blog，gitbook废弃
 - **全部文章**tab页，文章标题下的描述，改为隐藏，hover泡泡显示
+- 响应式重构
 
-## 2020年04月17日变更
+## 变更记录
+- 用腾讯兔小巢搭留言板
 - **全部文章**tab页，文章标题下增加描述
 - 从**emojipedia.org**添加全站emoji
 - 页首布局更改为一行，去除gitbook链接
@@ -20,8 +22,6 @@ toc: 0
 - rss链接改为打开新页面
 - 替换幼稚的置顶按钮
 - 增加apps在线工具tab
-- 用腾讯兔小巢搭留言板
-
 - 博客计时
 ![博客计时](/images/blog/blog-counter.gifs)
 - Gitbook
