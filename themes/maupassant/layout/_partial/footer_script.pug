@@ -1,0 +1,23 @@
+script.
+      window.onload=function(){
+        if(localStorage.getItem("theme-dark") === "true"){
+          //暗黑模式
+          $("body").addClass("dark-theme")
+          $("#lighter-btn+label").click()
+        }else{
+          //普通模式
+          $("body").removeClass("dark-theme")
+        }
+
+        $("#lighter-btn+label").click(function(e){
+          if(!$("#lighter-btn")[0].checked){
+            //暗黑模式
+            $("body").addClass("dark-theme")
+            localStorage.setItem("theme-dark","true")
+          }else{
+            //普通模式
+            $("body").removeClass("dark-theme")
+            localStorage.setItem("theme-dark","false")
+          }
+        });
+      }

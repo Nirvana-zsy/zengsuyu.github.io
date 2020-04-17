@@ -8,6 +8,9 @@ date: 2000-01-01
 description: 每日一折腾，不折腾难受。
 toc: 0
 ---
+## TODO
+- gitbook文章全部迁移至blog，gitbook废弃
+- **全部文章**tab页，文章标题下的描述，改为隐藏，hover泡泡显示
 
 ## 2020年04月17日变更
 - **全部文章**tab页，文章标题下增加描述
@@ -16,9 +19,16 @@ toc: 0
 - 增加暗色模式
 - rss链接改为打开新页面
 - 替换幼稚的置顶按钮
-- gitbook文章全部迁移至blog，gitbook废弃
 - 增加apps在线工具tab
+- 用腾讯兔小巢搭留言板
 
+- 博客计时
+![博客计时](/images/blog/blog-counter.gifs)
+- Gitbook
+- Google Adsense广告
+- categories分类排序
+- 返回顶部控件
+  
 
 ## 主题 & 个性化样式
 
@@ -157,21 +167,6 @@ disqus: username ## Disqus评论 Your disqus_shortname, e.g. username
 #### 提交至 “中文独立博客列表” https://github.com/timqian/chinese-independent-blogs
 
 fork[此仓库](https://github.com/timqian/chinese-independent-blogs)，blogs-original.csv中维护自己的博客后，提pull request即可。
-
-
----
-以下待更新
-
-## 博客计时
-![博客计时](/images/blog/blog-counter.gifs)
-
-## Gitbook
-
-## Google Adsense广告
-
-## categories分类排序
-
-## 返回顶部控件
 
 
 

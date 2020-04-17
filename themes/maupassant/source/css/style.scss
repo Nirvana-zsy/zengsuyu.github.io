@@ -27,7 +27,7 @@ textarea,
 }
 
 .pure-g {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 html{
@@ -77,9 +77,6 @@ body {
       background-color: #292a2d;
       color: #a9a9b3;
       border-color: #a9a9b3;
-    }
-    .search-form{
-      top: 3px;
     }
     .post .post-content{
       color:#a9a9b3;
@@ -139,7 +136,7 @@ div {
 }
 
 #header {
-  min-height: 160px;
+  min-height: 130px;
   box-sizing: border-box;
   background: #fff;
   z-index: 99;
@@ -148,8 +145,8 @@ div {
   border-bottom: 1px solid #ddd;
   position: fixed;
   .site-name {
-    margin: 20px 0 20px 0;
-    height: 100px;
+    margin: 5px 0 5px 0;
+    height: 80px;
     h1 {
       padding: 0;
       margin: 0;
@@ -160,7 +157,7 @@ div {
       font: bold 38px/1.12 'Times New Roman', Georgia, Times, sans-serif;
       color: #555;
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       span,
       &:hover {
         color: #777;
@@ -175,9 +172,9 @@ div {
     }
     .right {
       display: inline-block;
-      height: 100px;
+      height: 80px;
       vertical-align: top;
-      padding: 10px 0;
+      padding: 0;
     }
     #lighter-btn {
       display: none;
@@ -722,7 +719,7 @@ div {
 }
 
 #footer {
-  padding: 0.8em 0 3.6em;
+  padding: 10px;
   margin-top: 1em;
   line-height: 2.5;
   color: #6e7173;
@@ -2253,7 +2250,7 @@ em.search-keyword {
     vertical-align: middle;
     margin-right: 10px;
     display: inline-block;
-    width: 100px;
+    width: 80px;
     border-radius: 50px;
   }
   #logo {
@@ -2296,4 +2293,11 @@ em.search-keyword {
   #toc {
     right: 10px;
   }
+}
+
+#commentBoard{
+  width: 100vw;
+  margin-left: -178px;
+  height: calc( 100vh - 140px);
+  margin-top: 30px;
 }

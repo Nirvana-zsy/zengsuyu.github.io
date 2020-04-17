@@ -37,18 +37,24 @@ html(lang=config.language)
           +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
     #layout.pure-g
-      .pure-u-1.pure-u-md-3-4: .content_container
-        block content
-      if theme.widgets_on_small_screens
-        .pure-u-1.pure-u-md-1-4: #sidebar
-          each item in theme.widgets
-            != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
+      if path=='comment/index.html'
+        .pure-u-1.pure-u-md-4-4
+          != page.content
+          != partial('_partial/footer_script.pug')
       else
-        .pure-u-1-4.hidden_mid_and_down: #sidebar
-          each item in theme.widgets
-            != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
-      .pure-u-1.pure-u-md-3-4
-        != partial('_partial/footer.pug')
+        .pure-u-1.pure-u-md-3-4
+          .content_container
+            block content
+        if theme.widgets_on_small_screens
+          .pure-u-1.pure-u-md-1-4: #sidebar
+            each item in theme.widgets
+              != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
+        else
+          .pure-u-1-4.hidden_mid_and_down: #sidebar
+            each item in theme.widgets
+              != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
+        .pure-u-1.pure-u-md-3-4
+          != partial('_partial/footer.pug')
 
     include _partial/totop.pug
     include _partial/after_footer.pug
