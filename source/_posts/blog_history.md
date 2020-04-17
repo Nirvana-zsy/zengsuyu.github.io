@@ -12,6 +12,9 @@ toc: 0
 ## 2020年04月17日变更
 - **全部文章**tab页，文章标题下增加描述
 - 从**emojipedia.org**添加全站emoji
+- 页首布局更改为一行，去除gitbook链接
+- 增加暗色模式
+- gitbook文章全部迁移至blog，gitbook废弃
 
 
 ## 主题 & 个性化样式

@@ -50,7 +50,7 @@ shareto: true ## 是否使用分享按鈕，需要安装hexo-helper-qrcode插件
 wordcount: true ## 是否开启文章紫薯和阅读时间统计，要安装hexo-wordcount插件  If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: true ##  是否在移动设备屏幕底部显示侧边栏 Set to true to enable widgets on small screens.
 canvas_nest: ## 是否使用canvas动态背景
-    enable: true ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
+    enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
     color: ## RGB value of the color, e.g. "100,99,98"
     opacity: ## Transparency of lines, e.g. "0.7"
     zIndex: ## The z-index property of the background, e.g. "-1"
@@ -143,8 +143,8 @@ headLinks:
     - title: GitHub
       url: https://github.com/scarsu
       icon: fa-github
-    - title: GitBook
-      url: https://doc.scarsu.com
-      icon: fa-book
+    # - title: GitBook
+    #   url: https://doc.scarsu.com
+    #   icon: fa-book
 
 date_format: YYYY-MM-DD

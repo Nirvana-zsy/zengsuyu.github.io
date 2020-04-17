@@ -36,7 +36,7 @@ a{
 	filter: blur(3px);
 }
 .tr3 {
-	transition: all .3s;
+	transition: all .2s;
 }
 #DonateText {
 	position: fixed;
@@ -74,7 +74,7 @@ a{
 	background: no-repeat center center;
 	background-color: rgba(204, 217, 220,0.1);
 	background-size: 45px;
-	transition: all .3s;
+	transition: all .2s;
 	cursor: pointer;
 	overflow: hidden;
 	line-height: 600px;
@@ -168,7 +168,7 @@ a{
 }
 [data-footnote]::before, [data-footnote]::after {
 	position: absolute;
-	transition: all .3s;
+	transition: all .2s;
 	transform: translate3d(-50%,0,0);
 	opacity: 0;
 	left: 37px;
