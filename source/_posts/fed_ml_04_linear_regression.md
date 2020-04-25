@@ -27,7 +27,7 @@ top: 0
 
 ## 准备、可视化：训练数据（实操）
 - 准备线性回归训练数据(特征、标签)
-- 使用tfvis可视化训练数据
+- 使用tfvis可视化训练数据(tfvis是一个神经网络可视化库)
 
 
 ```html
@@ -57,13 +57,13 @@ parcel li*/*.html
 ```
 
 ## 可视化效果
-![image](/images/ai/17.png)
+![可视化效果](/images/ai/17.png)
 
 
 
 ## 定义单个神经元的神经网络模型
-- 初始化一个神经网络模型
-- 为模型添加**层**
+- 初始化一个神经网络模型(model)
+- 为模型添加**层**(layer)
 - 设计**层**的神经元个数和**inputShape**
 
 
@@ -94,12 +94,12 @@ window.onload = () => {
 - **损失函数**用于计算预测值与实际值差距
 
 
-![image](/images/ai/18.png)
+![预测值、实际值、损失](/images/ai/18.png)
 
 
-- **均方误差**是一种损失函数
+- **均方误差**（meanSquaredError）是一种损失函数
 
-![image](/images/ai/19.png)
+![MSE](/images/ai/19.png)
 
 
 - 在TensorFlow.js中设置损失函数
@@ -131,17 +131,17 @@ window.onload = () => {
 
 - 迭代试错：
 
-![image](/images/ai/20.png)
+![迭代试错](/images/ai/20.png)
 
 
 - 梯度下降法：
 
-![image](/images/ai/21.png)
+![梯度下降法](/images/ai/21.png)
 
 
 - SGD
 
-![image](/images/ai/22.png)
+![SGD](/images/ai/22.png)
 
 
 
@@ -213,17 +213,17 @@ window.onload = async () => {
 - 批量处理size设置为1，训练初期会有明显抖动
 
 
-![image](/images/ai/23.png)
+![](/images/ai/23.png)
 
-![image](/images/ai/24.png)
+![](/images/ai/24.png)
 
 
 - 批量处理size设置为4，训练曲线比较平滑
 
-![image](/images/ai/25.png)
+![](/images/ai/25.png)
 
 
-![image](/images/ai/26.png)
+![](/images/ai/26.png)
 
 
 ## 进行预测
@@ -238,6 +238,6 @@ window.onload = async () => {
   console.log(output.dataSync()); //将输出的Tensor转为普通数据并显示
 ```
 
-![image](/images/ai/27.png)
+![预测结果](/images/ai/27.png)
 
 

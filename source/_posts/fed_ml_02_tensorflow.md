@@ -9,12 +9,12 @@ toc: 1
 top: 0
 ---
 
-## 是什么
+## TensorFlow.js是什么
 - js实现的机器学库
 - 可以在node.js/浏览器环境中使用机器学习技术，这意味着有更好的实时性和交互性
 - 著名的TensorFlow是用Python实现的
 
-## 能干什么
+## TensorFlow.js能干什么
 - 运行现有的模型（算法工程师已经训练好的模型）
 - 重新训练现有模型
 - 使用javascript开发机器学习模型
