@@ -8,6 +8,18 @@ description: Javascript玩转机器学习01
 toc: 1
 top: 0
 ---
+## 为什么要学机器学习
+可以做一些很酷的事情,tensorflow.js官网列出了一些已经训练好的，开箱即用的[模型](https://www.tensorflow.org/js/models)
+
+例如，[BodyPix](https://github.com/tensorflow/tfjs-models/tree/master/body-pix)：实时分割人的身体和身体部位
+
+![body-pix](/images/ai/000.gif)
+
+[图像分类](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet),
+[文本恶意检测](https://github.com/tensorflow/tfjs-models/tree/master/toxicity),
+[语音指令识别](https://github.com/tensorflow/tfjs-models/tree/master/speech-commands),
+[...](https://www.tensorflow.org/js/models)
+
 
 ## 机器学习是什么
 ```
