@@ -51,3 +51,6 @@ ch binds to TensorFlow C++, by running npm i @tensorflow/tfjs-node, or npm i @te
 - `node-gyp`是node和计算机底层交互时经常要用到的包，在windows直接安装这个包也需要一些依赖，例如安装visual studio、python，因此`windows-build-tools@4.0.0`这个包就是用来解决其依赖问题的。
 
 - 安装完后端版本tfjs`@tensorflow/tfjs-node`后，即可直接通过require引入使用
+
+---
+[代码仓库](https://github.com/scarsu/js-ml.git)

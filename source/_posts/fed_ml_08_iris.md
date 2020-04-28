@@ -126,3 +126,6 @@ window.predict = (form)=>{
 ![image](/images/ai/45.png)
 
 
+
+---
+[代码仓库](https://github.com/scarsu/js-ml.git)

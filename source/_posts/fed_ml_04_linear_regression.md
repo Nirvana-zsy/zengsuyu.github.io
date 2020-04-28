@@ -241,3 +241,6 @@ window.onload = async () => {
 ![预测结果](/images/ai/27.png)
 
 
+
+---
+[代码仓库](https://github.com/scarsu/js-ml.git)

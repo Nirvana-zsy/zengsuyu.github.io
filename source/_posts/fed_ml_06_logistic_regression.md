@@ -134,4 +134,6 @@ window.predict = (form)=>{
 
 
 
+---
+[代码仓库](https://github.com/scarsu/js-ml.git)
 

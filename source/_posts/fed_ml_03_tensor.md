@@ -52,3 +52,7 @@ top: 0
 ![传统for循环运算张量 vs dot运算张量](/images/ai/15.png)
 
 ![点乘结果与for循环结果一致](/images/ai/16.png)
+
+
+---
+[代码仓库](https://github.com/scarsu/js-ml.git)

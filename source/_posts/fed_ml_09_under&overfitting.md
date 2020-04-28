@@ -161,3 +161,7 @@ model.add(tf.layers.dropout({ rate: 0.9 }));
 
 
 ![丢弃法训练结果](/images/ai/53.png)
+
+
+---
+[代码仓库](https://github.com/scarsu/js-ml.git)
