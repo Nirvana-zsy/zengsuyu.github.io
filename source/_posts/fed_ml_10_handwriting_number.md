@@ -9,6 +9,8 @@ toc: 1
 top: 0
 ---
 
+![先看一下简单训练的预测效果](/images/ai/001.gif)
+
 ## 加载MNIST数据集
 - MNIST:巨大的训练集雪碧图,以手写数字图片组成
 
@@ -204,8 +206,48 @@ await model.fit(trainXs, trainYs, {
 
 - js:
 ```javascript
+const canvas = document.querySelector('canvas');
 
+canvas.addEventListener('mousemove', (e) => {
+if (e.buttons === 1) {
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'rgb(255,255,255)';
+        ctx.fillRect(e.offsetX, e.offsetY, 25, 25);
+    }
+});
+
+//黑底画板
+window.clear = () => {
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'rgb(0,0,0)';
+    ctx.fillRect(0, 0, 300, 300);
+};
+
+clear();
 
 ```
 
-![underFitting](/images/ai/47.png)
+- 进行预测：
+```javascript
+window.predict = () => {
+const input = tf.tidy(() => {
+    return tf.image.resizeBilinear(		//转换图像tensor尺寸
+        tf.browser.fromPixels(canvas),	//canvas转换为tensor
+        [28, 28],	//转换成28*28
+        true
+    ).slice([0, 0, 0], [28, 28, 1])	//canvas图片是彩色图片，通过slice转换为黑白图片
+    .toFloat()	//训练数据进行过归一化，因此预测值也要归一化
+    .div(255)	//归一化
+    .reshape([1, 28, 28, 1]);	//和神经网络第一层的输入格式统一
+});
+const pred = model.predict(input).argMax(1);
+alert(`预测结果为 ${pred.dataSync()[0]}`);
+};
+```
+
+![预测效果](/images/ai/001.gif)
+
+---
+<small>总结：这一节有两个难点，一是卷积神经网络的构建，重在理解图像卷积核;二是图像与tensor格式的转换，需要多加练习与斟酌;<br/>
+本地训练结果正确率大概70%，可以通过增加训练集数据和训练次数来提升效果</small>
+
