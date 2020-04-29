@@ -8,6 +8,16 @@ description: Javascript玩转机器学习01
 toc: 1
 top: 0
 ---
+## 大纲
+- 理论知识：机器学习、神经网络、 Tensorflow. js
+- 经典案例：线性回归、逻辑回归、XOR、IRS、手写数字识
+别、商标识别、语音识别
+- 神经网络模型：从单个神经元到深度神经网络
+- 神经网络模型算法：MSE/Log/ Cross Entropy
+Sigmoid/Relu/Softmax， SGD/Adam
+- 炼丹最佳实践：归化、欠（过）拟合、可视化、度量
+- 模型的迁移学习、保存、加载、转换
+
 ## 为什么要学机器学习
 可以做一些很酷的事情,tensorflow.js官网列出了一些已经训练好的，开箱即用的[模型](https://www.tensorflow.org/js/models)
 
