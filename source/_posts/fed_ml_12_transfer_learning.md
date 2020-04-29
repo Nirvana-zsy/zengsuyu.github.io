@@ -3,7 +3,7 @@ title: ML12 基于迁移学习的图片分类-商标识别
 categories:
     - 12 MachineLearning # 一级分类
 tags:
-date: 2020-04-28
+date: 2020-04-27
 description: Javascript玩转机器学习12
 toc: 1
 top: 0

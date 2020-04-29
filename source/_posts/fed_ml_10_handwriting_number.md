@@ -3,7 +3,7 @@ title: ML10 训练卷积神经网络 识别手写数字
 categories:
     - 12 MachineLearning # 一级分类
 tags:
-date: 2020-04-27
+date: 2020-04-25
 description: Javascript玩转机器学习10
 toc: 1
 top: 0

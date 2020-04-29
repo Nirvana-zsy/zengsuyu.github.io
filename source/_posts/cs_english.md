@@ -77,3 +77,5 @@ delegate  |   转交
 prefix/postfix  |  前缀后缀
 Adaptor  |  适配器
 TL;DR  |   too long;dont/didnt read 精华/总结
+conjecture  | 猜测猜想
+Threshold  | 阈值
