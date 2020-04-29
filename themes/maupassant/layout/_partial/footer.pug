@@ -40,3 +40,10 @@
         }
       });
     });
+    window.showDesc = function(el,event){
+      if(!$(el).parent().children(".popup")[0].innerText) return
+      $(el).parent().children(".popup").css("display","inline")
+    };
+    window.hideDesc = function (el,event) {
+      $(el).parent().children(".popup").css("display","none")
+    }

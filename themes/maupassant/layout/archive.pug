@@ -19,27 +19,10 @@ block content
             for post in posts
               li
                 span.date= post.date.format('YYYY/MM/DD')
-                a(href=url_for(post.path), title=post.title,target='_blank',style='color:#444;')
+                a(href=url_for(post.path), title=post.title,target='_blank',style='color:#444;',data-desc=post.description)
                   +title(post)
-                if post.description
-                  .post-content
-                    != post.description
-                else if post.excerpt
-                  .post-content
-                    != post.excerpt
-                else if post.content
-                  - var br = 0
-                  - for (var i = 0; i < 5; ++i) {
-                    - br = post.content.indexOf('\n',br+1)
-                    if br<0
-                      - break
-                    if br >150
-                      - break
-                  - }
-                  if br < 0
-                    .post-content
-                      != post.content
-                  else
-                    .post-content
-                      != post.content.substring(0, br)
+                i.fa.fa-info-circle.post-desc-icon(onmouseover='window.showDesc(this,event)',onmouseout='window.hideDesc(this,event)')
+                div.popup=post.description
+                //- .post-content
+                //-   != post.description
   include _partial/paginator.pug
