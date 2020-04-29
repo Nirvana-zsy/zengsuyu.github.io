@@ -65,7 +65,7 @@ head
 
     if theme.blogtimer == true
       script.
-        window.onload=function(){
+        window.addEventListener('load',function(){
           var $timer=jQuery("#blog-timer");
           var $desc=jQuery("#blog-timer .desc");
           $timer.show();
@@ -80,4 +80,4 @@ head
             var str = "在路上："+day+"天"+hour+"小时"+min+"分钟"+sec+"秒";
             $desc.html(str);
           },1000);
-        }
+        });
