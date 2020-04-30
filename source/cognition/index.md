@@ -9,6 +9,15 @@ subtitle: 睁开眼睛看看这世界吧
 <!-- <a target="_blank" href="http://www.fuyanshe.cn/headline/view/69259">【你拥有的最宝贵的财富是什么？】</a>  -->
 - <a target="_blank" href="https://medium.com/s/notes-on-changing-your-life/how-to-seem-like-you-always-have-your-sh-t-together-11114005114e">【How to Seem Like You Always Have Your Sh*t Together】</a> 
 
+#### 读书笔记
+- <a target="_blank" href="https://www.scarsu.com/danshari/">《断舍离》读书输出</a> 
+- <a target="_blank" href="https://www.scarsu.com/continuous_action/">《刻意学习》读书输出——如何更高效的成长 </a> 
+- <a target="_blank" href="https://www.scarsu.com/self_control/">《自控力》读书输出</a> 
+- <a target="_blank" href="https://www.scarsu.com/life_courage/">《被讨厌的勇气》读书笔记</a> 
+- <a target="_blank" href="https://www.scarsu.com/behavior_decision/">《别做正常的傻瓜》行为决策学入门书籍,让你的每一个行为都得到最优解</a> 
+- <a target="_blank" href="https://www.scarsu.com/poor_economics/">《贫穷的本质：我们为什么摆脱不了贫穷》读书输出</a> 
+
+
 #### 优质社区
 - <a target="_blank" href="https://medium.com/">Medium</a> - a place to read and write big ideas and important stories
 
