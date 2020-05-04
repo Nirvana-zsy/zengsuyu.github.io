@@ -4,7 +4,7 @@ categories:
     - 03 JavaScript # 一级分类
 tags:
     - stateOfJs
-date: 2019-12-31
+date: 2019-12-30
 description: 根据stateOfJs2019调查中，20000余名JS开发者的数据整理而来
 toc: 1
 top: 0
