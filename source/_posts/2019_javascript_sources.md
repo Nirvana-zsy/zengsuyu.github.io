@@ -33,7 +33,7 @@ top: 0
 - [Reddit](https://reddit.com)
 - [Hacker News](https://news.ycombinator.com/)
 - [Alligator.io](https://alligator.io/)
-- [Habr](https://habr.com/en/  
+- [Habr](https://habr.com/en/)  
 - [freeCodeCamp](https://learn.freecodecamp.one/)
 - [2ality](https://2ality.com/)
 - [Scotch](https://scotch.io)
@@ -53,7 +53,7 @@ top: 0
 
 ## Sites & Courses
 - [Stack Overflow](https://stackoverflow.com/)
-- [MDN](https://developer.mozilla.org/en-US/   
+- [MDN](https://developer.mozilla.org/en-US/)   
 - [W3Schools](https://www.w3schools.com/)
 - [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)
 - [Wes Bos](https://wesbos.com/)
