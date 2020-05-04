@@ -2050,6 +2050,8 @@ figure.highlight,
   background-color: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.07);
   border-radius: 1px;
+  max-height: 200px;
+  overflow-y: auto;
   .toc {
     padding: 0;
     margin: 0.5em;

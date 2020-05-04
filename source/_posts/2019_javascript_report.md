@@ -53,7 +53,7 @@ top: 0
 
 ## JavaScript 特性
 - 这是今年新增的一项数据
-- Javascript是一个不停更新的语言，每年都有新的Ecmascript版本发布，从箭头功能到解构，过去几年中添加的新特性现在已成为我们编写JavaScript不可或缺的一部分。
+- Javascript是一个不停更新的语言，每年都有新的Ecmascript版本发布，从箭头函数到解构，过去几年中添加的新特性现在已成为我们编写JavaScript不可或缺的一部分。
 - 因此，从今年开始，除了开发Javascript使用的工具外，增加了这项数据：JavaScript编写方式：所使用的模式，语法和特性
 
 ### 语法
