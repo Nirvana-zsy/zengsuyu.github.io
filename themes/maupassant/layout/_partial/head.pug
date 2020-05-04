@@ -32,7 +32,6 @@ head
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         ga('create','#{theme.google_analytics}','auto');ga('send','pageview');
-
     if theme.baidu_analytics
       script.
         var _hmt = _hmt || [];
@@ -42,11 +41,9 @@ head
           var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hm, s);
           })();
-    
     if theme.busuanzi == true
         script(src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)
         //- script(src=url_for(theme.js) + '/busuanzi.pure.mini.js', async)
-
     script.
       window.onload=function(){
         var tocLinkArray=jQuery("ol.toc li a");
@@ -62,7 +59,6 @@ head
           })
         }
       }
-
     if theme.blogtimer == true
       script.
         window.addEventListener('load',function(){
