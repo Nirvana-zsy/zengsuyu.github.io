@@ -119,7 +119,7 @@ title: 前端导航
 #### 友链
 - <a href="http://www.taoweng.site">前端桃园</a>
 - <a href="https://leihuang.dev/">Lei Huang</a>
-- <a href="http://blog.eccto.cn/index">EricChen</a>
+- <a href="https://ericchen.vip/">EricChen</a>
 <!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
 
 
