@@ -15,7 +15,8 @@ row 2 col 1 | row 2 col 2
 under the hood  | 底层
 specify   |  指定
 get passed in  | 传入 
-sync/async | 
+sync/async | 同步异步
+asynchronously | 异步
 whatnot | 
 in good shape | （运行代码的时候祈祷的
 nest | 
@@ -79,3 +80,5 @@ Adaptor  |  适配器
 TL;DR  |   too long;dont/didnt read 精华/总结
 conjecture  | 猜测猜想
 Threshold  | 阈值
+constants   | 常量
+assign   | 赋值
