@@ -20,6 +20,9 @@ title: 关于
 - ~~DIY爱好者🔨~~
 - ~~倡导轻断食 + 断舍离📖~~
 
+<!-- #### 开源贡献
+- 现代javascript教程翻译 -->
+
 <!-- #### Skills
 - 前端：HTML | CSS | JS | REACT | GRUNT | NODE
 - 毕设：基于Node.js的即时通讯系统（Socket.io|Express)
