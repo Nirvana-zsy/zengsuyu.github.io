@@ -80,7 +80,7 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination 分页
-per_page: 30 ## 每页显示的文章量 (0 = 关闭分页功能)
+per_page: 0 ## 每页显示的文章量 (0 = 关闭分页功能)
 pagination_dir: page ## 分页目录
 
 # Extensions 扩展
