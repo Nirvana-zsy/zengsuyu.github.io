@@ -82,3 +82,6 @@ conjecture  | 猜测猜想
 Threshold  | 阈值
 constants   | 常量
 assign   | 赋值
+dirty    | 一般指代更改了未保存的数据/文件
+truthy    | 泛指真值
+singly-linked list    | 单链表
