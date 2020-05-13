@@ -20,8 +20,9 @@ title: 关于
 - ~~DIY爱好者🔨~~
 - ~~倡导轻断食 + 断舍离📖~~
 
-<!-- #### 开源贡献
-- 现代javascript教程翻译 -->
+#### 开源贡献
+- 现代javascript教程翻译
+- [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
 
 <!-- #### Skills
 - 前端：HTML | CSS | JS | REACT | GRUNT | NODE
