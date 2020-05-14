@@ -70,6 +70,7 @@ category_map: ## 分类别名(路由)
     11 Tools: tools
     12 MachineLearning: ml
     13 外语: lang
+    14 学习方法: learn
 tag_map: ## 标签别名
 
 # Date / Time format 日期时间格式
