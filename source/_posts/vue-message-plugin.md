@@ -9,7 +9,10 @@ toc: 1
 top: 0
 ---
 
-## 插件地址
+## vue-message-plugin
+- 一个基于 Vue.js 的消息插件，按照 ElementUI / message的接口实现
+- [插件地址](https://www.npmjs.com/package/vue-message-plugin)
+- [源码地址](https://github.com/scarsu/vue-message-plugin)
 
 ![vue-message-plugin预览](/images/vue-message-plugin.gif)
 
