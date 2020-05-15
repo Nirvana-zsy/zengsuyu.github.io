@@ -9,11 +9,11 @@ description: 每日一折腾，不折腾难受。
 toc: 0
 ---
 ## TODO
-- gitbook文章全部迁移至blog，gitbook废弃
-- **全部文章**tab页，文章标题下的描述，改为隐藏，hover泡泡显示
 - 响应式重构
 
 ## 变更记录
+- **全部文章**tab页，文章标题下的描述，改为隐藏，hover泡泡显示
+- gitbook文章全部迁移至blog，gitbook废弃
 - 用腾讯兔小巢搭留言板
 - **全部文章**tab页，文章标题下增加描述
 - 从**emojipedia.org**添加全站emoji
@@ -106,7 +106,11 @@ npm i --save gitment
 
 ```
 
-- **Disqus**[需要Q，已经弃用-20191212]
+
+**gitment自2018年起原作者的CORS header服务已经停了，貌似至今暂未维护，不过这个服务的源代码已经开源，很简单的nodejs代码，如果由服务器可以自己启一个服务，我目前用的是这个地址：https://shimeng.info/api/oauth ，手动在gitment.browser.js中把 https://gh-oauth.imsun.net 替换成上述服务地址即可**
+
+
+- **Disqus**[需要FQ，已经弃用-20191212]
 在disqus官网注册账户，在主题配置文件中开启disqus评论控件:
 ```yaml
 # Comment 评论相关

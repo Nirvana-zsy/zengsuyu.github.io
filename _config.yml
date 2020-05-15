@@ -62,7 +62,7 @@ category_map: ## 分类别名(路由)
     01 HTML: html
     02 CSS: css
     03 JavaScript: javascript
-    05 课外输入: read
+    05 课外输入|我读过的书们: read
     06 构建工具: build-tools
     07 工具库: utility-libraries
     08 调试-Devtools进阶系列: debug

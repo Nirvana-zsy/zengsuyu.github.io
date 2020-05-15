@@ -3542,7 +3542,6 @@ var Gitment = function () {
       var id = this.id,
           owner = this.owner,
           repo = this.repo;
-debugger
       return _utils.http.get('/repos/' + owner + '/' + repo + '/issues', {
         creator: owner,
         labels: id
