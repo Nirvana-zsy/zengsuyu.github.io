@@ -58,7 +58,7 @@ index_generator:
 # Category & Tag
 default_category: ScarSu
 category_map: ## 分类别名(路由)
-    00 ScarSu: ScarSu
+    00 ScarSu|关于我和这个博客: ScarSu
     01 HTML: html
     02 CSS: css
     03 JavaScript: javascript
@@ -67,7 +67,7 @@ category_map: ## 分类别名(路由)
     07 工具库: utility-libraries
     08 调试-Devtools进阶系列: debug
     10 数据库: database
-    11 工具: tools
+    11 工具|推荐一些提高效率的工具: tools
     12 机器学习入门系列: ml
     13 外语: lang
     14 一些高效的学习方法: learn

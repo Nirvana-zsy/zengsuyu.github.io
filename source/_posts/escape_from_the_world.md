@@ -1,7 +1,7 @@
 ---
 title: 我与这世界的距离 # 文章标题
 categories:
-    - 00 ScarSu # 一级分类
+    - 00 ScarSu|关于我和这个博客 # 一级分类
 tags:
 comments: true #开启评论
 date: 1996-06-06
