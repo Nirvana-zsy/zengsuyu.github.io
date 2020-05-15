@@ -29,5 +29,5 @@ subtitle: 睁开眼睛看看这世界吧
 - <a target="_blank" href="https://book.douban.com/subject/1874488/">《别做正常的傻瓜》</a>行为决策学入门
 
 #### 笔记本
+- <a target="_blank" href="https://www.notion.so/f1ba5d9c5aab4a458109abd3c1673f92">我的影单分享</a>
 - <a target="_blank" href="https://www.scarsu.com/excape_from_the_world/">【我与这世界的距离】</a>一些胡言乱语。
-- <a target="_blank" href="https://www.notion.so/ddd411ef5246495c86be211c5127311b?v=2c3ed794f65b459a8305ca1f9fbdcb6c">我的影单分享</a>
