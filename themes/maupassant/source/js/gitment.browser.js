@@ -3422,7 +3422,8 @@ var Gitment = function () {
       this.state.user.isLoggingIn = true;
       // _utils.http.post('https://gh-oauth.openapi.link', {
       //_utils.http.post('https://gh-oauth.imsun.net', {
-      _utils.http.post('https://auth.baixiaotu.cc', {
+      // _utils.http.post('https://auth.baixiaotu.cc', {
+      _utils.http.post('https://shimeng.info/api/oauth', {
       //_utils.http.post('https://bak.smalbox.club', {
       //_utils.http.post('https://cors.wenjunjiang.win', {
         code: code,
