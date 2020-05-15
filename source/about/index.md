@@ -29,7 +29,7 @@ title: 关于
 
 
 #### 开源贡献
-- 现代javascript教程翻译
+- [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info)
 - [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
 
 #### ~~Tags Me~~  No Tags Anymore 🚫

@@ -1,7 +1,7 @@
 ---
 title: ML05 归一化
 categories:
-    - 12 MachineLearning # 一级分类
+    - 12 机器学习入门系列 # 一级分类
 tags:
 date: 2020-01-05
 description: Javascript玩转机器学习05

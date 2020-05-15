@@ -1,7 +1,7 @@
 ---
 title: ML01 机器学习&神经网络简介
 categories:
-    - 12 MachineLearning # 一级分类
+    - 12 机器学习入门系列 # 一级分类
 tags:
 date: 2019-12-25
 description: Javascript玩转机器学习01

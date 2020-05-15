@@ -1,7 +1,7 @@
 ---
 title: Customize VSCode
 categories:
-    - 11 Tools # 一级分类
+    - 11 工具 # 一级分类
 tags:
 date: 2020-04-28
 description: VSCode高效使用,来自创造VSCode的Microsoft的Azure团队的BurkeHolland的分享

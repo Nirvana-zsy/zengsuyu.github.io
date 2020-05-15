@@ -1,7 +1,7 @@
 ---
 title: Devtools 老司机养成 - 番外篇 - Devtools中的”VM“
 categories:
-    - 08 调试 # 一级分类
+    - 08 调试Devtools进阶系列 # 一级分类
 tags:
 date: 2020-04-06
 description: 为什么经常有脚本的“文件名”是"[VM](XXXX "？？

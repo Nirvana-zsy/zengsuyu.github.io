@@ -1,7 +1,7 @@
 ---
 title: Devtools 老司机养成 - 第七篇- Memory 内存
 categories:
-    - 08 调试 # 一级分类
+    - 08 调试Devtools进阶系列 # 一级分类
 tags:
 date: 2020-04-05
 description: 你开的网页会卡吗？来Memory面板了解一下内存分析&内存泄漏

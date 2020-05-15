@@ -1,7 +1,7 @@
 ---
 title: ML04 线性回归训练
 categories:
-    - 12 MachineLearning # 一级分类
+    - 12 机器学习入门系列 # 一级分类
 tags:
 date: 2020-01-02
 description: Javascript玩转机器学习04

@@ -1,7 +1,7 @@
 ---
 title: ML14 声控轮播图 - 语音识别迁移学习
 categories:
-    - 12 MachineLearning # 一级分类
+    - 12 机器学习入门系列 # 一级分类
 tags:
 date: 2020-04-29
 description: Javascript玩转机器学习14

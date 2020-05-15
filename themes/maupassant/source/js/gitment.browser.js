@@ -3420,7 +3420,11 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://cors.wenjunjiang.win/?remoteUrl=https://github.com/login/oauth/access_token', {
+      // _utils.http.post('https://gh-oauth.openapi.link', {
+      //_utils.http.post('https://gh-oauth.imsun.net', {
+      _utils.http.post('https://auth.baixiaotu.cc', {
+      //_utils.http.post('https://bak.smalbox.club', {
+      //_utils.http.post('https://cors.wenjunjiang.win', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
@@ -3537,7 +3541,7 @@ var Gitment = function () {
       var id = this.id,
           owner = this.owner,
           repo = this.repo;
-
+debugger
       return _utils.http.get('/repos/' + owner + '/' + repo + '/issues', {
         creator: owner,
         labels: id

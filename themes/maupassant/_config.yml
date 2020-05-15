@@ -9,16 +9,16 @@ changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
     enable: true ## If you want to use Gitment comment system please set the value to true.
     owner: scarsu ## Your GitHub ID, e.g. username
-    repo: https://github.com/scarsu/gitmentComment.git ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-    client_id: 014ff022361448e5d76c ## GitHub client ID, e.g. 75752dafe7907a897619
-    client_secret: fa244588f4e680ddff3ce079c7f0dc5c0ff52512 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+    repo: ScarSuHexo_Netlify ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+    client_id: d6f2352e58fb923322f5 ## GitHub client ID, e.g. 75752dafe7907a897619
+    client_secret: de27abd6cce5329c72ef8a7fb7cc91cec332cc89 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
     enable: false ## If you want to use Gitment comment system please set the value to true.
-    owner: ## Your GitHub ID, e.g. username
-    repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-    client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
-    client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-    admin: ## Github repo owner and collaborators, only these guys can initialize github issues.
+    owner: scarsu ## Your GitHub ID, e.g. username
+    repo: ScarSuHexo_Netlify ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+    client_id: d6f2352e58fb923322f5 ## GitHub client ID, e.g. 75752dafe7907a897619
+    client_secret: de27abd6cce5329c72ef8a7fb7cc91cec332cc89 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+    admin: scarsu ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
     enable: false ## If you want to use Valine comment system, please set the value to true.
     appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz

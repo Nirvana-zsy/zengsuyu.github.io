@@ -1,7 +1,7 @@
 ---
 title: ML11 使用预训练模型 图片分类
 categories:
-    - 12 MachineLearning # 一级分类
+    - 12 机器学习入门系列 # 一级分类
 tags:
 date: 2020-04-26
 description: Javascript玩转机器学习11
