@@ -1,7 +1,17 @@
 ---
 title: 前端导航
 ---
-<small>从 StateOfJs2019 提取了上万名开发者最常用的一些前端信息源网站</small>
+
+#### 友链
+- <a href="https://www.lxchuan12.cn/">若川</a>
+- <a href="http://www.taoweng.site">前端桃园</a>
+- <a href="https://leihuang.dev/">Lei Huang</a>
+- <a href="https://ericchen.vip/">EricChen</a>
+<!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
+
+
+从 StateOfJs2019 提取了上万名开发者最常用的一些前端信息源网站↓
+
 ## Blogs & Magazines
 - [CSS Tricks](https://css-tricks.com/)
 - [Dev.to](https://dev.to/)
@@ -116,13 +126,6 @@ title: 前端导航
 - [DevMode.fm](https://devmode.fm/)
 - [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
 
-#### 友链
-- <a href="http://www.taoweng.site">前端桃园</a>
-- <a href="https://leihuang.dev/">Lei Huang</a>
-- <a href="https://ericchen.vip/">EricChen</a>
-<!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
-
-
 #### 前端大佬
 - <a href="https://me.getify.com/">getify - Kyle Simpson </a> - you dont know js作者
 - <a href="https://www.h5jun.com/">十年踪迹 / 月影</a> - 吴亮,360齐舞团团长
@@ -149,8 +152,9 @@ title: 前端导航
 <!-- #### FE Conf -->
 
 ```js
+    //欢迎友链，请从上面的联系方式找我
     //不定期更新
     //排名不分先后
-    //推荐请联系邮箱 scarsu001@gmail.com
-    //包含了stateofjs2019调查中20000名开发者依赖的信息源
 ```
+
+<small>谁看的信息源越多，世界在他的眼中便越真实客观</small>

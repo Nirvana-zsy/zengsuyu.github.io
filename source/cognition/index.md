@@ -30,4 +30,4 @@ subtitle: 睁开眼睛看看这世界吧
 
 #### 笔记本
 - <a target="_blank" href="https://www.notion.so/f1ba5d9c5aab4a458109abd3c1673f92">我的影单分享</a>
-- <a target="_blank" href="https://www.scarsu.com/excape_from_the_world/">【我与这世界的距离】</a>一些胡言乱语。
+- <a target="_blank" href="https://www.scarsu.com/excape_from_the_world/">我与这世界的距离</a>一些胡言乱语。
