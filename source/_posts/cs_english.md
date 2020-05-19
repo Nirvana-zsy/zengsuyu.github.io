@@ -3,15 +3,19 @@ title: 计算机相关 单词书📖
 categories:
     - 13 外语
 tags:
-date: 2018-01-01
-description: CS ~ English
+date: 2019-01-01
+description: 总结一下，我看英文前端文档/视频遇到的一些计算机/前端相关的单词/专业术语
 toc: 0
 ---
 
+从2014年大一过了六级之后，就把学英语落下了，但是作为一个程序员，英语还是很重要的，将来有机会出国发展英语也是硬配置。
+
+所以工作之后经常刻意强迫自己读英文文档，也看过一些英文前端视频，比如FrontEndMaster、WesBos。
+
+总结一下，我看英文前端文档/视频遇到的一些计算机/前端相关的单词/专业术语👇，希望对其他同行提升英语有一点帮助。
+
 单词 | 释义
 ---|---
-row 1 col 1 | row 1 col 2
-row 2 col 1 | row 2 col 2
 under the hood  | 底层
 specify   |  指定
 get passed in  | 传入 
@@ -27,7 +31,7 @@ neat   | 整齐利落
 scallfold   |  脚手架
 handy  |  便利
 ultimate   | 最终
-rewind  | 倒回
+rewind  | 倒回/回退
 isolation   |   隔离
 intefere |  妨碍 打扰
 capture |  捕获
@@ -85,4 +89,4 @@ assign   | 赋值
 dirty    | 一般指代更改了未保存的数据/文件
 truthy    | 泛指真值
 singly-linked list    | 单链表
-legacy    | 遗留问题
+legacy    | 遗留问题（legacy code：万恶的遗留代码）
