@@ -28,6 +28,14 @@
         $("body").removeClass("dark-theme")
       }
 
+      $("#nav-menu").on('click',function(e){
+        $("#nav-menu").toggleClass("expand")
+        //- e.preventDefault()
+      });
+      //- $("#nav-menu").on('mouseout',function(){
+      //-   $("#nav-menu").removeClass("expand")
+      //- });
+
       $("#lighter-btn+label").click(function(e){
         if(!$("#lighter-btn")[0].checked){
           //暗黑模式
