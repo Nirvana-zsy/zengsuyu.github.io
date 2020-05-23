@@ -1,7 +1,7 @@
 ---
 title: Devtools 老司机养成 - 第五篇- Network 面板
 categories:
-    - 08 调试Devtools进阶系列 # 一级分类
+    - 02 Debug|Devtools进阶系列 # 一级分类
 tags:
 date: 2020-03-22
 description: chrome最重要之二的Network面板，给后端小哥甩锅？实锤都在这里...

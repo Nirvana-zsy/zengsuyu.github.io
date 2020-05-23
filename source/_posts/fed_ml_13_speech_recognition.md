@@ -1,7 +1,7 @@
 ---
 title: ML13 用tf官方的预训练模型-语音识别
 categories:
-    - 12 机器学习入门系列 # 一级分类
+    - 03 TensorFlow|机器学习系列 # 一级分类
 tags:
 date: 2020-04-28
 description: Javascript玩转机器学习13

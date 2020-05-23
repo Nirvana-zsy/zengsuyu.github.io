@@ -1,7 +1,7 @@
 ---
 title: 2018年度javascript行业报告
 categories:
-    - 03 JavaScript # 一级分类
+    - 06 JavaScript # 一级分类
 tags:
     - stateOfJs
 date: 2018-12-31

@@ -1,7 +1,7 @@
 ---
 title: ML08 多分类问题训练：IRIS鸢尾花分类问题
 categories:
-    - 12 机器学习入门系列 # 一级分类
+    - 03 TensorFlow|机器学习系列 # 一级分类
 tags:
 date: 2020-01-09
 description: Javascript玩转机器学习08

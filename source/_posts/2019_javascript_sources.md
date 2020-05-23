@@ -1,7 +1,7 @@
 ---
 title: 2019年度Javascript社区-信息源聚合
 categories:
-    - 03 JavaScript # 一级分类
+    - 06 JavaScript # 一级分类
 tags:
     - stateOfJs
 date: 2019-12-30

@@ -1,7 +1,7 @@
 ---
 title: ML03【Tensor-张量】简介
 categories:
-    - 12 机器学习入门系列 # 一级分类
+    - 03 TensorFlow|机器学习系列 # 一级分类
 tags:
 date: 2019-12-29
 description: Javascript玩转机器学习03

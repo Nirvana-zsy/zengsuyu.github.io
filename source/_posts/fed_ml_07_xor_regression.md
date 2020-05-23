@@ -1,7 +1,7 @@
 ---
 title: ML07 XOR回归训练：多层神经网络
 categories:
-    - 12 机器学习入门系列 # 一级分类
+    - 03 TensorFlow|机器学习系列 # 一级分类
 tags:
 date: 2020-01-07
 description: Javascript玩转机器学习07

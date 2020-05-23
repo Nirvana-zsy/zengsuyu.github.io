@@ -1,7 +1,7 @@
 ---
 title: 用chrome调试node.js服务端代码
 categories:
-    - 08 调试Devtools进阶系列 # 一级分类
+    - 02 Debug|Devtools进阶系列 # 一级分类
 tags:
 date: 2018-07-30
 description: 不然你想用什么调试？

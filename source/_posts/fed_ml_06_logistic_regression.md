@@ -1,7 +1,7 @@
 ---
 title: ML06 逻辑回归训练
 categories:
-    - 12 机器学习入门系列 # 一级分类
+    - 03 TensorFlow|机器学习系列 # 一级分类
 tags:
 date: 2020-01-06
 description: Javascript玩转机器学习06

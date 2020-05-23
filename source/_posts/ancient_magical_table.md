@@ -1,7 +1,7 @@
 ---
 title: 古老神奇的table
 categories:
-    - 01 HTML # 一级分类
+    - 04 HTML # 一级分类
 tags:
 date: 2018-08-29
 description: 凭什么table能兼容IE6？

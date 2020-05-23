@@ -1,7 +1,7 @@
 ---
 title: Vue消息插件开发 & npm发布
 categories:
-    - 03 JavaScript # 一级分类
+    - 06 JavaScript # 一级分类
 tags:
 date: 2020-05-14
 description: 手写一个基于 Vue.js 的消息插件，按照 ElementUI / message的接口实现

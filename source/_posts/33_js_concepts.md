@@ -1,7 +1,7 @@
 ---
 title: JavaScript开发者应懂的33个概念
 categories:
-    - 03 JavaScript # 一级分类
+    - 06 JavaScript # 一级分类
 tags:
 date: 2019-07-01
 description: 基本都是面试考点了

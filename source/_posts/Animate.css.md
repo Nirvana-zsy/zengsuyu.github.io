@@ -1,7 +1,7 @@
 ---
 title: Animate.css
 categories:
-    - 02 CSS # 一级分类
+    - 05 CSS # 一级分类
 tags:
 date: 2018-02-01
 description: Animate.css是一个来自国外的 CSS3 动画库。
