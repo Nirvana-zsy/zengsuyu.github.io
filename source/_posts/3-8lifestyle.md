@@ -9,7 +9,7 @@ toc: 1
 top: 0
 ---
 
-![题图](/images/read/3-8lifestyle.jpg)
+![](/images/read/3-8lifestyle.jpg)
 
 ## `REM` 睡眠
 
