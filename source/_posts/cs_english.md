@@ -28,12 +28,12 @@ gotchas  | 陷阱
 shortcut | 
 inventory |  库存/牛
 neat   | 整齐利落
-scallfold   |  脚手架
+scaffold   |  脚手架
 handy  |  便利
 ultimate   | 最终
 rewind  | 倒回/回退
 isolation   |   隔离
-intefere |  妨碍 打扰
+interfere |  妨碍 打扰
 capture |  捕获
 raw |  原生的
 vanilla js   |    raw js：原生js
@@ -81,7 +81,7 @@ timeline  |  时间轴
 delegate  |   转交
 prefix/postfix  |  前缀后缀
 Adaptor  |  适配器
-TL;DR  |   too long;dont/didnt read 精华/总结
+TL;DR  |   too long;don't/didn't read 精华/总结
 conjecture  | 猜测猜想
 Threshold  | 阈值
 constants   | 常量
@@ -90,3 +90,12 @@ dirty    | 一般指代更改了未保存的数据/文件
 truthy    | 泛指真值
 singly-linked list    | 单链表
 legacy    | 遗留问题（legacy code：万恶的遗留代码）
+instruction     | 指令
+Glossary     | 术语
+constrained     | 受约束的
+deterministic     | 确定的
+decent     | 优雅的、体面的
+bulk     | 体积
+parallel     | 并行的。平行的
+fraction     | 片段
+standstill     | 停止停顿

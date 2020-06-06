@@ -10,11 +10,11 @@ top: 0
 ---
 
 
-## 概览
+## Performance面板概览
 
 -   performance 面板可以用于分析`运行时性能`(运行时强调的是与页面加载性能相区分)
 -   以隐身模式打开网页 （隐身模式可确保 Chrome 以干净的状态运行。例如，排除扩展对性能测量的影响
--   [Janky Animation demo ：性能测试 demo](https://googlechrome.github.io/devtools-samples/jank/)
+-   [Junky Animation demo ：性能测试 demo](https://googlechrome.github.io/devtools-samples/jank/)
 -   视图 overview：
 
 ![performance.png](https://i.loli.net/2019/04/23/5cbf1d586fe21.png)

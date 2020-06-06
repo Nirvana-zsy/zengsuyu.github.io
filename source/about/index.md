@@ -24,7 +24,9 @@ title: 关于
 #### 开源贡献
 
 - [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
-- [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info)
+<!-- - [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info) -->
+- [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
+- [Chrome 插件 - TOPEST](https://github.com/scarsu/Topest-Chrome-Extension)
 
 #### 博客内容
 
