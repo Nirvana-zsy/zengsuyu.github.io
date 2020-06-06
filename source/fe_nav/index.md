@@ -3,10 +3,11 @@ title: 前端导航
 ---
 
 #### 友链
-- <a href="https://www.lxchuan12.cn/">若川</a>
 - <a href="http://www.taoweng.site">前端桃园</a>
-- <a href="https://leihuang.dev/">Lei Huang</a>
+- <a href="https://www.lxchuan12.cn/">若川</a>
 - <a href="https://ericchen.vip/">EricChen</a>
+- <a href="https://blog.ncgame.cc/">不才's blog</a>
+<!-- - <a href="https://leihuang.dev/">Lei Huang</a> -->
 <!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
 
 
