@@ -1,20 +1,20 @@
 ---
-title: 万字长文解释【Javascript Event Loop & 异步机制】
+title: 【Javascript Event Loop & 异步机制】总结
 categories:
     - 06 JavaScript # 一级分类
 tags:
 date: 2020-06-08
-description: 万字长文 + 动图 + 实例，解释清楚：Javascript Event Loop如何调度异步任务
+description: 长文 + 动图 + 实例，视图解释清楚：Javascript Event Loop如何调度异步任务
 toc: 1
 top: 0
 ---
-## 这篇文章解决的问题
-- 我们写的各种回调什么时候执行？
-- setTimeout(cb,0)和Promise.resolve().then(cb)哪个先执行？
-- Javascript的单线程如何实现异步并发？
-- Event Loop到底是如何调度任务？
+## 带着问题看这篇文章
+- 我们写的各种回调什么时候执行？按照什么顺序执行？
+- setTimeout(cb,0)和Promise.resolve().then(cb)谁的回调先执行？
+- Javascript的单线程是如何实现异步并发的？
+- Event Loop到底是如何调度任务的？
 - 如何利用RAF优化性能？
-- 下面这段代码输出是什么？回答不对的请看完这篇文章~
+- 下面这段代码输出是什么？回答不对的朋友，看完这篇文章也许你的思路就会清晰~
 
 ```javascript
 console.log(1);
@@ -38,18 +38,7 @@ console.log(7);
 // 结果：1475236 
 ```
 
-## 参考资料
-- HTML规范： [https://www.w3.org/TR/html5/webappapis.html#event-loops](https://www.w3.org/TR/html5/webappapis.html#event-loops)
-- NodeJS Event Loop 文档： [https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop](https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
-- mdn相关文档：[https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
-- Jake Archibald在JSConf.Asia的演讲视频【In The Loop】,很值得看： [https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
-- Philip Roberts在JSConf的演讲视频【What the heck is the event loop anyway】,很值得看： [https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
-- Philip Roberts做的Event Loop可视化网站： [http://latentflip.com/loupe/](http://latentflip.com/loupe/)
-- [JS Runtime运行时 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
-<!-- - 博客： [https://segmentfault.com/a/1190000016278115?utm_source=tag-newest](https://segmentfault.com/a/1190000016278115?utm_source=tag-newest) -->
-<!-- - 博客： [https://www.jianshu.com/p/d4b5170a5c94](https://www.jianshu.com/p/d4b5170a5c94) -->
-
-## JS Runtime运行时
+## JS Runtime的几个概念
 
 
 ### call stack 调用栈
@@ -66,7 +55,7 @@ console.log(7);
 
 **堆**一大块内存区域（通常是非结构化的)，对象被分配在堆中
 
-### task queue 队列
+### task queue 消息队列
 
 JS运行时包含了一个**消息队列**，每个消息队列关联着一个用于处理这个消息的回调函数。（队列的特点是先进先出）
 
@@ -82,15 +71,13 @@ JS运行时包含了一个**消息队列**，每个消息队列关联着一个�
 - 为什么单线程能实现异步和并发？
 - 因为单线程指的是js runtime
 - 而浏览器和Node提供了API，使我们可以调用其他线程去做并发的异步任务，例如网络请求、DOM、setTimeout
-非阻塞
 
 ### Non-blocking 非阻塞
 
 - blocking：阻塞，是指浏览器在等待耗时长的代码(eg.网络请求,I/O)期间，不能处理任何其他事情，包括用户响应。
 - 解决阻塞的方法：异步任务
 - 异步任务怎么实现的？依赖的就是**异步API**和**event loop事件循环**
-- JavaScript的事件循环模型与许多其他语言不同的一个非常有趣的特性是，它**永不阻塞**，所以当一个应用正等待一个异步任务时，它仍然可以处理其它事情，比如用户输入。
-- 由于历史原因有一些**例外**，如 `alert` 或者`同步 XHR`，但应该尽量避免使用它们。注意，[例外的例外也是存在的](https://stackoverflow.com/questions/2734025/is-javascript-guaranteed-to-be-single-threaded/2734311#2734311)（但通常是实现错误而非其它原因）。
+- JavaScript的事件循环模型与许多其他语言不同的一个非常有趣的特性是，它**永不阻塞**，所以当一个应用正等待一个异步任务时，它仍然可以处理其它事情，比如用户输入。（由于历史原因有一些**例外**，如 `alert` 或者`同步 XHR`，但应该尽量避免使用它们，[例外的例外也是存在的](https://stackoverflow.com/questions/2734025/is-javascript-guaranteed-to-be-single-threaded/2734311#2734311)（但通常是实现导致的错误而非其它原因）。
 
 ### **不被抢占**
 
@@ -116,9 +103,6 @@ JS运行时包含了一个**消息队列**，每个消息队列关联着一个�
 - 主线程之外，存在一个待处理消息的**消息队列task queue**。每一个消息都关联着一个用以处理这个消息的回调函数。
 - 当主线程调用栈中的所有同步任务执行完毕，系统就会读取task queue，取最先进的消息作为参数，将其关联的回调函数放入主线程调用栈中执行
 
-### 原理图
-
-![](/images/event-loop/Untitled%204.png)
 
 ### **添加消息**
 
@@ -163,11 +147,14 @@ function foo(){
 
 ![](/images/event-loop/Untitled%203.png)
 
+**原理图**
 
-### webWorker & 跨运行时通信
+![](/images/event-loop/Untitled%204.png)
+
+### 题外话：webWorker & 跨运行时通信
 
 - 每个 **WebWorker** 、跨域的 **iframe 、**浏览器不同窗口都有各自的运行时，即都有各自的 call stack 、heap、queue。
-- 不同的运行时，可以通过 `[postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage)` 方法来通信。
+- 不同的运行时，可以通过 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 方法来通信。
 
 **postMessage：**
 
@@ -183,7 +170,7 @@ otherWindow:其他窗口的引用：
 - 执行window.open返回的窗口对象
 - 通过window.frames获取到的子frame窗口对象
 
-message：要发送到其他窗口的数据，会被`[结构化克隆算法](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm)`序列化
+message：要发送到其他窗口的数据，会被[结构化克隆算法](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm)序列化
 
 targetOrigin：用来指定哪些窗口能接收到消息事件
 
@@ -222,29 +209,29 @@ function receiveMessage(event)
 
 ### 浏览器渲染 - Rendering Task步骤
 
-- requestAnimationFrame
-- style calculation计算样式
-- layout计算布局
-- paint渲染像素数据
+- requestAnimationFrame API
+- style calculation 计算样式
+- layout 计算布局
+- paint 实际渲染像素数据
 
 ### **render blocking 渲染阻塞**
 
-具体来讲，如果js runtime的call stack一直不能清空，例如event loop将一个耗时的回调放进了call stack，会导致浏览器主线程被占用，无法执行render相关的工作，用户交互的事件也被添加在消息队列等待调用栈清空得不到执行，因此无法响应用户的操作，造成阻塞渲染的“卡顿”现象。
+具体来讲，如果js runtime 的 call stack 一直不能清空，例如event loop将一个耗时的回调放进了call stack，会导致浏览器主线程被占用，无法执行render相关的工作，用户交互的事件也被添加在消息队列等待调用栈清空得不到执行，因此无法响应用户的操作，造成阻塞渲染的“卡顿”现象。
 
 ### 60FPS
 
-在event loop处理消息队列时，我们提倡要缩短单个消息处理时间，在可能的情况下尽量将一个消息裁剪成多个消息，rendering  task可以在消息之间执行，以保证保证UI Rendering调用的频率能达到 `60 frames per second` （UI Rendering Task执行次数通常是每秒60次，但在大多数遵循W3C建议的浏览器中，回调函数执行次数通常与浏览器屏幕刷新次数相匹配。），即每次event loop处理消息执行回调所占用的时间 小于 16.67 毫秒。
+在event loop处理消息队列时，我们提倡要缩短单个消息处理时间，在可能的情况下尽量将一个消息裁剪成多个消息，rendering task 可以在消息之间执行，以保证保证UI Rendering调用的频率能达到 `60 frames per second` （UI Rendering Task执行次数通常是每秒60次，但在大多数遵循W3C建议的浏览器中，回调函数执行次数通常与浏览器屏幕刷新次数相匹配。），即每次event loop处理消息执行回调所占用的时间 小于 16.67 毫秒。
 
-demo1:
+### demo1:
 
-看下面这段代码，先 append 一个元素再设置display=none去隐藏这个元素，**不必担心**这个元素会闪现，因为这两行代码会在某一次event loop中执行，只有这两行代码执行完，并且清空了调用栈，才有可能执行下一次UI Render task
+看下面这段代码，先 append 一个元素再设置display=none去隐藏这个元素，**不必担心**这个元素会闪现，因为这两行代码会在某一次event loop中执行，只有这两行代码执行完，并且清空了当前调用栈，才有可能执行下一次UI Render task
 
 ```jsx
 document.body.appendChild(el)
 el.style.display='none'
 ```
 
-demo2:
+### demo2:
 
 下面这段代码，重复的显示隐藏一个元素，看起来开销很大，但其实在RenderingTask期间，只会取最终结果来渲染，
 
@@ -367,9 +354,9 @@ button addEventListener ('click,()=>{
 
 ### 微任务阻塞浏览器
 
-如果执行微任务期间，不停的有新的微任务，会导致浏览器阻塞
+如果执行微任务期间，不停的有新的微任务加入到queue中，会导致浏览器阻塞
 
-微任务的执行会因为JS堆栈的情况有所不同，根据调用栈是否清空去判断微任务是否会执行。看几个例子：
+微任务的执行会因为JS堆栈的情况有所不同，根据**调用栈是否清空**去判断微任务是否会执行。
 
 ## ⭐event loop执行顺序(含micro task)
 
@@ -382,39 +369,39 @@ button addEventListener ('click,()=>{
 
 ![](/images/event-loop/event_loop.gif)
 
-**test1：调用栈未清空，不执行micro task**
+**demo1：调用栈未清空，不执行micro task**
 
-在控制台中执行一段代码，会当做同步代码来处理。listener1执行后，微任务队列+1，但是因为是同步执行的代码，所以会立即执行listener2，微任务队列+1，所以顺序是`listener1,listener2,microtsk1,microtask2`
+在控制台中执行一段代码，会当做同步代码来处理。listener1执行后，微任务队列+1，但是因为是同步执行的代码，所以会立即执行listener2，微任务队列+1，所以顺序是`listener1,listener2,microtask1,microtask2`
 
 ![](/images/event-loop/Untitled%2011.png)
 
-**test2:调用栈清空后，micro task 优先于 macro task执行**
+**demo2:调用栈清空后，micro task 优先于 macro task执行**
 
 同步执行两个setTimeout，会将 listener1和listener2加入到task queue，同步代码执行就结束。先执行listener1，将micro task1加入微任务队列，listener1执行完后，调用栈清空，即使这时候task queue还有listener2，也会先执行所有微任务，将所有微任务清空后，再执行listener2，因此输出顺序是 `listener1,microtsk1,listener2,microtask2`  
 
 ![](/images/event-loop/Untitled%2012.png)
 
-**test3：同test2**
+**demo3：同demo2**
 
 用户点击事件
 
-由于点击事件会被添加到task queue，因此，这个 test3 的结果和 test2 结果相同
+由于点击事件会被添加到task queue，因此，这个 demo3 的结果和 demo2 结果相同
 
 ![](/images/event-loop/Untitled%2013.png)
 
-**test4：同test1**
+**demo4：同demo1**
 
 js调用click()事件
 
-由于是在代码中手动执行click，所以会同步执行两个listener，因此test4和test1结构相同。
+由于是在代码中手动执行click，所以会同步执行两个listener，因此demo4和demo1结构相同。
 
 ![](/images/event-loop/Untitled%2014.png)
 
-**test5：micro 优先于 macro执行**
+**demo5：micro 优先于 macro执行**
 
 ![](/images/event-loop/Untitled%2015.png)
 
-**test6：综合实例**
+**demo6：综合实例**
 
 ```javascript
 // 浏览器中执行
@@ -494,3 +481,16 @@ main start 和 main end同步执行，同步代码执行完后，调用栈清空
 ```
 
 ![](/images/event-loop/Untitled%2017.png)
+
+
+
+## 参考资料
+- HTML规范： [https://www.w3.org/TR/html5/webappapis.html#event-loops](https://www.w3.org/TR/html5/webappapis.html#event-loops)
+- NodeJS Event Loop 文档： [https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop](https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
+- mdn相关文档：[https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
+- Jake Archibald在JSConf.Asia的演讲视频【In The Loop】,很值得看： [https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
+- Philip Roberts在JSConf的演讲视频【What the heck is the event loop anyway】,很值得看： [https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
+- Philip Roberts做的Event Loop可视化网站： [http://latentflip.com/loupe/](http://latentflip.com/loupe/)
+- [JS Runtime运行时 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
+<!-- - 博客： [https://segmentfault.com/a/1190000016278115?utm_source=tag-newest](https://segmentfault.com/a/1190000016278115?utm_source=tag-newest) -->
+<!-- - 博客： [https://www.jianshu.com/p/d4b5170a5c94](https://www.jianshu.com/p/d4b5170a5c94) -->
