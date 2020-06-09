@@ -38,7 +38,7 @@ console.log(7);
 // 结果：1475236 
 ```
 
-## JS Runtime的几个概念
+## JS Runtime 的几个概念
 
 
 ### call stack 调用栈
@@ -64,6 +64,14 @@ JS运行时包含了一个**消息队列**，每个消息队列关联着一个�
 3. 消息被作为参数调用与之关联的回调函数
 4. 同时为该函数调用向调用栈添加一个新的栈帧
 5. 调用栈再次为空时，event loop会重复1-4步骤
+
+通常，task queue中的任务被称为：**macrotask 宏任务**.
+
+以下几种异步API的回调属于**宏任务**：
+- setTimeout
+- MessageChannel
+- postMessage
+- setImmediate
 
 ### Single Thread 单线程
 
@@ -96,7 +104,7 @@ JS运行时包含了一个**消息队列**，每个消息队列关联着一个�
 - 浏览器的Event Loop模型是在[html5的规范](https://www.w3.org/TR/html5/webappapis.html#event-loops)中明确定义的，具体的实现由浏览器厂商来做。
 - NodeJS的Event Loop是基于libuv实现的。可以参考Node的[官方文档](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)以及libuv的[官方文档](http://docs.libuv.org/en/v1.x/design.html)。
 
-### **浏览器EventLoop运行机制（不考虑micro task）**
+### **浏览器EventLoop运行机制（不考虑microtask）**
 
 - 所有同步任务都在**主线程**上执行，形成一个**call stack**调用栈
 - 可以通过**浏览器API**调用 运行在其他线程的**异步任务**
@@ -151,7 +159,7 @@ function foo(){
 
 ![](/images/event-loop/Untitled%204.png)
 
-### 题外话：webWorker & 跨运行时通信
+### 知识延伸：webWorker & 跨运行时通信
 
 - 每个 **WebWorker** 、跨域的 **iframe 、**浏览器不同窗口都有各自的运行时，即都有各自的 call stack 、heap、queue。
 - 不同的运行时，可以通过 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 方法来通信。
@@ -205,14 +213,15 @@ function receiveMessage(event)
 }
 ```
 
-## UI Rendering Task
+## UI Rendering Task & 性能优化
 
 ### 浏览器渲染 - Rendering Task步骤
 
-- requestAnimationFrame API
+- requestAnimationFrame API(在chrome，火狐，符合WEB标准)
 - style calculation 计算样式
 - layout 计算布局
 - paint 实际渲染像素数据
+- requestAnimationFrame API(在edge，safari)
 
 ### **render blocking 渲染阻塞**
 
@@ -281,7 +290,7 @@ demo2：用RAF控制动画执行顺序，需求是box元素的水平位置变化
 ```jsx
 button addEventListener ('click,()=>{
 	box.style.transform = 'translateX(1000px)'
-	box.style.transition= 'tranform 1s ease-in-out'
+	box.style.transition= 'transform 1s ease-in-out'
 	box.style.transform = 'translateX(500px)'
 })
 
@@ -292,7 +301,7 @@ button addEventListener ('click,()=>{
 //换一种写法
 button addEventListener ('click,()=>{
 	box.style.transform = 'translateX(1000px)'
-	box.style.transition= 'tranform 1s ease-in-out'
+	box.style.transition= 'transform 1s ease-in-out'
 	
 	requestAnimationFrame(()=>{
 		box.style.transform = 'translateX(500px)'
@@ -308,7 +317,7 @@ button addEventListener ('click,()=>{
 	
 	requestAnimationFrame(()=>{
 		requestAnimationFrame(()=>{
-			box.style.transition= 'tranform 1s ease-in-out'
+			box.style.transition= 'transform 1s ease-in-out'
 			box.style.transform = 'translateX(500px)'
 		})
 	})
@@ -339,45 +348,74 @@ button addEventListener ('click,()=>{
 
 ![](/images/event-loop/Untitled%209.png)
 
-## Micro Task 微任务
+## MicroTask 微任务
 
-**微任务，micro task，也叫jobs。**
+**微任务，microtask，也叫jobs。**
 
 ### 微任务 异步类型
 
-一些异步任务执行完成后，其**回调**会依次进入micro task queue，等待后续被调用，这些异步任务包括：
+一些异步任务执行完成后，其**回调**会依次进入microtask queue，等待后续被调用，这些异步任务包括：
 
 - **Promise.then**
 - MutationObserver
 - process.nextTick (Node独有)
 - Object.observe
 
-### 微任务阻塞浏览器
+## ⭐event loop运行机制(含microtask)
 
-如果执行微任务期间，不停的有新的微任务加入到queue中，会导致浏览器阻塞
-
-微任务的执行会因为JS堆栈的情况有所不同，根据**调用栈是否清空**去判断微任务是否会执行。
-
-## ⭐event loop执行顺序(含micro task)
-
+event loop中任务的执行顺序：
 1. 同步代码执行，直至调用栈清空
-2. micro task：调用栈清空后，优先执行**所有**的micro task，如果有新的micro task，**继续执行新micro task，**直至micro task queue清空
-3. task queue：执行一个task，后续的task暂不处理
-4. render task：执行完所有render task，新render task暂不处理
+2. microtask：调用栈清空后，优先执行**所有**的microtask，如果有新的microtask，**继续执行新microtask，**直至microtask queue清空
+3. task queue：执行task queue第一个任务，后续的task暂不处理
+4. 每当调用栈清空后，重复2-3步骤
 
+
+**两个重点：**
+
+- 微任务阻塞浏览器：如果执行微任务期间，不停的有新的微任务，会导致浏览器阻塞
+- 微任务的执行会因为JS堆栈的情况有所不同，要根据**调用栈是否清空**去判断微任务是否会执行。
+
+一个直观的例子：
+
+```jsx
+Promise.resolve().then(()=>{
+    console.log('microtask 1')
+})
+Promise.resolve().then(()=>{
+    console.log('microtask 2')
+})
+console.log('sync code')
+setTimeout(()=>{
+    console.log('macro task 1')
+    Promise.resolve().then(()=>{
+        console.log('microtask 3')
+    })
+},0)
+setTimeout(()=>{
+    console.log('macro task 2')
+},0)
+
+//结果：
+//sync code 同步代码优先执行
+//microtask 1  同步代码执行完后，调用栈清空，优先执行 microtask  
+//microtask 2  同上
+//macro task 1  调用栈清空，microtask queue清空，此时可以执行一个位于队首的macro task，执行期间新增一个microtask
+//microtask 3  调用栈清空后，由于存在microtask，因此优先执行microtask
+//macro task 2  最后执行macro task，清空task queue
+```
+
+**流程图**
 ![](/images/event-loop/Untitled%2010.png)
 
-![](/images/event-loop/event_loop.gif)
-
-**demo1：调用栈未清空，不执行micro task**
+**demo1：调用栈未清空，不执行microtask**
 
 在控制台中执行一段代码，会当做同步代码来处理。listener1执行后，微任务队列+1，但是因为是同步执行的代码，所以会立即执行listener2，微任务队列+1，所以顺序是`listener1,listener2,microtask1,microtask2`
 
 ![](/images/event-loop/Untitled%2011.png)
 
-**demo2:调用栈清空后，micro task 优先于 macro task执行**
+**demo2:调用栈清空后，microtask 优先于 macro task执行**
 
-同步执行两个setTimeout，会将 listener1和listener2加入到task queue，同步代码执行就结束。先执行listener1，将micro task1加入微任务队列，listener1执行完后，调用栈清空，即使这时候task queue还有listener2，也会先执行所有微任务，将所有微任务清空后，再执行listener2，因此输出顺序是 `listener1,microtsk1,listener2,microtask2`  
+同步执行两个setTimeout，会将 listener1和listener2加入到task queue，同步代码执行就结束。先执行listener1，将microtask1加入微任务队列，listener1执行完后，调用栈清空，即使这时候task queue还有listener2，也会先执行所有微任务，将所有微任务清空后，再执行listener2，因此输出顺序是 `listener1,microtask1,listener2,microtask2`  
 
 ![](/images/event-loop/Untitled%2012.png)
 
@@ -428,12 +466,12 @@ console.log(7);
 // 逻辑：
 147是同步执行，同步代码执行完后的queue：
 	task queue：callback2，callback6
-	micro task：callback5
+	microtask：callback5
 此时调用栈已清空，优先执行微任务callback5，调用栈清空
 再执行callback2，调用栈清空
 此时的queue：
 	task queue：callback6
-	micro task：callback3
+	microtask：callback3
 优先执行微任务callback3，调用栈清空
 最后执行callback6
 ```
@@ -470,27 +508,33 @@ console.log('main end');
 
 main start 和 main end同步执行，同步代码执行完后，调用栈清空，此时的queue：
 	task queue：cb1
-	micro queue：cb3
+	microtask queue：cb3
 先执行微任务cb3，执行完后，调用栈清空，此时的queue：
 	task queue：cb1
-	micro queue：cb4
+	microtask queue：cb4
 先执行微任务cb4，执行完后，调用栈清空，此时的queue：
 	task queue：cb1
-	micro queue：空
+	microtask queue：空
 最后执行cb1，然后执行cb2
 ```
 
 ![](/images/event-loop/Untitled%2017.png)
 
+**rendering task的执行顺序**
+在上面的event loop执行机制中，没有提到rendering task，是因为rendering task是由浏览器自行去决定何时运行的，与当前设备的屏幕刷新率等因素相关，确定的是：
+- RAF 在 rendering task 初始期间执行
+- 如果定义了多个 RAF 回调，会被加入到 `Animation queue`中，在UI Rendering 期间，会清空 Animation queue，与 microtask 不同的是，如果清空 Animation queue 期间，有新的 animation task 被加入到 queue 中，此次 rendering task 执行期间，不会处理新的 animation task。
+
+macrotask、microtask、animation task的区别，可以看在下面的动图中横向对比：
+
+![](/images/event-loop/event-loop.gif)
 
 
 ## 参考资料
-- HTML规范： [https://www.w3.org/TR/html5/webappapis.html#event-loops](https://www.w3.org/TR/html5/webappapis.html#event-loops)
-- NodeJS Event Loop 文档： [https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop](https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
-- mdn相关文档：[https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
-- Jake Archibald在JSConf.Asia的演讲视频【In The Loop】,很值得看： [https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
-- Philip Roberts在JSConf的演讲视频【What the heck is the event loop anyway】,很值得看： [https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
-- Philip Roberts做的Event Loop可视化网站： [http://latentflip.com/loupe/](http://latentflip.com/loupe/)
+- [HTML规范](https://www.w3.org/TR/html5/webappapis.html#event-loops)
+- [NodeJS Event Loop 文档](https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
+- [mdn相关文档](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
+- [Jake Archibald在JSConf.Asia的演讲视频【In The Loop】,很值得看：](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
+- [Philip Roberts在JSConf的演讲视频【What the heck is the event loop anyway】,很值得看](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
+- [Philip Roberts做的Event Loop可视化网站](http://latentflip.com/loupe/)
 - [JS Runtime运行时 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
-<!-- - 博客： [https://segmentfault.com/a/1190000016278115?utm_source=tag-newest](https://segmentfault.com/a/1190000016278115?utm_source=tag-newest) -->
-<!-- - 博客： [https://www.jianshu.com/p/d4b5170a5c94](https://www.jianshu.com/p/d4b5170a5c94) -->
