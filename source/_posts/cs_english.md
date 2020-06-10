@@ -99,3 +99,4 @@ bulk     | 体积
 parallel     | 并行的。平行的
 fraction     | 片段
 standstill     | 停止停顿
+subtle     | 微妙的

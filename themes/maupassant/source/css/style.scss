@@ -126,10 +126,10 @@ a,
 button.submit {
   color: #6e7173;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a:hover,
@@ -232,13 +232,13 @@ div {
     }
     input[type="checkbox"]:checked + label,
     input[type="checkbox"]:not(:checked) + label {
-      transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease;
     }
     input[type="checkbox"]:checked + label:after {
-      transition: all 0.2s ease-in;
+      transition: all 0.2s ease;
     }
     input[type="checkbox"]:not(:checked) + label:after {
-      transition: all 0.2s ease-out;
+      transition: all 0.2s ease;
     }
   }
   #nav-menu {
