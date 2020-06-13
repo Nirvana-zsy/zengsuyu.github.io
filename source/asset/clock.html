@@ -39,31 +39,35 @@
       font-size: 1.5em;
     }
     #full{
-      width: 30px;
+      opacity: 0;
+      width: 40px;
       height: 30px;
       line-height: 30px;
-      border-radius: 15px;
-      background-color:#fff;
-      color:#000;
+      background-color:#000;
+      border:1px solid #fff;
+      color:#fff;
       position: absolute;
       right: 20px;
       top: 20px;
       cursor: pointer;
       user-select: none;
+      transition: opacity .2s linear;
     }
     #exit{
-      display: none;
-      width: 30px;
+      opacity: 0;
+      z-index:-1;
+      width: 40px;
       height: 30px;
       line-height: 30px;
-      border-radius: 15px;
-      background-color:#fff;
-      color:#000;
+      background-color:#000;
+      border:1px solid #fff;
+      color:#fff;
       position: absolute;
       right: 20px;
       top: 20px;
       cursor: pointer;
       user-select: none;
+      transition: opacity .2s linear;
     }
   </style>
   <script src="./quotes.js" type="text/javascript"></script>
@@ -80,7 +84,39 @@
     <div id="exit">Exit</div>
   </div>
   <script>
+    let fullFlag = false;
     const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+    clock()
+    quote()
+    setInterval(clock,1000)
+    setInterval(quote,30000)
+
+    document.getElementById("full").addEventListener("click",full)
+    document.getElementById("exit").addEventListener("click",exitFullscreen)
+    document.addEventListener('mousemove', (event) => {
+      userActive()
+    })
+    document.addEventListener('fullscreenchange', (event) => {
+      if (document.fullscreenElement) {
+        document.getElementById("exit").style.display = "block";
+        document.getElementById("exit").style.opacity = 1
+        document.getElementById("full").style.display = "none";
+        fullFlag = true;
+        setTimeout(function(){
+          document.getElementById("exit").style.opacity = 0
+        },2000)
+      } else {
+        document.getElementById("exit").style.display = "none";
+        document.getElementById("full").style.display = "block";
+        document.getElementById("full").style.opacity = 1
+        fullFlag = false;
+        setTimeout(function(){
+          document.getElementById("full").style.opacity = 0
+        },2000)
+      }
+    });
+
     function clock(){
       let now = new Date()
 
@@ -105,28 +141,19 @@
       let _quote = `${quote.quote} ——${quote.author}`
       document.getElementById('quote').innerHTML = _quote
     }
-
-    clock()
-    quote()
-    setInterval(()=>{
-        clock()
-    },1000)
-    setInterval(()=>{
-      quote()
-    },30000)
-    document.getElementById("full").addEventListener("click",full)
-    document.getElementById("exit").addEventListener("click",exitFullscreen)
-    document.addEventListener('fullscreenchange', (event) => {
-      if (document.fullscreenElement) {
-        console.log(`Element: ${document.fullscreenElement.id} entered full-screen mode.`);
-        document.getElementById("exit").style.display = "block"
-        document.getElementById("full").style.display = "none"
-      } else {
-        document.getElementById("exit").style.display = "none"
-        document.getElementById("full").style.display = "block"
-        console.log('Leaving full-screen mode.');
+    function userActive(){
+      if(fullFlag){
+        document.getElementById("exit").style.opacity = 1
+        setTimeout(function(){
+          document.getElementById("exit").style.opacity = 0
+        },3000)
+      }else{
+        document.getElementById("full").style.opacity = 1
+        setTimeout(function(){
+          document.getElementById("full").style.opacity = 0
+        },3000)
       }
-    });
+    }
 
     function full() {
       const ele = document.getElementById("content")
