@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <style>
+    html,body{
+      margin:0;
+      padding:0;
+      background-color:#000;
+    }
+    html,body *{
+      color:#fff;
+    }
+    #content{
+      width: 100vw;
+      box-sizing: border-box;
+      padding: 10vh;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+    #date{
+      height: 20vh;
+      line-height: 40vh;
+      font-size: 3em;
+    }
+    #timer{
+      height: 50vh;
+      line-height: 50vh;
+      font-size: 30vh;
+    }
+    #second{
+      font-size: 2em;
+    }
+    #quote{
+      height: 10vh;
+      font-size: 1.5em;
+    }
+    #full{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      background-color:#fff;
+      color:#000;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+    #exit{
+      display: none;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      background-color:#fff;
+      color:#000;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+  <script src="./quotes.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="content">
+    <div id="date"></div>
+    <div class="timer">
+      <span id="timer"></span>
+      <span id="second"></span>
+    </div>
+    <div id="quote"></div>
+    <div id="full">Full</div>
+    <div id="exit">Exit</div>
+  </div>
+  <script>
+    const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    function clock(){
+      let now = new Date()
+
+      let year = now.getFullYear()+''
+      let month = (now.getMonth()+1)+''
+      let day = now.getDate()+''
+      let weekDay = WEEK_DAYS[now.getDay()+'']
+      let _date = `${year}-${month.padStart(2,'0')}-${day.padStart(2,'0')}  ${weekDay}`
+      
+      let hour = now.getHours()+''
+      let minute = now.getMinutes()+''
+      let second = (now.getSeconds()+'').padStart(2,'0')
+      let _timer = `${hour.padStart(2,'0')} : ${minute.padStart(2,'0')}`
+
+      document.getElementById('timer').innerHTML = _timer
+      document.getElementById('date').innerHTML = _date
+      document.getElementById('second').innerHTML = second
+    }
+    function quote(){
+      let randomIdx = Math.floor(quotes.length * Math.random())
+      let quote = quotes[randomIdx]
+      let _quote = `${quote.quote} ——${quote.author}`
+      document.getElementById('quote').innerHTML = _quote
+    }
+
+    clock()
+    quote()
+    setInterval(()=>{
+        clock()
+    },1000)
+    setInterval(()=>{
+      quote()
+    },30000)
+    document.getElementById("full").addEventListener("click",full)
+    document.getElementById("exit").addEventListener("click",exitFullscreen)
+    document.addEventListener('fullscreenchange', (event) => {
+      if (document.fullscreenElement) {
+        console.log(`Element: ${document.fullscreenElement.id} entered full-screen mode.`);
+        document.getElementById("exit").style.display = "block"
+        document.getElementById("full").style.display = "none"
+      } else {
+        document.getElementById("exit").style.display = "none"
+        document.getElementById("full").style.display = "block"
+        console.log('Leaving full-screen mode.');
+      }
+    });
+
+    function full() {
+      const ele = document.getElementById("content")
+      if (ele.requestFullscreen) {
+        ele.requestFullscreen();
+      } else if (ele.mozRequestFullScreen) {
+        ele.mozRequestFullScreen();
+      } else if (ele.webkitRequestFullscreen) {
+        ele.webkitRequestFullscreen();
+      } else if (ele.msRequestFullscreen) {
+        ele.msRequestFullscreen();
+      }
+    }
+    function exitFullscreen() {
+      if(document.exitFullScreen) {
+        document.exitFullScreen();
+      } else if(document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if(document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if(document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>

@@ -6,6 +6,7 @@ title: Apps
 #### [留言墙](/comment/)
 #### [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
 #### [Chrome 插件 - TOPEST](https://github.com/scarsu/Topest-Chrome-Extension)
+#### <a href="/asset/clock.html" target="_blank">简黑时钟</a>
 
 > 下面还有很多个坑，还在建设中
 
