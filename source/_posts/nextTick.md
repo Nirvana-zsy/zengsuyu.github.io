@@ -4,7 +4,7 @@ categories:
     - 06 JavaScript # 一级分类
 tags:
 date: 2020-06-10
-description: 
+description: tick这个词到底时什么意思😯？
 toc: 1
 top: 0
 ---
