@@ -69,6 +69,24 @@
       user-select: none;
       transition: opacity .2s linear;
     }
+    @media screen and (max-width:1024px){
+      #date{
+        line-height: 35vh;
+        font-size: 1em;
+      }
+      #timer {
+        height: 10vh;
+        line-height: 10vh;
+        font-size: 10vw;
+      }
+      #second {
+        font-size: 1em;
+      }
+      #quote {
+        height: 10vh;
+        font-size: 1em;
+      }
+    }
   </style>
   <script src="./quotes.js" type="text/javascript"></script>
 </head>
@@ -86,6 +104,7 @@
   <script>
     let fullFlag = false;
     const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    let lastTimer = null;
 
     clock()
     quote()
@@ -95,7 +114,11 @@
     document.getElementById("full").addEventListener("click",full)
     document.getElementById("exit").addEventListener("click",exitFullscreen)
     document.addEventListener('mousemove', (event) => {
-      userActive()
+      let now=new Date().getTime()
+      if(!lastTimer || now - lastTimer >500 ){
+        lastTimer=now
+        userActive()
+      }
     })
     document.addEventListener('fullscreenchange', (event) => {
       if (document.fullscreenElement) {
