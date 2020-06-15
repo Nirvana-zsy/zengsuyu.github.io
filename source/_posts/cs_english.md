@@ -100,3 +100,4 @@ parallel     | 并行的。平行的
 fraction     | 片段
 standstill     | 停止停顿
 subtle     | 微妙的
+augment     | 增强，扩展（vue 拦截数组方法，扩展数组的原型方法时使用 protoAugment
