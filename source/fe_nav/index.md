@@ -7,6 +7,7 @@ title: 前端导航
 - <a href="https://www.lxchuan12.cn/">若川</a>
 - <a href="https://ericchen.vip/">EricChen</a>
 - <a href="https://blog.ncgame.cc/">不才's blog</a>
+- <a href="https://drawcode.mdnice.com/">编程如画 灵魂画手</a>
 <!-- - <a href="https://leihuang.dev/">Lei Huang</a> -->
 <!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
 
