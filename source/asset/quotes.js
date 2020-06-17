@@ -395,39 +395,11 @@ const quotes = [
     "author": "Steve Jobs"
   },
   {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
+    "quote": "Easter eggs！It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
     "author": "酥鱼ScarSu"
   },
   {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
-    "author": "酥鱼ScarSu"
-  },
-  {
-    "quote": "Easter eggs！😁It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
+    "quote": "Easter eggs！It's not a quote,and I just hope you're happy right now💕💕💕😊😘.",
     "author": "酥鱼ScarSu"
   },
   {
