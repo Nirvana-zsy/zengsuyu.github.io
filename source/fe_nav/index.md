@@ -13,121 +13,9 @@ title: 前端导航
 <!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
 
 
-从 StateOfJs2019 提取了上万名开发者最常用的一些前端信息源网站↓
-
-## Blogs & Magazines
-- [CSS Tricks](https://css-tricks.com/)
-- [Dev.to](https://dev.to/)
-- [JavaScript Weekly](https://javascriptweekly.com/)
-- [Smashing Magazine](https://www.smashingmagazine.com/)
-- [David Walsh Blog](https://davidwalsh.name/)
-- [SitePoint](https://www.sitepoint.com/)
-- [CoDrops](https://tympanus.net/codrops/)
-- [Daily JS](https://medium.com/dailyjs)
-- [Best Of JS](https://bestofjs.org/)
-- [Echo JS](https://echojs.com/)
-- [Medium](https://medium.com/)
-- [Kent C. Dodds](https://kentcdodds.com/blog/)
-- [Twitter](https://twitter.com)
-- [Overreacted](https://overreacted.io/)
-- [Reddit](https://reddit.com)
-- [Hacker News](https://news.ycombinator.com/)
-- [Alligator.io](https://alligator.io/)
-- [Habr](https://habr.com/en/)  
-- [freeCodeCamp](https://learn.freecodecamp.one/)
-- [2ality](https://2ality.com/)
-- [Scotch](https://scotch.io)
-- [Node Weekly](https://nodeweekly.com/)
-- [Hackernoon](https://hackernoon.com/)
-- [The Ember Times](https://the-emberjs-times.ongoodbits.com/)
-- [React Status](https://react.statuscode.com/)
-- [Frontend Focus](https://frontendfoc.us/)
-- [Angular In Depth](https://indepth.dev/)
-- [Web.dev](https://web.dev/)
-- [Web Development Reading List](https://wdrl.info/)
-- [ESNext News](http://esnextnews.com/)
-- [The Changelog](https://changelog.com/)
-- [Pony Foo](https://ponyfoo.com/)
-- [Robin Wieruch](https://www.robinwieruch.de/)
-- [Wes Bos](https://wesbos.com/)
-- <a href="https://75team.com/">齐舞周刊</a>
-- <a href="http://fex.baidu.com/">百度FEX</a>
-- <a href="https://github.com/Tnfe/TNFE-Weekly">腾讯TNFE团队-weekly</a>
-
-## Sites & Courses
-- [Stack Overflow](https://stackoverflow.com/)
-- [MDN](https://developer.mozilla.org/en-US/)
-- [W3Schools](https://www.w3schools.com/)
-- [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)
-- [Wes Bos](https://wesbos.com/)
-- [Codecademy](https://www.codecademy.com/)
-- [Level Up Tutorials](https://www.leveluptutorials.com/)
-- [Design+Code](https://designcode.io/)
-- [Udemy](https://www.udemy.com/) 
-- [Egghead.io](https://egghead.io/)
-- [Frontend Masters](https://frontendmasters.com/)
-- [YouTube](https://youtube.com)
-- [Vue Mastery](https://www.vuemastery.com/)
-- [Platzi](https://platzi.com/)
-- [Vue School](https://vueschool.io/)
-- [Laracasts](https://laracasts.com/)
-- [Traversy Media](https://www.traversymedia.com/)
-- [Medium](https://medium.com/)
-- [Udacity](https://www.udacity.com/)
-- [Kent C. Dodds](https://kentcdodds.com/blog/)
-- [Testing JavaScript](https://testingjavascript.com/)
-- [Lynda](https://www.lynda.com/) 
-- [Academind](academind)
-- [LinkedIn Learning](https://www.linkedin.com/learning/)
-- [Treehouse](https://teamtreehouse.com/)
-- [Scrimba](https://scrimba.com/)
-- [JavaScript.info](https://javascript.info/)
-- [Tyle McGinnis](https://tylermcginnis.com/)
-- [Reddit](https://reddit.com)
-- [Ultimate Courses](https://ultimatecourses.com/)
-- [caniuse](https://caniuse.com)
-- [Overreacted](https://overreacted.io/)
-- [devdocs.io](https://devdocs.io)
-- <a href="http://www.jstips.co/">jstips</a>
-
-## Podcasts
-- [Syntax](https://syntax.fm/)
-- [The Changelog](https://changelog.com/)
-- [Front End Happy Hour](https://frontendhappyhour.com/)
-- [JavaScript Jabber](https://devchat.tv/js-jabber/)
-- [Full Stack Radio](http://www.fullstackradio.com/)
-- [Shop Talk Show](https://shoptalkshow.com/)
-- [JS Party](https://changelog.com/jsparty)
-- [CodePen Radio](https://blog.codepen.io/radio/)
-- [JAMStack Radio](https://www.heavybit.com/library/podcasts/jamstack-radio/)
-- [Modern Web](https://modernweb.podbean.com/)
-- [The Web Platform Podcast](https://thewebplatformpodcast.com/)
-- [CodePen](https://codepen.io/)
-- [React Podcast](https://reactpodcast.com/)
-- [Software Engineering Daily](https://softwareengineeringdaily.com/)
-- [Ladybug Podcast](https://ladybug.dev/)
-- [Real Talk JavaScript](https://realtalkjavascript.simplecast.com/)
-- [The Undefined Podcast](https://undefined.fm/)
-- [Веб-стандарты](https://web-standards.ru/)
-- [Elm Slack](https://elmlang.herokuapp.com/)
-- [Soft Skills Engineering Podcast](https://softskills.audio/)
-- [Frontend Weekend](https://frontendweekend.ml/)
-- [Elm Town](https://elmtown.simplecast.fm/)
-- [The Odin Project](https://www.theodinproject.com/)
-- [Developer Tea](https://developertea.simplecast.fm/)
-- [Command Line Heroes](https://www.redhat.com/en/command-line-heroes)
-- [Adventures in Angular](https://devchat.tv/adv-in-angular/)
-- [Toolsday](https://spec.fm/podcasts/toolsday)
-- [Coding Blocks](https://www.codingblocks.net/)
-- [Egghead.io](https://egghead.io/)
-- [Kent C. Dodds](https://kentcdodds.com/blog/)
-- [EmberMap](https://embermap.com/)
-- [.NET Rocks](https://www.dotnetrocks.com/)
-- [Views on Vue](https://devchat.tv/views-on-vue/)
-- [Reason Town](https://player.fm/series/reason-town)
-- [Hipsters Ponto Tech](https://hipsters.tech/)
-- [DevMode.fm](https://devmode.fm/)
-- [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
+#### 浏览器书签下载
+- [从 StateOfJs2019 提取了上万名前端开发者最常用的一些前端信息源网站](https://www.scarsu.com/2019_javascript_sources/) （<a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">点击下载书签文件</a>）
+- <a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">十个国外技术社区 （点击下载书签文件）</a>
 
 #### 前端大佬
 - <a href="https://me.getify.com/">getify - Kyle Simpson </a> - you dont know js作者
@@ -155,7 +43,7 @@ title: 前端导航
 <!-- #### FE Conf -->
 
 ```js
-    //欢迎友链，请从上面的联系方式找我
+    //欢迎友链，联系我：scarsu001@gmail.com，微信号scarsu001
     //不定期更新
     //排名不分先后
 ```
