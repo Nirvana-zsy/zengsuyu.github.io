@@ -15,6 +15,9 @@ title: 前端导航
 
 #### 浏览器书签下载
 - [从 StateOfJs2019 提取了上万名前端开发者最常用的一些前端信息源网站](https://www.scarsu.com/2019_javascript_sources/) （<a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">点击下载书签文件</a>）
+
+![bookmark](/images/bookmark.png)
+
 - <a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">十个国外技术社区 （点击下载书签文件）</a>
 
 #### 前端大佬
