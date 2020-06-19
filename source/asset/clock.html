@@ -102,9 +102,9 @@
     <div id="exit">Exit</div>
   </div>
   <script>
-    let fullFlag = false;
-    const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    let lastTimer = null;
+    var fullFlag = false;
+    var WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    var lastTimer = null;
 
     clock()
     quote()
@@ -114,7 +114,7 @@
     document.getElementById("full").addEventListener("click",full)
     document.getElementById("exit").addEventListener("click",exitFullscreen)
     document.addEventListener('mousemove', (event) => {
-      let now=new Date().getTime()
+      var now=new Date().getTime()
       if(!lastTimer || now - lastTimer >500 ){
         lastTimer=now
         userActive()
@@ -141,27 +141,27 @@
     });
 
     function clock(){
-      let now = new Date()
+      var now = new Date()
 
-      let year = now.getFullYear()+''
-      let month = (now.getMonth()+1)+''
-      let day = now.getDate()+''
-      let weekDay = WEEK_DAYS[now.getDay()+'']
-      let _date = `${year}-${month.padStart(2,'0')}-${day.padStart(2,'0')}  ${weekDay}`
+      var year = now.getFullYear()+''
+      var month = (now.getMonth()+1)+''
+      var day = now.getDate()+''
+      var weekDay = WEEK_DAYS[now.getDay()+'']
+      var _date = `${year}-${month.padStart(2,'0')}-${day.padStart(2,'0')}  ${weekDay}`
       
-      let hour = now.getHours()+''
-      let minute = now.getMinutes()+''
-      let second = (now.getSeconds()+'').padStart(2,'0')
-      let _timer = `${hour.padStart(2,'0')} : ${minute.padStart(2,'0')}`
+      var hour = now.getHours()+''
+      var minute = now.getMinutes()+''
+      var second = (now.getSeconds()+'').padStart(2,'0')
+      var _timer = `${hour.padStart(2,'0')} : ${minute.padStart(2,'0')}`
 
       document.getElementById('timer').innerHTML = _timer
       document.getElementById('date').innerHTML = _date
       document.getElementById('second').innerHTML = second
     }
     function quote(){
-      let randomIdx = Math.floor(quotes.length * Math.random())
-      let quote = quotes[randomIdx]
-      let _quote = `${quote.quote} ——${quote.author}`
+      var randomIdx = Math.floor(quotes.length * Math.random())
+      var quote = quotes[randomIdx]
+      var _quote = `${quote.quote} ——${quote.author}`
       document.getElementById('quote').innerHTML = _quote
     }
     function userActive(){
@@ -179,7 +179,7 @@
     }
 
     function full() {
-      const ele = document.getElementById("content")
+      var ele = document.getElementById("content")
       if (ele.requestFullscreen) {
         ele.requestFullscreen();
       } else if (ele.mozRequestFullScreen) {

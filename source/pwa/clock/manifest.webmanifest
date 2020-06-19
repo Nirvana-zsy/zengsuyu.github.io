@@ -1,0 +1,15 @@
+{
+  "background_color": "transparent",
+  "description": "极简全屏黑白时钟。",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Clock",
+  "short_name": "Clock",
+  "start_url": "./index.html"
+}

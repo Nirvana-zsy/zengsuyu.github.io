@@ -26,7 +26,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :themes/maupassant/languages
-skip_render: "asset/**/*" ## 跳过指定文件的渲染，可使用 glob 表达式来匹配路径。
+skip_render: 
+    - "asset/**/*" ## 跳过指定文件的渲染，可使用 glob 表达式来匹配路径。
+    - "pwa/**/*" ## pwa路径
 
 # Writing
 new_post_name: :title.md ## File name of new posts
