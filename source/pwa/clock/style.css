@@ -1,0 +1,82 @@
+html,body{
+  margin:0;
+  padding:0;
+  background-color:#000;
+}
+html,body *{
+  color:#fff;
+}
+#content{
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 0;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+#date{
+  height: 20vh;
+  line-height: 40vh;
+  font-size: 3em;
+}
+#timer{
+  height: 50vh;
+  line-height: 50vh;
+  font-size: 30vh;
+}
+#second{
+  font-size: 2em;
+}
+#quote{
+  height: 10vh;
+  font-size: 1.5em;
+}
+#full{
+  opacity: 0;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  background-color:#000;
+  border:1px solid #fff;
+  color:#fff;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity .2s linear;
+}
+#exit{
+  opacity: 0;
+  z-index:-1;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  background-color:#000;
+  border:1px solid #fff;
+  color:#fff;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity .2s linear;
+}
+@media screen and (max-width:1024px){
+  #date{
+    line-height: 35vh;
+    font-size: 1em;
+  }
+  #timer {
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 10vw;
+  }
+  #second {
+    font-size: 1em;
+  }
+  #quote {
+    height: 10vh;
+    font-size: 1em;
+  }
+}
