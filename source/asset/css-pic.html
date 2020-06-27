@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play With CSS PIC</title>
+<style>
+  html,body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  #container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    background-color: #eee;
+    flex-direction: column;
+  }
+  #upload{
+    border:1px solid #000;
+  }
+  #pixel{
+    width:3px;
+    height:3px;
+    background-color:transparent;
+    overflow:hidden;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <h2>上传:</h2>
+    <div>
+      <input id="fileIn" type="file"/>
+    </div>
+    <h2>预览:</h2>
+    <canvas id="upload" width="300" height="300">
+      您的浏览器不支持canvas，快更新浏览器吧🤔
+    </canvas>
+    <h2>css实现：</h2>
+    <div id="output">
+      <div id="pixel"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var P = Math.PI;
+  document.addEventListener('DOMContentLoaded', init);
+
+  function init(){
+    document.addEventListener('change',function(e){
+      debugger
+      var imgFile = document.getElementById("fileIn").files[0];
+      var imgEl = new Image();
+      var w,h;
+      imgEl.addEventListener('load',function(){
+        w = imgEl.width;
+        h = imgEl.height;
+
+        // canvas显示图片预览
+        var canvas = document.getElementById('upload'); 
+        if(!canvas.getContext){
+          document.body.innerHTML='您的浏览器不支持canvas，快更新浏览器吧🤔'
+          return
+        }
+        var ctx = canvas.getContext('2d')
+        ctx.drawImage(imgEl,0,0)
+        
+        // canvas显示图片预览
+        var pixelEl = document.getElementById('pixel')
+        var imageData = ctx.getImageData(0,0,300,300);
+        debugger
+      })
+
+      // file转image element
+      imgEl.src = URL.createObjectURL(imgFile)
+      
+    })
+
+
+    // 笑脸
+    /* ctx.beginPath()
+    ctx.arc(50,50,50,0,2*P,false)
+    ctx.stroke()
+    ctx.moveTo(75,50)  //移动当前canvas笔触位置
+    ctx.arc(50,50,25,0,P,false)
+    ctx.stroke()
+    ctx.moveTo(65,40)
+    ctx.arc(60,40,5,0,2*P,false)
+    ctx.stroke()
+    ctx.moveTo(45,40)
+    ctx.arc(40,40,5,0,2*P,false)
+    ctx.stroke() */
+
+    // 填充三角形
+    /* ctx.beginPath()
+    ctx.moveTo(10,10)
+    ctx.lineTo(60,10)
+    ctx.lineTo(10,60)
+    ctx.fill() */
+    //路径使用填充（fill）时，路径自动闭合
+    
+    // 三角形
+    /* ctx.beginPath()
+    ctx.moveTo(70,20)
+    ctx.lineTo(70,70)
+    ctx.lineTo(20,70)
+    ctx.closePath()
+    ctx.stroke() */
+    // 使用描边（stroke）则不会闭合路径。
+    // 如果没有添加闭合路径closePath()到描述三角形函数中
+    // 则只绘制了两条线段，并不是一个完整的三角形
+
+    // 填充上弦月
+    /* ctx.beginPath();
+    ctx.arc(50,50,50,0,1.5*P,false)
+    ctx.fill(); */
+
+    // 贝塞尔曲线
+    // quadraticCurveTo(cp1x, cp1y, x, y)
+    // 绘制二次贝塞尔曲线，cp1x,cp1y为一个控制点，x,y为结束点（起始点为当前canvas笔触位置）
+    // 二次贝塞尔曲线 对话框
+    /* ctx.beginPath();
+    ctx.moveTo(75, 25);
+    ctx.quadraticCurveTo(25, 25, 25, 62.5);
+    ctx.quadraticCurveTo(25, 100, 50, 100);
+    ctx.quadraticCurveTo(50, 120, 30, 125);
+    ctx.quadraticCurveTo(60, 120, 65, 100);
+    ctx.quadraticCurveTo(125, 100, 125, 62.5);
+    ctx.quadraticCurveTo(125, 25, 75, 25);
+    ctx.stroke(); */
+
+    // bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
+    // 绘制三次贝塞尔曲线，cp1x,cp1y为控制点一，cp2x,cp2y为控制点二，x,y为结束点（起始点为当前canvas笔触位置）
+    // 三次贝塞尔曲线 爱心
+    /* ctx.beginPath();
+    ctx.moveTo(75, 40);
+    ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
+    ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+    ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
+    ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+    ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+    ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
+    ctx.fill(); */
+
+    // 封装的一个用于绘制圆角矩形的函数.
+    function roundedRect(ctx, x, y, width, height, radius){
+      ctx.beginPath();
+      ctx.moveTo(x, y + radius);
+      ctx.lineTo(x, y + height - radius);
+      ctx.quadraticCurveTo(x, y + height, x + radius, y + height);
+      ctx.lineTo(x + width - radius, y + height);
+      ctx.quadraticCurveTo(x + width, y + height, x + width, y + height - radius);
+      ctx.lineTo(x + width, y + radius);
+      ctx.quadraticCurveTo(x + width, y, x + width - radius, y);
+      ctx.lineTo(x + radius, y);
+      ctx.quadraticCurveTo(x, y, x, y + radius);
+      ctx.stroke();
+    }
+
+    // 组合图
+    /* roundedRect(ctx, 12, 12, 150, 150, 15);
+    roundedRect(ctx, 19, 19, 150, 150, 9);
+    roundedRect(ctx, 53, 53, 49, 33, 10);
+    roundedRect(ctx, 53, 119, 49, 16, 6);
+    roundedRect(ctx, 135, 53, 49, 33, 10);
+    roundedRect(ctx, 135, 119, 25, 49, 10);
+
+    ctx.beginPath();
+    ctx.arc(37, 37, 13, Math.PI / 7, -Math.PI / 7, false);
+    ctx.lineTo(31, 37);
+    ctx.fill();
+
+    for(var i = 0; i < 8; i++){
+      ctx.fillRect(51 + i * 16, 35, 4, 4);
+    }
+
+    for(i = 0; i < 6; i++){
+      ctx.fillRect(115, 51 + i * 16, 4, 4);
+    }
+
+    for(i = 0; i < 8; i++){
+      ctx.fillRect(51 + i * 16, 99, 4, 4);
+    }
+
+    ctx.beginPath();
+    ctx.moveTo(83, 116);
+    ctx.lineTo(83, 102);
+    ctx.bezierCurveTo(83, 94, 89, 88, 97, 88);
+    ctx.bezierCurveTo(105, 88, 111, 94, 111, 102);
+    ctx.lineTo(111, 116);
+    ctx.lineTo(106.333, 111.333);
+    ctx.lineTo(101.666, 116);
+    ctx.lineTo(97, 111.333);
+    ctx.lineTo(92.333, 116);
+    ctx.lineTo(87.666, 111.333);
+    ctx.lineTo(83, 116);
+    ctx.fill();
+
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.moveTo(91, 96);
+    ctx.bezierCurveTo(88, 96, 87, 99, 87, 101);
+    ctx.bezierCurveTo(87, 103, 88, 106, 91, 106);
+    ctx.bezierCurveTo(94, 106, 95, 103, 95, 101);
+    ctx.bezierCurveTo(95, 99, 94, 96, 91, 96);
+    ctx.moveTo(103, 96);
+    ctx.bezierCurveTo(100, 96, 99, 99, 99, 101);
+    ctx.bezierCurveTo(99, 103, 100, 106, 103, 106);
+    ctx.bezierCurveTo(106, 106, 107, 103, 107, 101);
+    ctx.bezierCurveTo(107, 99, 106, 96, 103, 96);
+    ctx.fill();
+
+    ctx.fillStyle = "black";
+    ctx.beginPath();
+    ctx.arc(101, 102, 2, 0, Math.PI * 2, true);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(89, 102, 2, 0, Math.PI * 2, true);
+    ctx.fill(); */
+
+    // Path2D对象：缓存、重用绘画命令/svg(canvas context上的一切命令都可以使用)
+    /* var rectangle = new Path2D();
+    rectangle.rect(10, 10, 50, 50);
+    var circle = new Path2D();
+    circle.moveTo(125, 35);
+    circle.arc(100, 35, 25, 0, 2 * Math.PI);
+    ctx.stroke(rectangle);
+    ctx.fill(circle); */
+
+    // 样式
+    // ctx.fillStyle = "rgba(255,165,0,1)";
+    // ctx.strokeStyle  = "rgba(255,165,0,1)";
+    // ctx.globalAlpha = 0.2;
+    // ctx.fillRect(0,37.5,150,37.5);
+    // ctx.lineWidth = 2;
+    //https://developer.mozilla.org/@api/deki/files/601/=Canvas-grid.png
+
+  }
+  </script>
+</body>
+</html>
