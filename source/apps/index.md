@@ -7,6 +7,7 @@ title: Apps
 #### [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
 #### [Chrome 插件 - TOPEST](https://github.com/scarsu/Topest-Chrome-Extension)
 #### <a href="/pwa/clock/index.html" target="_blank">全屏简黑时钟(PWA)</a>
+#### <a href="/asset/css-pic.html" target="_blank">原生CSS画图</a>
 
 > 还有很多个坑，还在建设中
 

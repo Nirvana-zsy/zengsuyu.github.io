@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Play With CSS PIC</title>
+  <title>CSS Image Playground</title>
 <style>
   html,body {
     padding: 0;
@@ -21,26 +21,67 @@
     border:1px solid #000;
   }
   #pixel{
-    width:3px;
-    height:3px;
+    width:1px;
+    height:1px;
     background-color:transparent;
     overflow:hidden;
+  }
+  pre:before{
+    content: '';
+    display: block;
+    background: url(https://imgkr.cn-bj.ufileos.com/97e4eed2-a992-4976-acf0-ccb6fb34d308.png);
+    height: 30px;
+    width: 100%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-color: #f8f8f8;
+    margin-bottom: -7px;
+    border-radius: 5px;
+    background-position: 10px 10px;
+  }
+  pre{
+    max-width: 98%;
+    border-radius: 4px;
+    margin: 10px auto 0 auto;
+    overflow: auto;
+    background: #f8f8f8;
+    border: 1px solid #ededed;
+  }
+  pre code{
+    display: block;
+    overflow-x: auto;
+    padding: 0 16px;
+    color: #333;
+    background: #f8f8f8;
+    display: -webkit-box;
+    font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+    border-radius: 0px;
+    font-size: 12px;
+    -webkit-overflow-scrolling: touch;
   }
 </style>
 </head>
 <body>
   <div id="container">
-    <h2>上传:</h2>
+    <h2>上传图片:（适用场景是小icon、logo等，上传大图可能会导致浏览器卡顿，后果自负~）</h2>
     <div>
       <input id="fileIn" type="file"/>
     </div>
-    <h2>预览:</h2>
-    <canvas id="upload" width="300" height="300">
+    <h2>canvas预览:</h2>
+    <canvas id="upload" width="300" height="200" style="width:300px;">
       您的浏览器不支持canvas，快更新浏览器吧🤔
     </canvas>
-    <h2>css实现：</h2>
+    <h2>css实现效果：</h2>
     <div id="output">
       <div id="pixel"></div>
+    </div>
+    <h2>CSS代码：</h2>
+    <div id="source">
+      <pre>
+        <code id="code">
+
+        </code>
+      </pre>
     </div>
   </div>
   <script type="text/javascript">
@@ -49,35 +90,63 @@
 
   function init(){
     document.addEventListener('change',function(e){
-      debugger
       var imgFile = document.getElementById("fileIn").files[0];
       var imgEl = new Image();
-      var w,h;
-      imgEl.addEventListener('load',function(){
-        w = imgEl.width;
-        h = imgEl.height;
-
-        // canvas显示图片预览
-        var canvas = document.getElementById('upload'); 
-        if(!canvas.getContext){
-          document.body.innerHTML='您的浏览器不支持canvas，快更新浏览器吧🤔'
-          return
-        }
-        var ctx = canvas.getContext('2d')
-        ctx.drawImage(imgEl,0,0)
-        
-        // canvas显示图片预览
-        var pixelEl = document.getElementById('pixel')
-        var imageData = ctx.getImageData(0,0,300,300);
-        debugger
-      })
+      var canvas = document.getElementById('upload'); 
+      if(!canvas.getContext){
+        document.body.innerHTML='您的浏览器不支持canvas，快更新浏览器吧🤔'
+        return
+      }
+      var ctx = canvas.getContext('2d')
 
       // file转image element
       imgEl.src = URL.createObjectURL(imgFile)
+      imgEl.addEventListener('load',function(){
+        var w = imgEl.width;
+        var h = imgEl.height;
+        // canvas显示图片预览
+        ctx.drawImage(imgEl,0,0,w,h,0,0,w,h)
+        
+        // canvas 获取 imageData rgba数据
+        var _str=''
+        var pixelEl = document.getElementById('pixel')
+        var imageDataArr = ctx.getImageData(0,0,w,h).data;
+        let arr = []
+        for(var y=0;y<w;y++){
+          for(var x=0;x<h;x++){
+            arr.push({
+              x:x,
+              y:y,
+              r: imageDataArr[(y * w + x) * 4],
+              g: imageDataArr[(y * w + x) * 4 + 1],
+              b: imageDataArr[(y * w + x) * 4 + 2],
+              a: imageDataArr[(y * w + x) * 4 + 3]/255,
+            })
+          }
+        }
+
+        _str = arr.map(item => {
+          return `rgba(${item.r}, ${item.g}, ${item.b}, ${item.a}) ${item.x}px ${item.y}px`
+        }).join(',');
+
+        let _code ='width:1px;\n' +
+          'height:1px;\n' +
+          'background-color:transparent;\n' +
+          'overflow:hidden;\n' + 
+          'box-shadow:' + arr.map(item => {
+          return `\trgba(${item.r}, ${item.g}, ${item.b}, ${item.a}) ${item.x}px ${item.y}px`
+        }).join(',\n');
+
+        document.getElementById("code").innerHTML = _code
+        document.getElementById("output").style.height = h+20 + 'px'
+
+        pixelEl.style.boxShadow = _str
+      })
       
     })
 
 
+    // canvas练习
     // 笑脸
     /* ctx.beginPath()
     ctx.arc(50,50,50,0,2*P,false)
