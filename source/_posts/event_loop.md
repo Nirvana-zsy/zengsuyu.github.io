@@ -4,7 +4,7 @@ categories:
     - 06 JavaScript # 一级分类
 tags:
 date: 2020-06-08
-description: 长文 + 动图 + 实例，视图解释清楚：Javascript Event Loop如何调度异步任务
+description: 长文 + 动图 + 实例，试图解释清楚：Javascript Event Loop如何调度异步任务
 toc: 1
 top: 0
 ---
@@ -527,6 +527,8 @@ main start 和 main end同步执行，同步代码执行完后，调用栈清空
 
 macrotask、microtask、animation task的区别，可以看在下面的动图中横向对比：
 
+![](/images/event-loop/raf.png)
+
 ![](/images/event-loop/event-loop.gif)
 
 
@@ -534,7 +536,7 @@ macrotask、microtask、animation task的区别，可以看在下面的动图中
 - [HTML规范](https://www.w3.org/TR/html5/webappapis.html#event-loops)
 - [NodeJS Event Loop 文档](https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
 - [mdn相关文档](https://developer.mozilla.org/zh-CN/docs/Glossary/Call_stack)
-- [Jake Archibald在JSConf.Asia的演讲视频【In The Loop】,很值得看：](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
-- [Philip Roberts在JSConf的演讲视频【What the heck is the event loop anyway】,很值得看](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
+- [Jake Archibald在JSConf.Asia的演讲视频【In The Loop】,很值得看：](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
+- [Philip Roberts在JSConf的演讲视频【What the heck is the event loop anyway】,很值得看](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 - [Philip Roberts做的Event Loop可视化网站](http://latentflip.com/loupe/)
 - [JS Runtime运行时 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
