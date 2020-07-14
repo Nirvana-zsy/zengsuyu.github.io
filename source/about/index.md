@@ -23,6 +23,7 @@ title: 关于
 
 #### 开源贡献
 
+- [markdown-nice](https://github.com/mdnice/markdown-nice/graphs/contributors)
 - [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
 <!-- - [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info) -->
 - [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
