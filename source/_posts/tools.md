@@ -26,3 +26,7 @@ toc: 1
 #### parcel 极简配置版**webpack**
 - npm全局安装parcel`npm i parcel-bundler -g`
 - `parcel setup/index.html`即可创建一个本地服务器,并构建打包当前html的依赖
+
+#### nodemon 热更新
+- npm全局安装`npm i nodemon -g`
+- `nodemon xx.js`
