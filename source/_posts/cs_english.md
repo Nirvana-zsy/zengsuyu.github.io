@@ -18,14 +18,14 @@ toc: 0
 ---|---
 under the hood  | 底层
 specify   |  指定
-get passed in  | 传入 
+get passed in  | 传入
 sync/async | 同步异步
 asynchronously | 异步
-whatnot | 
+whatnot | 诸如此类的
 in good shape | （运行代码的时候祈祷的
-nest | 
+nest | 巢
 gotchas  | 陷阱
-shortcut | 
+shortcut | 捷径
 inventory |  库存/牛
 neat   | 整齐利落
 scaffold   |  脚手架
@@ -49,7 +49,7 @@ reinstate   |    恢复
 verbose   |    冗余的
 upstream  |   （向上返回）
 downstream  |   （向下传）
-CRUD acronym  |   
+CRUD acronym  |   CRUD
 manually    |    手动
 DEPRECATED   |   启用
 bottleneck   |   瓶颈
@@ -103,3 +103,4 @@ subtle     | 微妙的
 augment     | 增强，扩展（vue 拦截数组方法，扩展数组的原型方法时使用 protoAugment
 instantiation     | 实例化
 Cheat sheet     | 手册 清单
+on-the-fly     | 动态
