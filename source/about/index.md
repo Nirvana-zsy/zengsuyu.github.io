@@ -19,7 +19,7 @@ title: 关于
 
 - <i class="fa fa-github"></i>   Github：<a href="https://github.com/scarsu">scarsu</a>
 - <i class="fa fa-envelope"></i>     邮箱：scarsu001@gmail.com
-- <i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    微信：907866991
+- <i class="fa fa-wechat"></i>    微信: scarsu001
 
 #### 开源贡献
 
