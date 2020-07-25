@@ -8,7 +8,7 @@ title: 关于
 
 - ScarSu这个有点中二的英文名来源于我的大学室友，没什么特别的故事和寓意，沿用至今~
 - 18年毕业于岳麓山第一高中，从事前端开发工作至今~
-- 双商有限，无甚成就，唯信努力；20多岁平平无奇，渴望有些突破和挑战~
+- 双商有限，无甚成就，唯信努力~
 - DIY爱好者🔨~
 - 倡导轻断食 + 断舍离📖 + 极简生活~
 - 有一个：个人公众号：自律神仙ScarSu
@@ -19,14 +19,14 @@ title: 关于
 
 - <i class="fa fa-github"></i>   Github：<a href="https://github.com/scarsu">scarsu</a>
 - <i class="fa fa-envelope"></i>     邮箱：scarsu001@gmail.com
-- <i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    QQ/微信：907866991
+- <i class="fa fa-qq"></i><i class="fa fa-wechat"></i>    微信：907866991
 
 #### 开源贡献
 
-- [markdown-nice](https://github.com/mdnice/markdown-nice/graphs/contributors)
-- [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
-<!-- - [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info) -->
 - [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
+- [markdown-nice](https://github.com/mdnice/markdown-nice/graphs/contributors)
+- [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info/pr)
+- [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
 - [Chrome 插件 - TOPEST](https://github.com/scarsu/Topest-Chrome-Extension)
 
 #### 博客内容
