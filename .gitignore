@@ -3,7 +3,8 @@ Thumbs.db
 *.log
 node_modules/
 .history/
-.deploy*/
+.deploy*/db.json
 .deploy_git/
 public/
 package-lock.json
+db.json
