@@ -25,6 +25,14 @@ head
     link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
     if config.feed
       link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
+    //- Global site tag (gtag.js) - Google Analytics
+    script(type='text/javascript', src='https://www.googletagmanager.com/gtag/js?id=UA-175312250-1')
+    //- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175312250-1"></script>
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-175312250-1');
     if theme.google_analytics
       script.
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

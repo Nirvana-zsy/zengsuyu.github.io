@@ -105,3 +105,5 @@ instantiation     | 实例化
 Cheat sheet     | 手册 清单
 on-the-fly     | 动态
 convention     | 公约，惯例
+cluster     | 集群
+resolve      | 解析

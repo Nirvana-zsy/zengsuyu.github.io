@@ -11,9 +11,12 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
-  $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
-    helpers : {
-    title: { type: 'inside'}
-    }
-  });
+  var $dom = $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery')
+  if($dom){
+    $dom.fancybox({
+      helpers : {
+      title: { type: 'inside'}
+      }
+    });
+  }
 });
