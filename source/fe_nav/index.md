@@ -6,7 +6,7 @@ title: 前端导航
 - <a href="http://www.taoweng.site">前端桃园</a>
 - <a href="https://www.lxchuan12.cn/">若川</a>
 - <a href="https://ericchen.vip/">EricChen</a>
-- <a href="https://blog.ncgame.cc/">不才's blog</a>
+- <a href="https://www.notbucai.com/">不才's blog</a>
 - <a href="https://drawcode.mdnice.com/">编程如画 灵魂画手</a>
 - <a href="https://youyi.netlify.app/">有义的简明博客</a>
 <!-- - <a href="https://leihuang.dev/">Lei Huang</a> -->

@@ -37,6 +37,8 @@ html(lang=config.language)
           span= ' ' + __('Hits')
       if theme.wordcount == true
         include _partial/wordcount.pug
+      input#lighter-btn(type='checkbox',name='lighter-btn')
+      label.lighter-btn(for='lighter-btn',title='暗黑模式开关')
     if theme.disqus
       a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
     if theme.changyan
@@ -92,3 +94,27 @@ html(lang=config.language)
 
     include _partial/totop.pug
     include _partial/after_footer.pug
+
+  script.
+      if(localStorage.getItem("theme-dark") === "true"){
+        //暗黑模式
+        $("html").addClass("dark-theme")
+        $("#lighter-btn+label").click()
+      }else{
+        //普通模式
+        $("html").removeClass("dark-theme")
+      }
+      window.onload=function(){
+
+        $("#lighter-btn+label").click(function(e){
+          if(!$("#lighter-btn")[0].checked){
+            //暗黑模式
+            $("html").addClass("dark-theme")
+            localStorage.setItem("theme-dark","true")
+          }else{
+            //普通模式
+            $("html").removeClass("dark-theme")
+            localStorage.setItem("theme-dark","false")
+          }
+        });
+      }

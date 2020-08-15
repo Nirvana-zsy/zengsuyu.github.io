@@ -18,15 +18,15 @@
     i(class='fa fa-clock-o')
     span.desc=''
   script.
+    if(localStorage.getItem("theme-dark") === "true"){
+      //暗黑模式
+      $("html").addClass("dark-theme")
+      $("#lighter-btn+label").click()
+    }else{
+      //普通模式
+      $("html").removeClass("dark-theme")
+    }
     window.addEventListener('load',function(){
-      if(localStorage.getItem("theme-dark") === "true"){
-        //暗黑模式
-        $("body").addClass("dark-theme")
-        $("#lighter-btn+label").click()
-      }else{
-        //普通模式
-        $("body").removeClass("dark-theme")
-      }
 
       $("#nav-menu").on('click',function(e){
         $("#nav-menu").toggleClass("expand")
@@ -39,11 +39,11 @@
       $("#lighter-btn+label").click(function(e){
         if(!$("#lighter-btn")[0].checked){
           //暗黑模式
-          $("body").addClass("dark-theme")
+          $("html").addClass("dark-theme")
           localStorage.setItem("theme-dark","true")
         }else{
           //普通模式
-          $("body").removeClass("dark-theme")
+          $("html").removeClass("dark-theme")
           localStorage.setItem("theme-dark","false")
         }
       });

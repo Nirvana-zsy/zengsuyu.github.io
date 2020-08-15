@@ -11,7 +11,7 @@ title: 关于
 - 双商有限，无甚成就，唯信努力~
 - DIY爱好者🔨~
 - 倡导轻断食 + 断舍离📖 + 极简生活~
-- 有一个：个人公众号：自律神仙ScarSu
+- 有一个发原创文章的个人公众号：自律神仙ScarSu
 
 <img id="slogan_img" src="/images/slogan.png" title="微信公众号：自律神仙ScarSu"/>
 
@@ -23,7 +23,7 @@ title: 关于
 
 #### 开源贡献
 
-- [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
+- [Chrome 插件 - NotionX](https://github.com/scarsu/NotionX)
 - [markdown-nice](https://github.com/mdnice/markdown-nice/graphs/contributors)
 - [现代javascript教程翻译](https://github.com/javascript-tutorial/zh.javascript.info/pr)
 - [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
@@ -35,12 +35,10 @@ title: 关于
 - 知识分享
 - 读书笔记
 - 个人观点
-- 偶尔：翻译/分享一些好文章
-- 偶尔：生活点滴、兴趣爱好
-- 杜绝：无脑转载的内容
+- 不会有无脑转载的内容
 
 <!-- #### Skills
-- 前端：HTML | CSS | JS | REACT | GRUNT | NODE
+- 前端：HTML | CSS | JS | REACT | GRUNT | NODE | VUE
 - 毕设：基于Node.js的即时通讯系统（Socket.io|Express)
 - 数据库：Oracle | SQL | PL/SQL
 - 服务端：Node | J2EE | ASP.net  -->

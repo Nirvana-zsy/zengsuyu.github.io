@@ -42,6 +42,11 @@ h6 {
     "Microsoft Yahei", sans-serif;
 }
 
+html{
+  &.dark-theme {
+    filter: invert(80%) hue-rotate(200deg)
+  }
+}
 body {
   background-color: #fff;
   color: #444;
@@ -51,63 +56,70 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
   &.dark-theme {
-    background-color: #292a2d;
-    color: #a9a9b3;
-    transition: all 0.2s ease;
-    & *,
-    #header {
-      background-color: #292a2d;
-      color: #a9a9b3;
-      transition: all 0.2s ease;
-    }
-    #header {
-      border-color: #eee;
-      .site-name #logo {
-        color: #ddd;
-      }
-      #nav-menu a {
-        border-bottom-color: #a9a9b3;
-        &:hover {
-          border-bottom-color: #fff;
-        }
-        &.current {
-          border-bottom-color: #292a2d;
-        }
-      }
-    }
-    a:hover,
-    a:active {
-      color: #eee;
-    }
-    #sidebar .widget .search-form input {
-      background-color: #292a2d;
-      color: #a9a9b3;
-      border-color: #a9a9b3;
-    }
-    .post .post-content {
-      color: #a9a9b3;
-    }
-    .post .post-title,
-    .post .post-title a {
-      color: #bbb;
-    }
-    .post .post-title:hover,
-    .post .post-title a:hover {
-      color: #eee;
-    }
-    .readmore a {
-      color: #eee;
-    }
-    .readmore a:hover {
-      background-color: #444;
-      border-bottom-color: #fff;
-    }
-    .post-archive {
-      li a {
-        color: #ccc;
-        // font-weight: 700;
-      }
-    }
+    // filter: invert(80%) hue-rotate(200deg)
+    // background-color: #292a2d;
+    // color: #a9a9b3;
+    // transition: all 0.2s ease;
+    // & *,
+    // #header {
+    //   background-color: #292a2d;
+    //   color: #a9a9b3;
+    //   transition: all 0.2s ease;
+    // }
+    // #header {
+    //   border-color: #eee;
+    //   .site-name #logo {
+    //     color: #ddd;
+    //   }
+    //   #nav-menu a {
+    //     border-bottom-color: #a9a9b3;
+    //     &:hover {
+    //       border-bottom-color: #fff;
+    //     }
+    //     &.current {
+    //       border-bottom-color: #292a2d;
+    //     }
+    //   }
+    // }
+    // a,
+    // .post .post-content ul a,
+    // .post .post-content ol a
+    // {
+    //   color:#ccc;
+    // }
+    // a:hover,
+    // a:active {
+    //   color: #eee;
+    // }
+    // #sidebar .widget .search-form input {
+    //   background-color: #292a2d;
+    //   color: #a9a9b3;
+    //   border-color: #a9a9b3;
+    // }
+    // .post .post-content {
+    //   color: #a9a9b3;
+    // }
+    // .post .post-title,
+    // .post .post-title a {
+    //   color: #bbb;
+    // }
+    // .post .post-title:hover,
+    // .post .post-title a:hover {
+    //   color: #eee;
+    // }
+    // .readmore a {
+    //   color: #eee;
+    // }
+    // .readmore a:hover {
+    //   background-color: #444;
+    //   border-bottom-color: #fff;
+    // }
+    // .post-archive {
+    //   li a {
+    //     color: #ccc;
+    //     // font-weight: 700;
+    //   }
+    // }
   }
 }
 
@@ -551,6 +563,56 @@ div {
         content: "\f024";
         padding-right: 0.3em;
       }
+    }
+    #lighter-btn {
+      display: none;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    #lighter-btn + label {
+      background-color: #e6e6e6;
+      border-radius: 7px;
+      cursor: pointer;
+      display: inline-block;
+      height: 14px;
+      position: relative;
+      box-shadow: 0.2px 0.2px 1px 0.5px #b4b4b4;
+      width: 30px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      left: 20px;
+    }
+    #lighter-btn + label:after {
+      background-color: #fff;
+      border-radius: 50%;
+      content: "";
+      height: 12px;
+      left: 1px;
+      position: absolute;
+      top: 0.5px;
+      width: 12px;
+      box-shadow: 0.2px 0.2px 1px 0.5px #b4b4b4;
+    }
+    #lighter-btn:checked + label:after {
+      left: 17px;
+    }
+    #lighter-btn:checked + label {
+      background-color: #ffc730;
+      box-shadow: none;
+    }
+    input[type="checkbox"]:checked + label,
+    input[type="checkbox"]:not(:checked) + label {
+      transition: all 0.2s ease;
+    }
+    input[type="checkbox"]:checked + label:after {
+      transition: all 0.2s ease;
+    }
+    input[type="checkbox"]:not(:checked) + label:after {
+      transition: all 0.2s ease;
     }
   }
   .ds-thread-count {

@@ -19,7 +19,7 @@ block content
             for post in posts
               li
                 span.date= post.date.format('YYYY/MM/DD')
-                a(href=url_for(post.path), title=post.title,target='_blank',style='color:#444;',data-desc=post.description)
+                a(href=url_for(post.path), title=post.title,target='_blank',data-desc=post.description)
                   +title(post)
                 i.fa.fa-info-circle.post-desc-icon(onmouseover='window.showDesc(this,event)',onmouseout='window.hideDesc(this,event)')
                 div.popup=post.description
