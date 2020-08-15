@@ -44,7 +44,7 @@ top: 0
 
 ### WEB 安全字体
 不同操作系统内置的字体是不同的，甚至差异很大，例如：
-![OS字体差异图](http://www.scarsu.com/images/gitbook/web_font01.png)
+![OS字体差异图](https://www.scarsu.com/images/gitbook/web_font01.png)
 
 win7和mac下，只有十种字体重合，Windows XP中甚至没有其中的Palatino 和Trebuchet MS字体.....
 
@@ -99,7 +99,7 @@ SVG(.svg)格式：
 
 不同浏览器对不同字体文件格式的兼容性也不同：
 
-![OS字体文件兼容性图](http://www.scarsu.com/images/gitbook/web_font02.png)
+![OS字体文件兼容性图](https://www.scarsu.com/images/gitbook/web_font02.png)
 
 **总结来说：eot(供ie使用) + woff(供其他现代浏览器使用)是最佳组合，如果要兼容更多老版本浏览器/移动端浏览器可以加上ttf或svg）**
 
