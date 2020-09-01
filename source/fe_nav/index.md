@@ -12,9 +12,27 @@ title: 前端导航
 <!-- - <a href="https://leihuang.dev/">Lei Huang</a> -->
 <!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
 
+#### 前端书单
+- 《Head First HTML与CSS(第2版)》 入门
+- 《CSS权威指南》 基础
+- 《CSS揭秘》 进阶
+- 《javascript语言精粹》
+- 《JavaScript DOM编程艺术(第2版)》
+- 《JavaScript权威指南》
+- 《JavaScript高级程序设计》(第四版即将上市)
+- 《你不知道的JavaScript 上中下》
+- 《ES6 标准入门（第3版）》
+- 《深入理解 ES6》
+- 《JavaScript设计模式与开发实践》
+- 《高性能JavaScript》
+- 《图解HTTP》
+- 《Web性能权威指南》
+- [《程序员进阶心法：快速突破成长瓶颈》](https://book.douban.com/subject/34668487/)
+- [《JavaScript忍者秘籍》](https://book.douban.com/subject/26638316/)
 
-#### 浏览器书签下载
-- [从 StateOfJs2019 提取了上万名前端开发者最常用的一些前端信息源网站](https://www.scarsu.com/2019_javascript_sources/) （<a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">点击下载书签文件</a>）
+
+#### 前端信息源
+- 从 StateOfJs2019 提取了上万名前端开发者最常用的一些[前端信息源网站](https://www.scarsu.com/2019_javascript_sources/) （<a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">点击下载书签文件</a>）
 
 ![bookmark](/images/bookmark.png)
 
@@ -37,7 +55,7 @@ title: 前端导航
 <!-- #### 高质量的前端公号
 - 前端桃园 -->
 
-#### 前端工具资源
+#### 工具
 - <a href="https://devhints.io/">fed cheatsheet</a> - all in one，前端snippets速查
 - <a href="https://github.com/30-seconds/30-seconds-of-code">30 seconds of code</a> - 精选的JavaScript代码段集合，开发者可以在30秒或更短的时间内理解这些代码段
 
