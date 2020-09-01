@@ -13,9 +13,9 @@ subtitle: 睁开眼睛看看这世界吧
 - 邓宁-克鲁格效应([论文](http://homepages.se.edu/cvonbergen/files/2012/12/Unskilled-and-Unaware-of-It.pdf))
 
 ![邓宁-克鲁格效应](/images/dunning-kruger_effect.png)
-- [如何阅读一本书](https://book.douban.com/subject/1013208/)
-- [时间简史](https://weread.qq.com/web/reader/e5d329105b9072e5d188fd9)
-- [人类简史](https://weread.qq.com/web/reader/d4a322a05d0f04d4a01f0d6)
+- [《如何阅读一本书》](https://book.douban.com/subject/1013208/)
+- [《时间简史》](https://weread.qq.com/web/reader/e5d329105b9072e5d188fd9)
+- [《人类简史》](https://weread.qq.com/web/reader/d4a322a05d0f04d4a01f0d6)
 
 
 
@@ -27,7 +27,7 @@ subtitle: 睁开眼睛看看这世界吧
 - <a target="_blank" href="https://www.scarsu.com/continuous_action/">《刻意学习》 </a> ([豆瓣链接](https://book.douban.com/subject/27071913/))如何更高效的成长
 - <a target="_blank" href="https://book.douban.com/subject/26575679/">《当我谈跑步时，我谈些什么》</a>村上春树25年跑步与人生历程，痛楚难以避免，而磨难可以选择。
 - <a target="_blank" href="https://book.douban.com/subject/34432670/">《胡适忍不住的新努力》</a>胡适的人生哲学
-- <a target="_blank" href="https://weread.qq.com/web/reader/7253294071cc8a5a72594ff">《施瓦辛格健身全书》</a>胡适的人生哲学
+- <a target="_blank" href="https://weread.qq.com/web/reader/7253294071cc8a5a72594ff">《施瓦辛格健身全书》</a>
 
 #### 心智成长书单
 
