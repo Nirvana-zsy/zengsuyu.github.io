@@ -60,19 +60,20 @@ index_generator:
 # Category & Tag
 default_category: ScarSu
 category_map: ## 分类别名(路由)
-    00 ScarSu|关于我和这个博客: ScarSu
-    01 课外输入|我读过的书们: read
-    02 Debug | Devtools老司机养成系列: debug
-    03 TensorFlow|机器学习系列: ml
-    04 HTML: html
-    05 CSS: css
-    06 JavaScript: javascript
-    07 构建工具: build-tools
-    08 工具库: utility-libraries
-    09 一些高效的学习方法: learn
-    10 数据库: database
-    11 工具|一些提高效率的工具: tools
-    13 外语: lang
+    01关于 | 此博客的来世今生: ScarSu
+    02阅读 | 我的课外书笔记: read
+    03方法论 | 高效学习: learn
+    04工具 | 效率MAX: tools
+    05外语: lang
+    10技术 | 前端Debug老司机: debug
+    10技术 | 前端机器学习: ml
+    10技术 | HTML: html
+    10技术 | CSS: css
+    10技术 | JavaScript: javascript
+    10技术 | 前端工具与工程化: fe-tools
+    10技术 | 前端测试: fe-test
+    10技术 | 数据库: database
+    99WIP | 努力填坑ing: wip
 tag_map: ## 标签别名
 
 # Date / Time format 日期时间格式

@@ -1,7 +1,7 @@
 ---
 title: 函数式编程
 categories:
-    - 06 JavaScript # 一级分类
+    - 10技术 | JavaScript # 一级分类
 tags:
 date: 2020-05-08
 description: 改变引发错误，最小化改变

@@ -1,7 +1,7 @@
 ---
 title: Devtools 入门
 categories:
-    - 02 Debug|Devtools进阶系列 # 一级分类
+    - 10技术 | 前端Debug老司机 # 一级分类
 tags:
 date: 2020-02-16
 description: Devtools新手请看这篇，入门大全～

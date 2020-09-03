@@ -1,7 +1,7 @@
 ---
 title: 正则自检清单
 categories:
-    - 06 JavaScript # 一级分类
+    - 10技术 | JavaScript # 一级分类
 tags:
 date: 2020-05-06
 description: 正则是程序员必备的效率生产力知识~

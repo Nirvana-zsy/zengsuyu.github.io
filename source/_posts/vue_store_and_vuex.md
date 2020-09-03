@@ -1,7 +1,7 @@
 ---
 title: Vue状态管理 & Vuex总结
 categories:
-    - 08 工具库 # 一级分类
+    - 10技术 | 前端工具与工程化 # 一级分类
 tags:
 date: 2020-04-30
 description: 多组件下 共享状态 的解决方案

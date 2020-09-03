@@ -1,7 +1,7 @@
 ---
 title: Devtools 老司机养成 - 第六篇 Performance 性能面板
 categories:
-    - 02 Debug|Devtools进阶系列 # 一级分类
+    - 10技术 | 前端Debug老司机 # 一级分类
 tags:
 date: 2020-03-29
 description: 中高级前端都应该懂的性能分析&优化，都在Performance面板

@@ -1,7 +1,7 @@
 ---
 title: 高可定+低维护的博客搭建指南
 categories:
-    - 00 ScarSu|关于我和这个博客 # 一级分类
+    - 01关于 | 此博客的来世今生 # 一级分类
 tags:
 date: 2018-12-08
 description: Markdown赛高d=====(￣▽￣*)b

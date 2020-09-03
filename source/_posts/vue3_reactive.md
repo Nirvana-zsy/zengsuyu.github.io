@@ -1,7 +1,7 @@
 ---
 title: Vue3响应式原理
 categories:
-    - 06 JavaScript # 一级分类
+    - 10技术 | JavaScript # 一级分类
 tags:
 date: 2020-07-24
 description: vue2 & vue3 响应式原理对比，手写mini版vue3响应式代码

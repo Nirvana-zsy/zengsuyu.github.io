@@ -29,13 +29,11 @@ title: 关于
 - [Vue插件：npm/vue-message-plugin](https://www.npmjs.com/package/vue-message-plugin)
 - [Chrome 插件 - TOPEST](https://github.com/scarsu/Topest-Chrome-Extension)
 
-#### 博客内容
+#### 为什么要技术输出
 
-- 我的技术输出
-- 知识分享
-- 读书笔记
-- 个人观点
-- 不会有无脑转载的内容
+1. 分享、写文档、技术输出，是对自己掌握得知识的**沉淀**
+2. 一个人的认知面是有限的，把你的认知分享给别人，可以听到别人的声音
+3. 分享、和别人交流的过程，是对知识的复盘，从《论语》的“温故而知新”，到[费曼学习法](https://36kr.com/p/1721599983617)，都印证了技术输出的作用
 
 <!-- #### Skills
 - 前端：HTML | CSS | JS | REACT | GRUNT | NODE | VUE

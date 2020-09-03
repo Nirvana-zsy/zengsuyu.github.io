@@ -1,7 +1,7 @@
 ---
 title: 【Javascript Event Loop & 异步机制】总结
 categories:
-    - 06 JavaScript # 一级分类
+    - 10技术 | JavaScript # 一级分类
 tags:
 date: 2020-06-08
 description: 长文 + 动图 + 实例，试图解释清楚：Javascript Event Loop如何调度异步任务

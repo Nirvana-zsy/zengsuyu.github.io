@@ -1,7 +1,7 @@
 ---
 title: ML15 Python与Js模型互转
 categories:
-    - 03 TensorFlow|机器学习系列 # 一级分类
+    - 10技术 | 前端机器学习 # 一级分类
 tags:
 date: 2020-04-30
 description: Javascript玩转机器学习15

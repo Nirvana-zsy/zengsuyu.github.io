@@ -1,7 +1,7 @@
 ---
 title: 关于字体图标的那些事
 categories:
-    - 05 CSS # 一级分类
+    - 10技术 | CSS # 一级分类
 tags:
 date: 2020-02-09
 description: 不要再用图片当icon了拜托~

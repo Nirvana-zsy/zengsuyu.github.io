@@ -1,7 +1,7 @@
 ---
 title: Devtools 老司机养成 - 第二篇-Elements 面板
 categories:
-    - 02 Debug|Devtools进阶系列 # 一级分类
+    - 10技术 | 前端Debug老司机 # 一级分类
 tags:
 date: 2020-03-01
 description: 样式顺手调，DOM实时改～
