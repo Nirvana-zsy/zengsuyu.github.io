@@ -30,8 +30,27 @@ title: 前端导航
 - [《程序员进阶心法：快速突破成长瓶颈》](https://book.douban.com/subject/34668487/)
 - [《JavaScript忍者秘籍》](https://book.douban.com/subject/26638316/)
 
+#### 前端算法书单
+
+初级
+
+- 《算法图解》
+- 《大话数据结构》
+- 《算法之美》
+- 《数学之美》
+- 《数据结构与算法 JavaScript 描述》
+
+经典
+
+- 《算法(第4版)》
+- 《算法导论》
+
+典藏
+
+- 《计算机程序设计艺术》
 
 #### 前端信息源
+
 - 从 StateOfJs2019 提取了上万名前端开发者最常用的一些[前端信息源网站](https://www.scarsu.com/2019_javascript_sources/) （<a href="/asset/js_sources_bookmark.html" download="js_sources_bookmark.html">点击下载书签文件</a>）
 
 ![bookmark](/images/bookmark.png)
