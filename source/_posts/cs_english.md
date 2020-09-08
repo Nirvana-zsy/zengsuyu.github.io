@@ -111,3 +111,4 @@ toc: 0
 | abort                    | 中止                                                               |
 | bias                     | 偏差/偏置                                                           |
 | explicit                     | 显式的，清楚明确的                                                           |
+| Conquer                     | 攻破、征服的                                                           |
