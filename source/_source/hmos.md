@@ -139,6 +139,36 @@ css:
 
 ```
 
+### JS架构和源码
+
+鸿蒙的 JS 框架 **ace_lite_jsfwk**,官方介绍是“轻量级 JS 核心开发框架”
+
+![架构图](https://gitee.com/openharmony/docs/raw/master/readme/figures/js-framework.png)
+
+> 提供了一套跨平台的类web应用开发框架，通过Toolkit将开发者编写的**HML、CSS和JS** 文件编译打包成**JS Bundle**，然后再将JS Bundle**解析运行成C++ native UI的View 组件**进行渲染。通过支持三方开发者使用声明式的API进行应用开发，以数据驱动视图变化，避免了大量的视图操作，大大降低了应用开发难度，提升开发者开发体验。
+
+源码的地址在：https://openharmony.gitee.com/openharmony/ace_lite_jsfwk
+
+其中JS的核心代码，主要在以下几个文件
+
+```
+runtime-core\src\core\index.js
+runtime-core\src\observer\
+                    |----observer.js
+                    |----subject.js
+                    |----utils.js
+runtime-core\src\profiler\index.js
+```
+
+也提供了一些测试用例：
+
+![](https://imgkr2.cn-bj.ufileos.com/df13c85b-fbfd-4bb9-a866-b6ee968a9e93.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=9G%252Bo%252FukpXqKAP6cEY8v3%252FM8aCaY%253D&Expires=1599897626)
+
+
+从源码看，实现了一个轻量的响应式MVVM系统，使用了 vue2 同样的属性劫持技术，即 `Object.defineProperty` API。
+
+
+
 ### 总结
 
 整体体验下来，感觉开发过程还是很丝滑的，api和开发模式很有vue的味道，应该存在借鉴。对于vue技术栈的前端er来说应该很好上手
@@ -153,3 +183,19 @@ css:
 
 值得前端技术人向国内鸿蒙开源社区，提供更多的关注，注入更多的技术力量
 
+### 资源
+
+鸿蒙OS开源地址
+https://openharmony.gitee.com/openharmony
+
+鸿蒙OS IDE下载
+https://developer.harmonyos.com/cn/develop/deveco-studio#download
+
+鸿蒙OS开发者文档
+https://gitee.com/openharmony/docs
+
+鸿蒙OS前端js框架文档
+https://developer.harmonyos.com/cn/docs/documentation/js-framework-file-0000000000611396
+
+鸿蒙OS前端js框架源码
+https://openharmony.gitee.com/openharmony/ace_lite_jsfwk
