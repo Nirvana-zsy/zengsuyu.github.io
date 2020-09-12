@@ -1,5 +1,5 @@
 ---
-title: 作为前端技术人，体验鸿蒙OS前端开发
+title: 作为前端技术人，体验刚开源的鸿蒙OS
 categories:
     - 10技术 | JS # 一级分类
 tags:
