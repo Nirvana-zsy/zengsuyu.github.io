@@ -151,7 +151,8 @@ css:
 
 鸿蒙的 JS 框架 **ace_lite_jsfwk**,官方介绍是“轻量级 JS 核心开发框架”
 
-![架构图](https://gitee.com/openharmony/docs/raw/master/readme/figures/js-framework.png)
+<!-- ![架构图](https://gitee.com/openharmony/docs/raw/master/readme/figures/js-framework.png) -->
+![鸿蒙OS 前端框架 架构图](/images/hmos/012.png)
 
 > 提供了一套跨平台的类web应用开发框架，通过Toolkit将开发者编写的**HML、CSS和JS** 文件编译打包成**JS Bundle**，然后再将JS Bundle**解析运行成C++ native UI的View 组件**进行渲染。通过支持三方开发者使用声明式的API进行应用开发，以数据驱动视图变化，避免了大量的视图操作，大大降低了应用开发难度，提升开发者开发体验。
 
