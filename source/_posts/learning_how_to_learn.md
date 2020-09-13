@@ -30,14 +30,10 @@ top: 0
 | 熟练掌握的内容  | 新事物学习，获取灵感 |
 
 以弹珠游戏类比大脑的思维：
-
-- 专注模式下，大脑遇到已知问题，能快速定位到已掌握的知识，利用训练好的知识回路，专一且迅速的解决问题，但是当遇到新问题时，专注模式就有局限性，由于关注于细节，大脑无法将更多的知识回路连接。
-
-![专注模式](./learning_how_to_learn/focus.png)
-
-- 发散模式下，大脑处于放松状态，不考虑细节，思维灵活跳跃，能从整体层面解决问题，更有助于发挥创造力。
-
-![发散模式](./learning_how_to_learn/diffuse.png)
+| 专注模式 |  发散模式  |
+|  ----  | ----  |
+| 大脑遇到已知问题，能快速定位到已掌握的知识，利用训练好的知识回路，专一且迅速的解决问题，但是当遇到新问题时，专注模式就有局限性，由于关注于细节，大脑无法将更多的知识回路连接。  | 大脑处于放松状态，不考虑细节，思维灵活跳跃，能从整体层面解决问题，更有助于发挥创造力。 |
+| ![专注模式](./learning_how_to_learn/focus.png) |![发散模式](./learning_how_to_learn/diffuse.png) | 
 
 举个例子：
 
@@ -344,3 +340,15 @@ Don’t Let the Brain Fool Yourself
 |
 
 长期记忆 long term memory（存储仓库）
+
+<style>
+table th:nth-of-type(1){
+width: 50%;
+}
+table th:nth-of-type(2){
+width: 50%;
+}
+table th,table td{
+  text-align:center;
+}
+</style>
