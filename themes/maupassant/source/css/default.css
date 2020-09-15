@@ -5,6 +5,21 @@
   color: #333;
   word-wrap: break-word;
 }
+.gitment-root-container{
+  box-shadow: 0 1px 8px 1px #d2caca;
+  border-radius: 5px;
+  padding: 2px 15px;
+}
+.gitment-root-container::before{
+  content: 'Comment';
+  border-bottom: 1px solid #ececec;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  display: block;
+}
 
 .gitment-container * {
   box-sizing: border-box;
@@ -544,7 +559,7 @@ a.gitment-editor-footer-tip:hover {
 
 .gitment-markdown .pl-md {
   color: #bd2c00;
-  background-color: #ffecec;
+  background-color: #332222;
 }
 
 .gitment-markdown .pl-mi1 {

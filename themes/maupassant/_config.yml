@@ -95,8 +95,8 @@ menu:
       directory: about/
     - page: apps
       directory: apps/
-    - page: comment
-      directory: comment/
+    # - page: comment
+    #   directory: comment/
     # - page: self_regulation
     #   directory: self_regulation/
     #   icon: fa-check-square-o

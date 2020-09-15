@@ -79,7 +79,8 @@ if theme.livere
 if theme.gitment.enable == true
     #container
     link(rel='stylesheet', href=url_for(theme.css) + '/default.css' + '?v=' + theme.version)
-    script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
+    //- script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
+    script(src='https://scarsu.oss-cn-shanghai.aliyuncs.com/blog-statics/gitment.browser.js')
     script.
       var gitment = new Gitment({
         owner: '#{theme.gitment.owner}',

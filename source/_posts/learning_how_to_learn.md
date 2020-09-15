@@ -1,19 +1,30 @@
 ---
-title: 【WIP】 Learning how To Learn
+title: 【学习方法】 Learning how To Learn
 categories:
     - 03方法论 | 高效学习 # 一级分类
 tags:
 date: 2020-09-09
-description: 通过精神学、心理学原理，探寻提高学习效率的真谛
+description: 通过精神学、心理学原理，探寻提高学习效率的真谛，成为更好的learner
 toc: 1
 top: 0
 ---
 
 ## Work In Progress
 
-## 介绍
 
-- 本文是coursera免费课程：[Learning how to Learn](https://www.coursera.org/learn/ruhe-xuexi) 的笔记
+
+酥鱼我从小学到大学毕业，当了十几年学生，工作又选择了程序员这个发展日新月异、需要持续学习的行业。提升学习效率，减少学习带来的挫折感和痛苦，一直是我所苦苦追寻而不得的。
+
+
+
+每每看到别人能用更短的时间，学到更多、更深刻的知识，我都留下了羡慕的泪水，因此我也曾向很多学霸、前辈请教学习的法门，多多少少能有些学习方法上的收获，但始终觉得自己对于“如何学习”这个问题，理不出一个最完美的、有逻辑性的答案。
+
+
+
+直到我接触到了coursera上的免费课程[Learning how to Learn](https://www.coursera.org/learn/ruhe-xuexi)，
+
+
+
 - 这门课的目的：通过了解**精神学、心理学**原理，提高学习效率，减少挫败感
 - 《学习之道》这本书是这门课的书面材料，书的作者是课程主讲老师
 - 这门课视频内容大概10h，值得花时间去上，但是如果能理解这篇文章总结的内容，那么可以节省掉看课程视频时间，如果遇到不理解的地方，可以上coursera网站看原课程（https://www.coursera.org/learn/ruhe-xuexi）
@@ -29,15 +40,17 @@ top: 0
 | 顺序思考  | 整体思考 |
 | 熟练掌握的内容  | 新事物学习，获取灵感 |
 
+
+
 以弹珠游戏类比大脑的思维：
 
 - 专注模式下，大脑遇到已知问题，能快速定位到已掌握的知识，利用训练好的知识回路，专一且迅速的解决问题，但是当遇到新问题时，专注模式就有局限性，由于关注于细节，大脑无法将更多的知识回路连接。
 
-![专注模式](./focus.png)
+![专注模式](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094332.png)
 
 - 发散模式下，大脑处于放松状态，不考虑细节，思维灵活跳跃，能从整体层面解决问题，更有助于发挥创造力。
 
-![发散模式](./diffuse.png)
+![发散模式](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094340.png)
 
 举个例子：
 
@@ -60,11 +73,11 @@ Salvador Dali，20世纪著名超现实主义画家。他有一个有趣的方�
 | 存储于大脑的前额皮质，与大脑的其他部位可以联系 | 占据大脑大片区域 |
 | 容量较小，因人而异 | 容量巨大 |
 
-![专注模式下的工作记忆](./working.png)
+![专注模式下的工作记忆](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094344.png)
 
 专注模式下，集中注意力，工作记忆区域活跃，此时就好像你脑子里有一只注意力章鱼，它必须将触角穿过工作记忆的四个插槽，从而帮助你把大脑里不同区域信息联系起来
 
-![发散模式下的长期记忆](./long-term.png)
+![发散模式下的长期记忆](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094345.png)
 
 发散模式下，长期记忆随机连接
 
@@ -72,7 +85,7 @@ Salvador Dali，20世纪著名超现实主义画家。他有一个有趣的方�
 
 高中学过生物的应该记得膝跳反射实验、神经元、突触，和下面这张图（不记得的、没学过的也没关系
 
-![生物神经元示意图](./tc.png)
+![生物神经元示意图](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094347.png)
 
 如上图所示，神经突触是神经元之间的连接，直径小于1微米（人类头发直径约20微米）
 
@@ -80,11 +93,11 @@ Salvador Dali，20世纪著名超现实主义画家。他有一个有趣的方�
 
 学习的过程，就是记忆的形成过程，也就是神经连接的建立过程，当你第一次接触一个新知识时，你的大脑里会存在一个真实的神经回路：
 
-![chunk](./chunk.png)
+![chunk](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094350.png)
 
 **刚形成的回路是不牢固的**，因为不论是学习专注，还是天马星空，只要你的思维存在，大脑就在活动，大脑中会不断发生着突触更迭的代谢活动：新的突触不断形成，其他突触消失。即使是睡一觉，睡前和睡后的你已经不是同一个你了
 
-![chunking](./tc2.png)
+![chunking](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915094353.png)
 
 活体动物大脑内部成像图
 

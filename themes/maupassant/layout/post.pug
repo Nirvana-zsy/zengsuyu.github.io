@@ -25,6 +25,7 @@ html(lang=config.language)
     
   .realPost
     h1.post-title= page.title
+    p.post-description= page.description
     .post-meta= page.date.format(config.date_format)
       if page.categories.length > 0
         span= ' | '

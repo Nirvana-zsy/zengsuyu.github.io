@@ -115,6 +115,7 @@ body {
       }
     }
     .realPost{
+      font-size: 16px;
       h1.post-title {
         color:#d8d8d8;
       }
@@ -487,9 +488,9 @@ div {
       }
     }
     .caption {
-      color: #444;
+      color: #888;
       display: block;
-      font-size: 0.9em;
+      font-size: 0.8em;
       margin-top: 0.1em;
       position: relative;
       text-align: center;
@@ -544,16 +545,22 @@ div {
 }
 
 .realPost {
-  margin: 20px 150px;
+  max-width: 680px;
+  margin: 20px auto;
   padding: 25px 0 15px;
   .post-title {
     margin: 0;
     color: #555;
     text-align: left;
-    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+    font: bold 2em/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
     a {
       color: #555;
     }
+    font-family: cursive, Baskerville;
+    font-weight: bold;
+  }
+  .post-description {
+    color: rgba(117, 117, 117, 1);
   }
   .post-meta {
     padding: 0;
@@ -666,26 +673,36 @@ div {
   }
   .post-content {
     clear: left;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.77;
-    color: #444;
+    color: rgba(41, 41, 41, 1);
     padding-top: 15px;
     text-align: justify;
     text-justify: distribute;
     word-break: normal;
-    h2 {
+    h1 {
+      // font-family: cursive, Baskerville;
       margin: 1.4em 0 1.1em;
       border-bottom: 1px solid #eee;
       overflow: hidden;
     }
-    h3 {
+    h2 {
       margin: 1.4em 0 1.1em;
+      background-color:#000;
+      color:#fff;
+      padding:2px 10px;
+      width:fit-content;
+      font-size:17px;
+      margin:60px auto 10px;
+      strong {
+        color:#fff;
+      }
     }
     pre code {
       padding: 0 2em;
     }
     p {
-      margin: 0 0 1.234em;
+      margin: 0 0 1.2em;
       code {
         display: inline-block;
         margin: 0 5px;
@@ -703,10 +720,11 @@ div {
       }
     }
     .caption {
-      color: #444;
+      color: #888;
       display: block;
       font-size: 0.9em;
       margin-top: 0.1em;
+      margin-bottom: 30px;
       position: relative;
       text-align: center;
     }
@@ -721,6 +739,8 @@ div {
       padding: 0.5em 0;
       margin: auto;
       display: block;
+      box-shadow: 0 1px 8px 1px #d2caca;
+      border-radius: 5px;
     }
     ul,
     ol {
@@ -948,25 +968,38 @@ blockquote,
   color: #555;
   border-left: none;
 }
-
-blockquote::before,
-.stressed-quote::before {
-  content: "\201C";
-  display: block;
-  font-family: times;
-  font-style: normal;
-  font-size: 48px;
-  color: #444;
-  font-weight: bold;
-  line-height: 30px;
-  margin-left: -50px;
-  position: absolute;
+blockquote{
+  border-radius: 6px;
+  background: white;
+  padding: 10px 10px 20px 10px;
+  box-shadow: rgba(84, 70, 35, 0.15) 0px 2px 8px, rgba(84, 70, 35, 0.15) 0px 1px 3px, rgba(255, 255, 255, 0.5) 0px 0px 0px 1px;
+  &::before {
+    content: "❝";
+    color: #dadada;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  &::after {
+    content: "❞";
+    float: right;
+    color: #dadada;
+  }
 }
 
 strong,
 b,
 em {
   font-weight: bold;
+}
+
+strong{
+  &::before {
+    content: '「';
+  }
+  &::after {
+    content: '」';
+  }
 }
 
 pre {
@@ -1046,7 +1079,7 @@ pre {
 }
 
 /* *******************************************************
-* Process timelime, (homepage)
+* Process timeline, (homepage)
 ******************************************************* */
 
 #process {
@@ -1450,7 +1483,7 @@ pre {
       font-size: 15px;
     }
     img {
-      box-shadow: rgb(170, 170, 170) 0px 0px 14px 0px;
+      box-shadow: rgba(84, 70, 35, 0.15) 0px 2px 8px, rgba(84, 70, 35, 0.15) 0px 1px 3px, rgba(255, 255, 255, 0.5) 0px 0px 0px 1px;
       width: 90%;
       border-radius: 4px;
       margin-top: 10px;
@@ -1581,12 +1614,28 @@ pre {
 
 figure.highlight,
 .codeblock {
-  background: #f7f8f8;
-  margin: 10px 0;
+  // background: #f7f8f8;
+  margin: 10px 0 20px 0;
   line-height: 1.1em;
   color: #333;
-  padding-top: 15px;
+  // padding-top: 15px;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px;
+  &::before{
+    content: '';
+    display: block;
+    background: url(https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200915134644.png);
+    height: 30px;
+    width: 100%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-color: #282c34;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    background-position: 10px 10px;
+  }
+  background-color: #282c34;
   table {
     display: block;
     width: 100%;
@@ -1603,6 +1652,7 @@ figure.highlight,
     margin: 0;
     // To override cursor attribute of `.tag` components
     cursor: text;
+    color: #ffffff;
   }
   // To align line number and line of code regardless if there is a scroll bar or not
   .gutter,
@@ -1629,7 +1679,8 @@ figure.highlight,
   }
   // Gutter which contains line numbers
   .gutter {
-    background: #f7f8f8;
+    // background: #f7f8f8;
+    color: #f7f8f8;
     border-right: 1px solid #e6e6e6;
     padding: 0.3em 15px;
   }
@@ -1664,13 +1715,13 @@ figure.highlight,
 .highlight {
   // General
   .comment {
-    color: #969896;
+    color: #abb2bf;
   }
   .string {
-    color: #183691;
+    color: #98c379;
   }
   .keyword {
-    color: #a71d5d;
+    color: #c678dd;
   }
   // ApacheConf
   &.apacheconf .code {
@@ -1680,27 +1731,27 @@ figure.highlight,
     .variable,
     .cbracket,
     .keyword {
-      color: #0086b3;
+      color: #c678dd;
     }
     .sqbracket {
       color: #df5000;
     }
     .section,
     .tag {
-      color: #63a35c;
+      color: #c678dd;
     }
   }
   // Bash
   &.bash .code {
     .shebang {
-      color: #969896;
+      color: #abb2bf;
     }
     .literal,
     .built_in {
-      color: #0086b3;
+      color: #c678dd;
     }
     .variable {
-      color: #333;
+      color: #abb2bf;
     }
     .title {
       color: #795da3;
@@ -1714,7 +1765,7 @@ figure.highlight,
     .literal,
     .built_in,
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
     .reserved,
     .attribute {
@@ -1740,25 +1791,25 @@ figure.highlight,
     }
     .number,
     .built_in {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // C#
   &.cs .code {
     .preprocessor,
     .preprocessor .keyword {
-      color: #333;
+      color: #abb2bf;
     }
     .title {
       color: #795da3;
     }
     .number,
     .built_in {
-      color: #0086b3;
+      color: #c678dd;
     }
     .xmlDocTag,
     .doctag {
-      color: #63a35c;
+      color: #c678dd;
     }
   }
   // CSS
@@ -1772,11 +1823,11 @@ figure.highlight,
     .hexcolor,
     .number,
     .function {
-      color: #0086b3;
+      color: #c678dd;
     }
     .attr_selector,
     .value {
-      color: #333;
+      color: #abb2bf;
     }
     .id,
     .class,
@@ -1786,7 +1837,7 @@ figure.highlight,
     }
     .tag,
     .selector-tag {
-      color: #63a35c;
+      color: #c678dd;
     }
   }
   // Diff
@@ -1812,7 +1863,7 @@ figure.highlight,
       color: #183691;
     }
     .literal {
-      color: #0086b3;
+      color: #c678dd;
     }
     .request {
       color: #a71d5d;
@@ -1830,7 +1881,7 @@ figure.highlight,
     }
     .value,
     .keyword {
-      color: #333;
+      color: #abb2bf;
     }
   }
   // JAVA
@@ -1847,7 +1898,7 @@ figure.highlight,
       color: #a71d5d;
     }
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
     .params {
       color: #1d3e81;
@@ -1867,14 +1918,14 @@ figure.highlight,
       color: #a71d5d;
     }
     .tag .title {
-      color: #333;
+      color: #abb2bf;
     }
     .regexp {
       color: #df5000;
     }
     .literal,
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // JSON
@@ -1884,20 +1935,20 @@ figure.highlight,
     }
     .number,
     .literal {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // Makefile
   &.mak .code {
     .constant {
-      color: #333;
+      color: #abb2bf;
     }
     .title {
       color: #795da3;
     }
     .keyword,
     .meta-keyword {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // Markdown
@@ -1914,7 +1965,7 @@ figure.highlight,
     .link_reference,
     .symbol,
     .code {
-      color: #0086b3;
+      color: #c678dd;
     }
     .link_url,
     .link {
@@ -1929,13 +1980,13 @@ figure.highlight,
     }
     .built_in,
     .literal {
-      color: #0086b3;
+      color: #c678dd;
     }
     .regexp {
       color: #183691;
     }
     .variable {
-      color: #333;
+      color: #abb2bf;
     }
   }
   // Objective-C
@@ -1956,7 +2007,7 @@ figure.highlight,
     .literal,
     .number,
     .built_in {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // Perl
@@ -1982,7 +2033,7 @@ figure.highlight,
     }
     .literal,
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
     .title {
       color: #795da3;
@@ -1996,7 +2047,7 @@ figure.highlight,
       color: #795da3;
     }
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // Ruby
@@ -2010,7 +2061,7 @@ figure.highlight,
     .number,
     .subst .keyword,
     .symbol {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // SQL
@@ -2019,14 +2070,14 @@ figure.highlight,
       color: #a71d5d;
     }
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // XML, HTML
   &.xml,
   &.html {
     .tag {
-      color: #333;
+      color: #abb2bf;
     }
     .value {
       color: #183691;
@@ -2037,7 +2088,7 @@ figure.highlight,
     }
     .title,
     .name {
-      color: #63a35c;
+      color: #c678dd;
     }
   }
   // Puppet
@@ -2046,13 +2097,13 @@ figure.highlight,
       color: #795da3;
     }
     .function {
-      color: #0086b3;
+      color: #c678dd;
     }
     .name {
       color: #a71d5d;
     }
     .attr {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // LESS
@@ -2065,7 +2116,7 @@ figure.highlight,
     .hexcolor,
     .function,
     .attribute {
-      color: #0086b3;
+      color: #c678dd;
     }
     .built_in {
       color: #df5000;
@@ -2090,10 +2141,10 @@ figure.highlight,
     .hexcolor,
     .function,
     .attribute {
-      color: #0086b3;
+      color: #c678dd;
     }
     .variable {
-      color: #333;
+      color: #abb2bf;
     }
     .built_in {
       color: #df5000;
@@ -2108,7 +2159,7 @@ figure.highlight,
     }
     .tag,
     .selector-tag {
-      color: #63a35c;
+      color: #c678dd;
     }
   }
   // Stylus
@@ -2118,13 +2169,13 @@ figure.highlight,
     }
     .tag,
     .selector-tag {
-      color: #63a35c;
+      color: #c678dd;
     }
     .number,
     .hexcolor,
     .attribute,
     .params {
-      color: #0086b3;
+      color: #c678dd;
     }
     .class,
     .id,
@@ -2143,7 +2194,7 @@ figure.highlight,
     }
     .built_in,
     .constant {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // Swift
@@ -2157,7 +2208,7 @@ figure.highlight,
     .built_in,
     .number,
     .type {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
   // YAML
@@ -2174,7 +2225,7 @@ figure.highlight,
       color: #183691;
     }
     .number {
-      color: #0086b3;
+      color: #c678dd;
     }
   }
 }
@@ -2323,10 +2374,15 @@ table {
   cursor: pointer;
   float: right;
   margin-left: 20px;
+  color: #01579f;
   &:before {
     font-family: "FontAwesome";
     content: "\f015";
     padding-right: 6px;
+  }
+  &:hover{
+    color: #fff;
+    background-color: #01579f;
   }
 }
 
@@ -2491,9 +2547,10 @@ em.search-keyword {
 
 // Custom styles.
 .post-copyright {
-  margin: 2em 0 0;
+  margin: 5em 0 0;
   padding: 0.5em 1em;
-  border-left: 3px solid #ff1700;
+  border-left: 3px solid #000;
+  border-right: 1px solid #000;
   background-color: #f9f9f9;
   list-style: none;
   li {
@@ -2578,3 +2635,40 @@ em.search-keyword {
 }
 
 
+/* font */
+// @font-face
+// {
+// 	font-family: zhuokai;
+// 	src: url('https://scarsu.oss-cn-shanghai.aliyuncs.com/fonts/ZhuoKai.ttf');
+// }
+// @font-face
+// {
+// 	font-family: youshe;
+// 	src: url('https://scarsu.oss-cn-shanghai.aliyuncs.com/fonts/YouShe.ttf');
+// }
+// @font-face
+// {
+// 	font-family: huisong;
+// 	src: url('https://scarsu.oss-cn-shanghai.aliyuncs.com/fonts/huisong.ttf');
+// }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  cursor: pointer !important;
+  background: rgba(0,0,0,.06);
+  box-shadow: inset 0 0 5px rgba(0,0,0,.08)
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  border-radius: 3px;
+  background: #ddd;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.2)
+}
