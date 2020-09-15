@@ -357,3 +357,15 @@ Don’t Let the Brain Fool Yourself
 |
 
 长期记忆 long term memory（存储仓库）
+
+<style>
+table th:nth-of-type(1){
+width: 50%;
+}
+table th:nth-of-type(2){
+width: 50%;
+}
+table th,table td{
+  text-align:center;
+}
+</style>
