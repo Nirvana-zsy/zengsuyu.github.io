@@ -1,154 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Image Playground</title>
-<style>
-  html,body {
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-  }
-  #container {
-    width: 90vw;
-    margin: 0 auto;
-    display: flex;
-    background-color: #eee;
-    flex-direction: column;
-  }
-  #upload{
-    border:1px solid #000;
-  }
-  #pixel{
-    width:1px;
-    height:1px;
-    background-color:transparent;
-    overflow:hidden;
-  }
-  pre:before{
-    content: '';
-    display: block;
-    background: url(https://imgkr.cn-bj.ufileos.com/97e4eed2-a992-4976-acf0-ccb6fb34d308.png);
-    height: 30px;
-    width: 100%;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-color: #f8f8f8;
-    margin-bottom: -7px;
-    border-radius: 5px;
-    background-position: 10px 10px;
-  }
-  pre{
-    max-width: 98%;
-    border-radius: 4px;
-    margin: 10px auto 0 auto;
-    overflow: auto;
-    background: #f8f8f8;
-    border: 1px solid #ededed;
-  }
-  pre code{
-    display: block;
-    overflow-x: auto;
-    padding: 0 16px;
-    color: #333;
-    background: #f8f8f8;
-    display: -webkit-box;
-    font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
-    border-radius: 0px;
-    font-size: 12px;
-    -webkit-overflow-scrolling: touch;
-  }
-</style>
-</head>
-<body>
-  <div id="container">
-    <h2>上传图片:（适用场景是小icon、logo等，上传大图可能会导致浏览器卡顿，后果自负~）</h2>
-    <div>
-      <input id="fileIn" type="file"/>
-    </div>
-    <h2>canvas预览:</h2>
-    <canvas id="upload" width="300" height="200" style="width:300px;">
-      您的浏览器不支持canvas，快更新浏览器吧🤔
-    </canvas>
-    <h2>css实现效果：</h2>
-    <div id="output">
-      <div id="pixel"></div>
-    </div>
-    <h2>CSS代码：</h2>
-    <div id="source">
-      <pre>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Image Playground</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+      }
+      #container {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        background-color: #eee;
+        flex-direction: column;
+      }
+      #upload {
+        border: 1px solid #000;
+      }
+      #pixel {
+        width: 1px;
+        height: 1px;
+        background-color: transparent;
+        overflow: hidden;
+      }
+      pre:before {
+        content: '';
+        display: block;
+        background: url(https://imgkr.cn-bj.ufileos.com/97e4eed2-a992-4976-acf0-ccb6fb34d308.png);
+        height: 30px;
+        width: 100%;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        margin-bottom: -7px;
+        border-radius: 5px;
+        background-position: 10px 10px;
+      }
+      pre {
+        max-width: 98%;
+        border-radius: 4px;
+        margin: 10px auto 0 auto;
+        overflow: auto;
+        background: #f8f8f8;
+        border: 1px solid #ededed;
+      }
+      pre code {
+        display: block;
+        overflow-x: auto;
+        padding: 0 16px;
+        color: #333;
+        background: #f8f8f8;
+        display: -webkit-box;
+        font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+        border-radius: 0px;
+        font-size: 12px;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>
+        上传图片:（适用场景是小icon、logo等，建议300*300像素以内，上传大图可能会导致浏览器卡顿，后果自负~）
+      </h2>
+      <div>
+        <input id="fileIn" type="file" />
+      </div>
+      <h2>canvas预览:</h2>
+      <canvas id="upload" width="300" height="200" style="width: 300px">
+        您的浏览器不支持canvas，快更新浏览器吧🤔
+      </canvas>
+      <h2>css实现效果：</h2>
+      <div id="output">
+        <div id="pixel"></div>
+      </div>
+      <h2>
+        CSS代码:
+        <button id="copy">copy code</button>
+        <span id="info"></span>
+      </h2>
+      <div id="source">
+        <pre>
         <code id="code">
 
         </code>
       </pre>
+      </div>
     </div>
-  </div>
-  <script type="text/javascript">
-  var P = Math.PI;
-  document.addEventListener('DOMContentLoaded', init);
+    <script type="text/javascript">
+      const P = Math.PI
+      let code = ''
+      document.addEventListener('DOMContentLoaded', init)
 
-  function init(){
-    document.addEventListener('change',function(e){
-      var imgFile = document.getElementById("fileIn").files[0];
-      var imgEl = new Image();
-      var canvas = document.getElementById('upload'); 
-      if(!canvas.getContext){
-        document.body.innerHTML='您的浏览器不支持canvas，快更新浏览器吧🤔'
-        return
-      }
-      var ctx = canvas.getContext('2d')
-
-      // file转image element
-      imgEl.src = URL.createObjectURL(imgFile)
-      imgEl.addEventListener('load',function(){
-        var w = imgEl.width;
-        var h = imgEl.height;
-        // canvas显示图片预览
-        ctx.drawImage(imgEl,0,0,w,h,0,0,w,h)
-        
-        // canvas 获取 imageData rgba数据
-        var _str=''
-        var pixelEl = document.getElementById('pixel')
-        var imageDataArr = ctx.getImageData(0,0,w,h).data;
-        let arr = []
-        for(var y=0;y<w;y++){
-          for(var x=0;x<h;x++){
-            arr.push({
-              x:x,
-              y:y,
-              r: imageDataArr[(y * w + x) * 4],
-              g: imageDataArr[(y * w + x) * 4 + 1],
-              b: imageDataArr[(y * w + x) * 4 + 2],
-              a: imageDataArr[(y * w + x) * 4 + 3]/255,
-            })
+      function init() {
+        document.addEventListener('change', function (e) {
+          var imgFile = document.getElementById('fileIn').files[0]
+          var imgEl = new Image()
+          var canvas = document.getElementById('upload')
+          if (!canvas.getContext) {
+            document.body.innerHTML = '您的浏览器不支持canvas，快更新浏览器吧🤔'
+            return
           }
-        }
+          var ctx = canvas.getContext('2d')
 
-        _str = arr.map(item => {
-          return `rgba(${item.r}, ${item.g}, ${item.b}, ${item.a}) ${item.x}px ${item.y}px`
-        }).join(',');
+          // file转image element
+          imgEl.src = URL.createObjectURL(imgFile)
+          imgEl.addEventListener('load', function () {
+            var w = imgEl.width
+            var h = imgEl.height
+            // canvas显示图片预览
+            ctx.drawImage(imgEl, 0, 0, w, h, 0, 0, w, h)
 
-        let _code ='width:1px;\n' +
-          'height:1px;\n' +
-          'background-color:transparent;\n' +
-          'overflow:hidden;\n' + 
-          'box-shadow:' + arr.map(item => {
-          return `\trgba(${item.r}, ${item.g}, ${item.b}, ${item.a}) ${item.x}px ${item.y}px`
-        }).join(',\n');
+            // canvas 获取 imageData rgba数据
+            var _str = ''
+            var pixelEl = document.getElementById('pixel')
+            var imageDataArr = ctx.getImageData(0, 0, w, h).data
+            let arr = []
+            for (var y = 0; y < h; y++) {
+              for (var x = 0; x < w; x++) {
+                arr.push({
+                  x: x,
+                  y: y,
+                  r: imageDataArr[(y * w + x) * 4],
+                  g: imageDataArr[(y * w + x) * 4 + 1],
+                  b: imageDataArr[(y * w + x) * 4 + 2],
+                  a: imageDataArr[(y * w + x) * 4 + 3] / 255,
+                })
+              }
+            }
 
-        document.getElementById("code").innerHTML = _code
-        document.getElementById("output").style.height = h+20 + 'px'
+            _str = arr
+              .map((item) => {
+                return `rgba(${item.r}, ${item.g}, ${item.b}, ${item.a}) ${item.x}px ${item.y}px`
+              })
+              .join(',')
 
-        pixelEl.style.boxShadow = _str
-      })
-      
-    })
+            let _code =
+              'width:1px;\n' +
+              'height:1px;\n' +
+              'background-color:transparent;\n' +
+              'overflow:hidden;\n' +
+              'box-shadow:' +
+              arr
+                .map((item) => {
+                  return `\trgba(${item.r}, ${item.g}, ${item.b}, ${item.a}) ${item.x}px ${item.y}px`
+                })
+                .join(',\n')
+            code = _code.replace(/\ +/g, '')
+            document.getElementById('code').innerHTML = _code
+            document.getElementById('output').style.height = h + 20 + 'px'
 
+            pixelEl.style.boxShadow = _str
+          })
+        })
 
-    // canvas练习
-    // 笑脸
-    /* ctx.beginPath()
+        document.querySelector('#copy').addEventListener('click', function () {
+          const info = document.getElementById('info')
+          navigator.clipboard.writeText(code).then(function() {
+            info.textContent = 'success'
+            info.style.color = 'green'
+            setTimeout(function(){
+              info.textContent = ''
+              info.style.color = '#000'
+            },3000)
+          }, function() {
+            info.textContent = 'fail'
+            info.style.color = 'red'
+            setTimeout(function(){
+              info.textContent = ''
+              info.style.color = '#000'
+            },3000)
+          });
+        })
+
+        // canvas练习
+        // 笑脸
+        /* ctx.beginPath()
     ctx.arc(50,50,50,0,2*P,false)
     ctx.stroke()
     ctx.moveTo(75,50)  //移动当前canvas笔触位置
@@ -161,35 +192,35 @@
     ctx.arc(40,40,5,0,2*P,false)
     ctx.stroke() */
 
-    // 填充三角形
-    /* ctx.beginPath()
+        // 填充三角形
+        /* ctx.beginPath()
     ctx.moveTo(10,10)
     ctx.lineTo(60,10)
     ctx.lineTo(10,60)
     ctx.fill() */
-    //路径使用填充（fill）时，路径自动闭合
-    
-    // 三角形
-    /* ctx.beginPath()
+        //路径使用填充（fill）时，路径自动闭合
+
+        // 三角形
+        /* ctx.beginPath()
     ctx.moveTo(70,20)
     ctx.lineTo(70,70)
     ctx.lineTo(20,70)
     ctx.closePath()
     ctx.stroke() */
-    // 使用描边（stroke）则不会闭合路径。
-    // 如果没有添加闭合路径closePath()到描述三角形函数中
-    // 则只绘制了两条线段，并不是一个完整的三角形
+        // 使用描边（stroke）则不会闭合路径。
+        // 如果没有添加闭合路径closePath()到描述三角形函数中
+        // 则只绘制了两条线段，并不是一个完整的三角形
 
-    // 填充上弦月
-    /* ctx.beginPath();
+        // 填充上弦月
+        /* ctx.beginPath();
     ctx.arc(50,50,50,0,1.5*P,false)
     ctx.fill(); */
 
-    // 贝塞尔曲线
-    // quadraticCurveTo(cp1x, cp1y, x, y)
-    // 绘制二次贝塞尔曲线，cp1x,cp1y为一个控制点，x,y为结束点（起始点为当前canvas笔触位置）
-    // 二次贝塞尔曲线 对话框
-    /* ctx.beginPath();
+        // 贝塞尔曲线
+        // quadraticCurveTo(cp1x, cp1y, x, y)
+        // 绘制二次贝塞尔曲线，cp1x,cp1y为一个控制点，x,y为结束点（起始点为当前canvas笔触位置）
+        // 二次贝塞尔曲线 对话框
+        /* ctx.beginPath();
     ctx.moveTo(75, 25);
     ctx.quadraticCurveTo(25, 25, 25, 62.5);
     ctx.quadraticCurveTo(25, 100, 50, 100);
@@ -199,10 +230,10 @@
     ctx.quadraticCurveTo(125, 25, 75, 25);
     ctx.stroke(); */
 
-    // bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
-    // 绘制三次贝塞尔曲线，cp1x,cp1y为控制点一，cp2x,cp2y为控制点二，x,y为结束点（起始点为当前canvas笔触位置）
-    // 三次贝塞尔曲线 爱心
-    /* ctx.beginPath();
+        // bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
+        // 绘制三次贝塞尔曲线，cp1x,cp1y为控制点一，cp2x,cp2y为控制点二，x,y为结束点（起始点为当前canvas笔触位置）
+        // 三次贝塞尔曲线 爱心
+        /* ctx.beginPath();
     ctx.moveTo(75, 40);
     ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
     ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
@@ -212,23 +243,28 @@
     ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
     ctx.fill(); */
 
-    // 封装的一个用于绘制圆角矩形的函数.
-    function roundedRect(ctx, x, y, width, height, radius){
-      ctx.beginPath();
-      ctx.moveTo(x, y + radius);
-      ctx.lineTo(x, y + height - radius);
-      ctx.quadraticCurveTo(x, y + height, x + radius, y + height);
-      ctx.lineTo(x + width - radius, y + height);
-      ctx.quadraticCurveTo(x + width, y + height, x + width, y + height - radius);
-      ctx.lineTo(x + width, y + radius);
-      ctx.quadraticCurveTo(x + width, y, x + width - radius, y);
-      ctx.lineTo(x + radius, y);
-      ctx.quadraticCurveTo(x, y, x, y + radius);
-      ctx.stroke();
-    }
+        // 封装的一个用于绘制圆角矩形的函数.
+        function roundedRect(ctx, x, y, width, height, radius) {
+          ctx.beginPath()
+          ctx.moveTo(x, y + radius)
+          ctx.lineTo(x, y + height - radius)
+          ctx.quadraticCurveTo(x, y + height, x + radius, y + height)
+          ctx.lineTo(x + width - radius, y + height)
+          ctx.quadraticCurveTo(
+            x + width,
+            y + height,
+            x + width,
+            y + height - radius
+          )
+          ctx.lineTo(x + width, y + radius)
+          ctx.quadraticCurveTo(x + width, y, x + width - radius, y)
+          ctx.lineTo(x + radius, y)
+          ctx.quadraticCurveTo(x, y, x, y + radius)
+          ctx.stroke()
+        }
 
-    // 组合图
-    /* roundedRect(ctx, 12, 12, 150, 150, 15);
+        // 组合图
+        /* roundedRect(ctx, 12, 12, 150, 150, 15);
     roundedRect(ctx, 19, 19, 150, 150, 9);
     roundedRect(ctx, 53, 53, 49, 33, 10);
     roundedRect(ctx, 53, 119, 49, 16, 6);
@@ -289,8 +325,8 @@
     ctx.arc(89, 102, 2, 0, Math.PI * 2, true);
     ctx.fill(); */
 
-    // Path2D对象：缓存、重用绘画命令/svg(canvas context上的一切命令都可以使用)
-    /* var rectangle = new Path2D();
+        // Path2D对象：缓存、重用绘画命令/svg(canvas context上的一切命令都可以使用)
+        /* var rectangle = new Path2D();
     rectangle.rect(10, 10, 50, 50);
     var circle = new Path2D();
     circle.moveTo(125, 35);
@@ -298,15 +334,14 @@
     ctx.stroke(rectangle);
     ctx.fill(circle); */
 
-    // 样式
-    // ctx.fillStyle = "rgba(255,165,0,1)";
-    // ctx.strokeStyle  = "rgba(255,165,0,1)";
-    // ctx.globalAlpha = 0.2;
-    // ctx.fillRect(0,37.5,150,37.5);
-    // ctx.lineWidth = 2;
-    //https://developer.mozilla.org/@api/deki/files/601/=Canvas-grid.png
-
-  }
-  </script>
-</body>
+        // 样式
+        // ctx.fillStyle = "rgba(255,165,0,1)";
+        // ctx.strokeStyle  = "rgba(255,165,0,1)";
+        // ctx.globalAlpha = 0.2;
+        // ctx.fillRect(0,37.5,150,37.5);
+        // ctx.lineWidth = 2;
+        //https://developer.mozilla.org/@api/deki/files/601/=Canvas-grid.png
+      }
+    </script>
+  </body>
 </html>
