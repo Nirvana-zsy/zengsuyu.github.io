@@ -112,3 +112,8 @@ toc: 0
 | bias                     | 偏差/偏置                                                           |
 | explicit                     | 显式的，清楚明确的                                                           |
 | Conquer                     | 攻破、征服的                                                           |
+| carve                     | 雕刻                                                           |
+| carve out some time       | 挤出一些时间                                                           |
+| tackle       | 处理、解决、应付                                                           |
+| intentionally       | 刻意地、故意地                                                           |
+| corresponding        | 相对应的                                                       |
