@@ -117,3 +117,5 @@ toc: 0
 | tackle       | 处理、解决、应付                                                           |
 | intentionally       | 刻意地、故意地                                                           |
 | corresponding        | 相对应的                                                       |
+| nested array        | 嵌套数组                                                       |
+| flat(ten)        | 展开，铺平，扁平化                                                       |
