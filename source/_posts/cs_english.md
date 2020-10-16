@@ -119,3 +119,5 @@ toc: 0
 | corresponding        | 相对应的                                                       |
 | nested array        | 嵌套数组                                                       |
 | flat(ten)        | 展开，铺平，扁平化                                                       |
+| scenario        | /səˈnɛrioʊ/方案；场景，情景                                                       |
+| operands        | 操作数，运算对象                                                       |
