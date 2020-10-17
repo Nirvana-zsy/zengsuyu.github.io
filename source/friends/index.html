@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .card-list .card {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        width: 48%;
+        min-height: 100px;
+        background: rgb(255 255 255);
+        transition: all 0.4s;
+        border-radius: 5px;
+        border:1px solid #ddd;
+        margin:10px 0;
+      }
+      .card-list .card:hover {
+        box-shadow: 8px 4px 20px 0px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px) scale(1.01);
+      }
+      .card-list .card img {
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s;
+        margin: 20px 10px;
+        padding: 0;
+      }
+      .card-list .card div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 10px 10px;
+        color: rgb(41 30 30);
+        transition: all 0.4s;
+      }
+      .card-list .card .desc {
+        margin: 0;
+        opacity: 0.8;
+        font-size:.9em;
+      }
+      .card-list .card .name {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-list">
+
+      <a class="card" href="http://www.taoweng.site/">
+        <img
+          class="avatar nofancybox"
+          src="https://image.notbucai.com/2020/07/06/2b2ebb5ac7403b7ab9c5cb5203b3ed68.png"
+        />
+        <div>
+          <p class="name">前端桃园</p>
+          <p class="desc">相信 W3C，遵从黑客文化，相信自己能改变世界</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://lxchuan12.gitee.io/">
+        <img
+          class="avatar nofancybox"
+          src="https://avatar-static.segmentfault.com/221/196/2211965068-5cf3a535a13d9_huge256"
+        />
+        <div>
+          <p class="name">若川的博客</p>
+          <p class="desc">撰写了学习源码整体架构系列8篇，公众号《若川视野》</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.notbucai.com/">
+        <img
+          class="avatar nofancybox"
+          src="https://image.notbucai.com/logo.png"
+        />
+        <div>
+          <p class="name">不才的博客</p>
+          <p class="desc">这是不才的博客，用于记录生活、学习笔记。专注WEB前端，全面发展，做一个有梦想又憨憨的咸鱼。</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://youyi.netlify.app/">
+        <img
+          class="avatar nofancybox"
+          src="https://youyi.netlify.app/laugh.jpeg"
+        />
+        <div>
+          <p class="name">有义的简明博客</p>
+          <p class="desc">前端 后端 Linux windows JavaScript typescript DBA</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://hungryturbo.com">
+        <img
+          class="avatar nofancybox"
+          src="https://cdn.jsdelivr.net/gh/Geekhyt/blogimgbed/blog/avatar.jpeg"
+        />
+        <div>
+          <p class="name">童欧巴博客</p>
+          <p class="desc">公众号《前端食堂》，吃好每一顿。</p>
+        </div>
+      </a>
+
+      
+      <!-- <a class="card" href="">
+        <img
+          class="avatar nofancybox"
+          src=""
+        />
+        <div>
+          <p class="name"></p>
+          <p class="desc"></p>
+        </div>
+      </a> -->
+    </div>
+
+    <div>
+      <h2>添加友链</h2>
+      <p>用任何方式联系上我都可以~</p>
+      <p>我的友链信息👇</p>
+      <pre>
+博客名称：ScarSu的博客
+博客网址：https://www.scarsu.com
+博客头像：https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201012144739.jpg
+博客介绍：一个程序媛关于【自律/读书认知/Web前端技术】的一些个人分享
+      </pre>
+    </div>
+  </body>
+</html>

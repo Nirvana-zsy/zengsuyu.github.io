@@ -86,6 +86,8 @@ menu:
     #   icon: fa-book
     - page: cognition
       directory: cognition/
+    - page: friends
+      directory: friends/
     - page: fe_nav
       directory: fe_nav/
     # - page: Demo

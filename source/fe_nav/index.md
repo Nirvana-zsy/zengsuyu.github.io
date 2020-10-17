@@ -2,16 +2,6 @@
 title: 前端导航
 ---
 
-#### 友链
-- <a href="http://www.taoweng.site">前端桃园</a>
-- <a href="https://www.lxchuan12.cn/">若川</a>
-- <a href="https://ericchen.vip/">EricChen</a>
-- <a href="https://www.notbucai.com/">不才's blog</a>
-- <a href="https://drawcode.mdnice.com/">编程如画 灵魂画手</a>
-- <a href="https://youyi.netlify.app/">有义的简明博客</a>
-<!-- - <a href="https://leihuang.dev/">Lei Huang</a> -->
-<!-- - <a href="https://www.liaoyunduo.top/">小心</a> -->
-
 #### 前端书单
 - 《Head First HTML与CSS(第2版)》 入门
 - 《CSS权威指南》 基础

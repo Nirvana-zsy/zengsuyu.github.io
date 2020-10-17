@@ -12,7 +12,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
   var $dom = $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery')
-  if($dom){
+  if($dom && $dom.fancybox){
     $dom.fancybox({
       helpers : {
       title: { type: 'inside'}
