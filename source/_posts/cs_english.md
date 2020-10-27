@@ -77,7 +77,7 @@ toc: 0
 | overhead                 | 开销                                                                |
 | distribution             | 分配                                                                |
 | timeline                 | 时间轴                                                              |
-| delegate                 | 转交                                                                |
+| delegate                 | 转交，委托                                                          | Event Delegation事件委托                                                                                                 |
 | prefix/postfix           | 前缀后缀                                                            |
 | Adaptor                  | 适配器                                                              |
 | TL;DR                    | too long;don't/didn't read 精华/总结                                |
@@ -123,3 +123,4 @@ toc: 0
 | operands                 | 操作数，运算对象                                                    |
 | diagonal                 | 对角线，斜线                                                        | leetcode 52. N皇后问题，棋盘斜线集合变量名                                                                               |
 | dimensions               | 尺寸，维度                                                          | FCC https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-principles/make-typography-responsive |
+| circuit                  | 线路，回路                                                          | https://www.codewars.com/kata/5536a85b6ed4ee5a78000035/train/javascript                                                  |
