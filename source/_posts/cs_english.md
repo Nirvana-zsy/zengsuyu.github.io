@@ -124,3 +124,5 @@ toc: 0
 | diagonal                 | 对角线，斜线                                                        | leetcode 52. N皇后问题，棋盘斜线集合变量名                                                                               |
 | dimensions               | 尺寸，维度                                                          | FCC https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-principles/make-typography-responsive |
 | circuit                  | 线路，回路                                                          | https://www.codewars.com/kata/5536a85b6ed4ee5a78000035/train/javascript                                                  |
+| polyfill                 | 填充                                                                | https://github.com/inexorabletash/polyfill                                                                               |
+| shim                     | 垫片                                                                | https://github.com/es-shims/es5-shim                                                                                     |
