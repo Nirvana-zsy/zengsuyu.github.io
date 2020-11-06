@@ -126,3 +126,4 @@ toc: 0
 | circuit                  | 线路，回路                                                          | https://www.codewars.com/kata/5536a85b6ed4ee5a78000035/train/javascript                                                  |
 | polyfill                 | 填充                                                                | https://github.com/inexorabletash/polyfill                                                                               |
 | shim                     | 垫片                                                                | https://github.com/es-shims/es5-shim                                                                                     |
+| exceed                   | 超过，溢出                                                          |                                                                                                                          |
