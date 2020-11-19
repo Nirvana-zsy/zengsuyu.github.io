@@ -81,7 +81,7 @@ toc: 0
 | prefix/postfix           | 前缀后缀                                                            |
 | Adaptor                  | 适配器                                                              |
 | TL;DR                    | too long;don't/didn't read 精华/总结                                |
-| conjecture               | 猜测猜想                                                            |
+| conjecture               | 猜测猜想,推测                                                       | https://www.codewars.com/kata/52fefe6cb0091856db00030e/train/javascript                                                  |
 | Threshold                | 阈值                                                                |
 | constants                | 常量                                                                |
 | assign                   | 赋值                                                                |
