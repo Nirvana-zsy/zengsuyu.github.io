@@ -2,12 +2,11 @@
 title: Apps
 ---
 
+#### [NotionX](https://github.com/scarsu/NotionX) - Browser extension that enhances Notion experience.
+#### <a href="/pwa/clock/index.html" target="_blank">全屏简黑时钟(PWA)</a>
 #### [计算机相关 单词本](/cs_english)
 <!-- #### [留言墙](/comment/) -->
 #### <a href="/asset/drum/index.html" target="_blank">JS Drum Kit</a>
-#### [Chrome 插件 - Notion Toc](https://github.com/scarsu/Notion-Chrome-Toc-Extension)
-#### [Chrome 插件 - TOPEST](https://github.com/scarsu/Topest-Chrome-Extension)
-#### <a href="/pwa/clock/index.html" target="_blank">全屏简黑时钟(PWA)</a>
 #### <a href="/asset/css-pic.html" target="_blank">用原生CSS box-shadow画图</a>
 
 > 还有很多个坑，还在建设中
