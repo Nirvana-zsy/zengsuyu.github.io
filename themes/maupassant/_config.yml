@@ -149,6 +149,9 @@ headLinks:
     - title: GitHub
       url: https://github.com/scarsu
       icon: fa-github
+    - title: 国内镜像站scarsu.cn
+      url: http://www.scarsu.cn
+      icon: fa-paper-plane
     # - title: GitBook
     #   url: https://doc.scarsu.com
     #   icon: fa-book
