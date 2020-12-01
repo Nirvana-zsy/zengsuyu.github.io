@@ -111,3 +111,21 @@ head
             $desc.html(str);
           },1000);
         });
+    script.
+      window.addEventListener('load',function(){
+        var mirrorLink = document.createElement('div')
+        mirrorLink.classList.add('head-link')
+        if(window.location.host.indexOf("scarsu.cn")>=0){
+          mirrorLink.innerHTML=`
+            <i class="fa fa-paper-plane"></i>
+            <a href="http://www.scarsu.com" title="国外镜像站scarsu.com" target="_blank">国外镜像站scarsu.com</a>
+          `
+        }else{
+          mirrorLink.innerHTML=`
+            <i class="fa fa-paper-plane"></i>
+            <a href="http://www.scarsu.cn" title="国内镜像站scarsu.cn" target="_blank">国内镜像站scarsu.cn</a>
+          `
+        }
+        document.querySelector('.site-name .right').insertBefore(mirrorLink,document.querySelector('#lighter-btn'))
+        mirrorLink=null
+      });
