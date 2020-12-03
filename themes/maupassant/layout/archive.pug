@@ -22,7 +22,38 @@ block content
                 a(href=url_for(post.path), title=post.title,target='_blank',data-desc=post.description)
                   +title(post)
                 i.fa.fa-info-circle.post-desc-icon(onmouseover='window.showDesc(this,event)',onmouseout='window.hideDesc(this,event)')
+                if theme.valine.enable
+                  i.fa.fa-eye.post-desc-icon(style='margin-left:10px;')
+                  span.leancloud_visitors( data-flag-title=post.title id='/'+post.path)
+                    span.post-meta-item-text=' '
+                    span.leancloud-visitors-count(style='color:#888;')=''
                 div.popup=post.description
                 //- .post-content
                 //-   != post.description
   include _partial/paginator.pug
+  
+  if theme.valine.enable == true
+    #vcomment
+    //- script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
+    script(src='//unpkg.com/valine/dist/Valine.min.js')
+    script.
+      var notify = '#{ theme.valine.notify }' == true ? true : false;
+      var verify = '#{ theme.valine.verify }' == true ? true : false;
+      var GUEST_INFO = ['nick','mail','link'];
+      var guest_info = '#{ theme.valine.guest_info }'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+      });
+      guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+      window.valine = new Valine({
+        el:'#vcomment',
+        notify:notify,
+        verify:verify,
+        appId:'#{theme.valine.appid}',
+        appKey:'#{theme.valine.appkey}',
+        placeholder:'#{theme.valine.placeholder}',
+        visitor:'#{theme.valine.visitor}',
+        avatar:'#{theme.valine.avatar}',
+        guest_info:guest_info,
+        recordIP:true,
+        pageSize:'#{theme.valine.pageSize}'
+      })

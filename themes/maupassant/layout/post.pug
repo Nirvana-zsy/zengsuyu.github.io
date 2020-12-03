@@ -38,6 +38,12 @@ html(lang=config.language)
           span= ' ' + __('Hits')
       if theme.wordcount == true
         include _partial/wordcount.pug
+      if theme.valine.enable
+        span=' | '
+        i.fa.fa-eye
+        span.leancloud_visitors( data-flag-title=page.title id='/'+page.path)
+          span.post-meta-item-text=' 阅读量 '
+          span.leancloud-visitors-count=''
       input#lighter-btn(type='checkbox',name='lighter-btn')
       label.lighter-btn(for='lighter-btn',title='暗黑模式开关')
     if theme.disqus
@@ -48,8 +54,8 @@ html(lang=config.language)
         span= ' ' + __('Comment')
       script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
     if theme.valine.enable
-      a.disqus-comment-count( href=url_for(page.path) + '#vcomment')
-        span.valine-comment-count(data-xid=url_for(page.path))
+      a.disqus-comment-count( href='/' + page.path + '#vcomment')
+        span.valine-comment-count(data-xid='/' + page.path)
         span= ' ' + __('Comment')
     if page.toc
       div(class='clear')

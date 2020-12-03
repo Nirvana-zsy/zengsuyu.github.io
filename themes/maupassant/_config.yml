@@ -7,7 +7,7 @@ changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-    enable: true ## If you want to use Gitment comment system please set the value to true.
+    enable: false ## If you want to use Gitment comment system please set the value to true.
     owner: scarsu ## Your GitHub ID, e.g. username
     repo: ScarSuHexo_Netlify ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
     client_id: d6f2352e58fb923322f5 ## GitHub client ID, e.g. 75752dafe7907a897619
@@ -20,15 +20,20 @@ gitalk:
     client_secret: de27abd6cce5329c72ef8a7fb7cc91cec332cc89 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
     admin: scarsu ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
-    enable: false ## If you want to use Valine comment system, please set the value to true.
-    appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-    appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
-    notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
-    verify: false ## Validation code.
-    placeholder: Just so so ## Comment box placeholders.
-    avatar: "mm" ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
+    enable: true ## If you want to use Valine comment system, please set the value to true.
+    appid: 6mzkhc3s2KpjnioquLiNngGi-gzGzoHsz ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+    appkey: BUMKR7vOFUL0PVOCEI3AApDe ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+    notify: true ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+    verify: true ## Validation code.
+    placeholder: 评论 ## Comment box placeholders.
+    avatar: "identicon" ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
     pageSize: 10 ## Number of comments per page.
     guest_info: nick,mail,link ## Attributes of reviewers.
+    visitor: true  #阅读量统计
+    comment_count: true # if false, comment count will only be displayed in post page, not in home page
+
+leancloud_visitors:
+  enable: false
 
 # search 搜索相关
 google_search: false ## Use Google search, true/false.
@@ -38,7 +43,7 @@ tinysou: ## Your tinysou_key 为搜索key, e.g. 4ac092ad8d749fdc6293
 self_search: true ## Use a jQuery-based local search engine, true/false.
 
 # website analytics 网站统计
-google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
+google_analytics: UA-175312250-1 ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: 652643ccce8310366e3ea65528fb9290 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 busuanzi: false ## 是否使用不蒜子页面访问计数 If you want to use Busuanzi page views please set the value to true.
 
@@ -118,10 +123,10 @@ widgets:
 
 # relative links 友情链接
 links:
-    - title: 齐舞团
-      url: https://75team.com/
-    - title: FEX
-      url: http://fex.baidu.com/
+    # - title: 齐舞团
+    #   url: https://75team.com/
+    # - title: FEX
+    #   url: http://fex.baidu.com/
     # - title: 前任Blog
     #   url: http://www.cnblogs.com/ScarSu/
 
