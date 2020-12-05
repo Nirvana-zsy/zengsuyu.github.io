@@ -1,7 +1,7 @@
 ---
 title: 2019年度javascript行业报告
 categories:
-    - 10技术 | JavaScript # 一级分类
+    - 10技术 | 行业信息
 tags:
     - stateOfJs
 date: 2019-12-31

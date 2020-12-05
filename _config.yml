@@ -73,6 +73,7 @@ category_map: ## 分类别名(路由)
     10技术 | 前端工具与工程化: fe-tools
     10技术 | 前端测试: fe-test
     10技术 | 数据库: database
+    10技术 | 行业信息: tech-news
     99WIP | 努力填坑ing: wip
 tag_map: ## 标签别名
 

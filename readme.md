@@ -6,7 +6,8 @@
 ## 本仓库介绍
 
 - 本仓库是：[ScarSu的个人博客-www.scarsu.com](https://www.scarsu.com)
-- 搭建工具：[hexo](https://hexo.io) + [netlify](https://www.netlify.com/)
+- 搭建工具：[hexo](https://hexo.io)
+- 部署工具：[netlify](https://www.netlify.com/) 或者 服务器+jenkins+nginx
 - [详细介绍](https://www.scarsu.com/hello_hexo/)
 
 ## 本仓库本地搭建步骤
