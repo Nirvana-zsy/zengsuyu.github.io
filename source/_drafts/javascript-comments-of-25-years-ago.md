@@ -1,9 +1,9 @@
 ---
-title: 1995年技术界人士对JavaScript的评价
+title: 1995年JavaScript刚发布时的行业评价
 categories:
     - 10技术 | 行业信息
 date: 2020-12-05
-description: 1995年JavaScript刚刚发布时的行业评价。
+description: 1995年JavaScript刚发布时的行业评价
 toc: 1
 top: 0
 ---
