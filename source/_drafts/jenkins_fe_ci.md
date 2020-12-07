@@ -7,6 +7,13 @@ description: 用jenkins搭建前端CI流程
 toc: 1
 top: 0
 ---
+
+https://www.jianshu.com/p/d6a6ecb31bd1?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+
+https://zhuanlan.zhihu.com/p/26701038
+
+https://www.mdnice.com/?outId=c0b5493e4e2442edaa81ac31020a3022
+
 ```
 登录配置，ssh，ftp
 
