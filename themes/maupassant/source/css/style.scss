@@ -380,7 +380,9 @@ div {
 
 .post {
   margin: 20px 20px;
-  padding: 25px 0 15px;
+  padding: 25px 0 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  
   .post-title {
     margin: 0;
     color: #555;
@@ -540,6 +542,23 @@ div {
         content: "\f0c6";
         padding-right: 0.3em;
       }
+    }
+  }
+  .gallery{
+    display: flex;
+    &>a{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &>.right{
+      flex: 2;
+      padding-left: 30px;
     }
   }
 }

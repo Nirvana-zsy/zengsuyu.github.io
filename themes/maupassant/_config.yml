@@ -165,3 +165,6 @@ headLinks:
     #   icon: fa-book
 
 date_format: YYYY-MM-DD
+
+# 首页开启画廊模式
+gallery: true
