@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "hexo-cli": "^4.2.0"
-  }
+  },
+  "engines" : { 
+    "node" : ">=10.15.0" 
+  } 
 }
