@@ -7,6 +7,7 @@ date: 2020-05-21
 description: 这是一本我用两周地铁通勤时间看完的书，虽然这本书没什么系统性，废话也比较多，但是看完这本书，确实对我的生活有所影响，让我养成了早睡早起的习惯，这篇文章总结一下书中的(我认为的)精华。
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211133333.png
 ---
 
 ![](/images/read/3-8lifestyle.jpg)

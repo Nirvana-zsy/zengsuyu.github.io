@@ -7,6 +7,7 @@ date: 2020-05-14
 description: 学习轮子源码是提升自我技术的有效途径，也是高阶程序员的必备技能。这套方法也适用于绝大多数知识体系的学习~
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211140022.png
 ---
 
 ![](/images/learning2.png)

@@ -24,5 +24,8 @@
     "hexo-server": "^2.0.0",
     "hexo-wordcount": "^6.0.1",
     "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "hexo-cli": "^4.2.0"
   }
 }

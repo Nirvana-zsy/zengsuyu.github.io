@@ -7,6 +7,7 @@ date: 2020-06-14
 description: 《富爸爸穷爸爸》被誉为“全球最好的”理财入门书，这本书不会教你如何理财，但是会让你对“金钱”有一个全新的观念和认知。
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211133003.png
 ---
 
 ## 简介

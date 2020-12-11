@@ -7,6 +7,8 @@ date: 2020-04-30
 description: 多组件下 共享状态 的解决方案
 toc: 1
 top: 0
+status: Done
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211233730.png
 ---
 # Vue状态管理 & Vuex
 
@@ -75,7 +77,7 @@ let vm2 = new Vue({
 
 因为共享状态放在组件的data里，store变化也会驱动组件view变更
 
-![](vuex2.png)
+![](/images/vuex2.png)
 
 ## Vuex基本思想
 
@@ -85,7 +87,7 @@ let vm2 = new Vue({
 
 通过定义和隔离状态管理中的各种概念并通过强制规则维持视图和状态间的独立性，我们的代码将会变得更结构化且易维护。
 
-![](vuex3.png)
+![](/images/vuex3.png)
 
 ## Vuex的使用&子组件注入
 

@@ -23,3 +23,10 @@ mixin title(page)
       = page.title
     else
       = _p('no-title')
+
+mixin status_content(post)
+  if post
+    if post.status
+      = theme.status[post.status].content
+    else
+      = ''

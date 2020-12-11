@@ -7,6 +7,7 @@ date: 2020-06-08
 description: 长文 + 动图 + 实例，试图解释清楚：Javascript Event Loop如何调度异步任务
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211133228.png
 ---
 ## 带着问题看这篇文章
 - 我们写的各种回调什么时候执行？按照什么顺序执行？

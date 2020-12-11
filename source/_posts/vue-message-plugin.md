@@ -7,6 +7,7 @@ date: 2020-05-14
 description: 手写一个基于 Vue.js 的消息插件，按照 ElementUI / message的接口实现
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211135913.png
 ---
 
 ## vue-message-plugin

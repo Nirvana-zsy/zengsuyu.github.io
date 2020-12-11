@@ -387,6 +387,13 @@ div {
     margin: 0;
     color: #555;
     text-align: left;
+    .status{
+      cursor:pointer;
+      font-size:0.7em;
+      position:relative;
+      top:-0.1em;
+      margin-right:5px;
+    }
     font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
     a {
       color: #555;
@@ -551,9 +558,10 @@ div {
       display: flex;
       justify-content: center;
       align-items: center;
+      max-height: 200px;
       img{
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
       }
     }
     &>.right{
@@ -881,6 +889,13 @@ div {
   li a {
     // color: #333;
     // font-weight: 700;
+  }
+  li .status{
+    cursor:pointer;
+    font-size:0.7em;
+    position:relative;
+    top:-0.1em;
+    margin-right:5px;
   }
   li .post-desc-icon {
     margin-left: 10px;

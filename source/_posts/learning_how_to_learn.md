@@ -8,12 +8,8 @@ date: 2020-09-15
 description: 通过精神学、心理学原理，探寻学习的本质，提高学习效率，降低学习挫败感，成为更好的终身学习者
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211123914.png
 ---
-
-![](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20200921190203.png)
-
-
-
 
 
 - 6000字长文预警，建议拉到底部，先看总结❤

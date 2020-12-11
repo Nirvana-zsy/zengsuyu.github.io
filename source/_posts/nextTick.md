@@ -7,6 +7,7 @@ date: 2020-06-10
 description: tick这个词到底时什么意思😯？
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211133145.png
 ---
 ## 带着问题看这篇文章
 - tick这个单词有点抽象,应该怎么理解?

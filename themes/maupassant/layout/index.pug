@@ -9,12 +9,18 @@ block title
 block content
   for post in page.posts.toArray()
     .post
-      if post.img
+      if post.img && theme.gallery
         .gallery
           img.post-img(src=post.img)
           div.right
             h1.post-title
               include _partial/helpers.pug
+              if post.status
+                span(class="status",title=post.status)
+                  + status_content(post)
+              else
+                span(class="status",title='Done')
+                  != theme.status.Done.content
               a(href=url_for(post.path),target='_blank')
                 +title(post)
             if post.description
@@ -50,6 +56,12 @@ block content
       else
         h1.post-title
           include _partial/helpers.pug
+          if post.status
+            span(class="status",title=post.status)
+              + status_content(post)
+          else
+            span(class="status",title='Done')
+              != theme.status.Done.content
           a(href=url_for(post.path),target='_blank')
             +title(post)
         .post-meta= post.date.format(config.date_format)

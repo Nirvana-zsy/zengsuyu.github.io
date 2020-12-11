@@ -7,6 +7,8 @@ date: 2020-05-06
 description: 正则是程序员必备的效率生产力知识~
 toc: 1
 top: 0
+status: Continuous Updates
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211230835.png
 ---
 ## 正则原型`test`方法
 ```javascript

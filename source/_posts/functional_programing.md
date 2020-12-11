@@ -7,6 +7,8 @@ date: 2020-05-08
 description: 改变引发错误，最小化改变
 toc: 1
 top: 0
+status: Continuous Updates
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211225823.png
 ---
 
 ## 函数式编程

@@ -7,7 +7,9 @@ date: 2020-07-24
 description: vue2 & vue3 响应式原理对比，手写mini版vue3响应式代码
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211132831.png
 ---
+
 ## 关于Vue3
 
 话说，Vue3已经进行到rc4版本了，4月份beta发布的时候前端圈红红火火，不知道大家开始学了没

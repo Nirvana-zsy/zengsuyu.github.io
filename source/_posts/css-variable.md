@@ -6,7 +6,8 @@ tags:
 date: 2020-09-25
 description: 原生js控制css变量、Vue3响应式css变量
 toc: 0
-img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201210161445.jpg
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211224029.png
+status: Done
 ---
 
 

@@ -168,3 +168,14 @@ date_format: YYYY-MM-DD
 
 # 首页开启画廊模式
 gallery: true
+
+# 文章状态
+status: 
+  Done: 
+    content: ✅
+  Work in Progress: 
+    content: 🚧
+  Draft: 
+    content: ⭕
+  Continuous Updates: 
+    content: 🔄

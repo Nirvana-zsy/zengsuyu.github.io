@@ -2,11 +2,11 @@ extends base
 
 block title
   if page.category
-     title= page.category + ' | ' + config.title
+    title= page.category + ' | ' + config.title
   if page.tag
-     title= page.tag + ' | ' + config.title
+    title= page.tag + ' | ' + config.title
   if page.archive
-     title= __('archive') + ' | ' + config.title
+    title= __('archive') + ' | ' + config.title
 block content
   if page.category || page.tag
       h1.label-title=  __('reading_label', page.category || page.tag)
@@ -18,6 +18,13 @@ block content
             for post in posts
               li
                 span.date= post.date.format('YYYY/MM/DD')
+                include _partial/helpers.pug
+                if post.status
+                  span(class="status",title=post.status)
+                    + status_content(post)
+                else
+                  span(class="status",title='Done')
+                    != theme.status.Done.content
                 a(href=url_for(post.path), title=post.title,target='_blank',data-desc=post.description)
                   +title(post)
                 i.fa.fa-info-circle.post-desc-icon(onmouseover='window.showDesc(this,event)',onmouseout='window.hideDesc(this,event)')

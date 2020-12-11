@@ -7,6 +7,7 @@ date: 2020-06-14
 description: 当我们褪去隐蔽的精神暴力，爱将自然流露。
 toc: 1
 top: 0
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201211133046.png
 ---
 
 
