@@ -1607,11 +1607,10 @@ pre {
         display: none;
       }
       .gallery{
-    display: flex;
+    display: block;
     &>a{
-      width:100%
-      flex: 1 0 100%;
-      display: flex;
+      display: block;
+      width:100%;
       justify-content: center;
       align-items: center;
       max-height: 200px;
@@ -1621,8 +1620,9 @@ pre {
       }
     }
     &>.right{
-      flex: 1 0 100%;
-      padding-left: 30px;
+      display:block;
+      width:100%;
+      padding-left: 0px;
     }
   }
     }
