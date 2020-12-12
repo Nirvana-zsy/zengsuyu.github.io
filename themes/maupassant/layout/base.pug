@@ -22,7 +22,7 @@ html(lang=config.language)
     #header
       .site-name
         h1.hidden= current_title
-        img#logo_profile_photo(src='/images/profile.jpg')
+        img#logo_profile_photo(class='nofancybox',src='/images/profile.jpg')
         div.right
           a#logo(href=url_for('.'))= config.title
           span.subtitle=config.subtitle
@@ -32,29 +32,28 @@ html(lang=config.language)
               a(href=theme.headLinks[i].url title=theme.headLinks[i].title target='_blank') #{theme.headLinks[i].title}
           input#lighter-btn(type='checkbox',name='lighter-btn')
           label.lighter-btn(for='lighter-btn',title='暗黑模式开关')
+          != partial('_widget/search.pug', null, {cache: !config.relative_link})
       #nav-menu
+        div(style="display:none;",id="nav-menu-btn")
+          i(class='fa fa-list')
         - for (var i in theme.menu)
           +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
-    #layout.pure-g
+    #layout
       if path=='comment/index.html'
-        .pure-u-1.pure-u-md-4-4
-          != page.content
-          != partial('_partial/footer_script.pug')
+        != page.content
+        != partial('_partial/footer_script.pug')
       else
-        .pure-u-1.pure-u-md-3-4
-          .content_container
-            block content
+        .content_container
+          block content
         if theme.widgets_on_small_screens
-          .pure-u-1.pure-u-md-1-4: #sidebar
+          #sidebar
             each item in theme.widgets
               != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
         else
-          .pure-u-1-4.hidden_mid_and_down: #sidebar
+          #sidebar
             each item in theme.widgets
               != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
-        .pure-u-1.pure-u-md-3-4
-          != partial('_partial/footer.pug')
+    != partial('_partial/footer.pug')
 
-    include _partial/totop.pug
     include _partial/after_footer.pug

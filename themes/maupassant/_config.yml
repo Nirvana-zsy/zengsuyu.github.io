@@ -114,7 +114,7 @@ menu:
 # Widget : Sidebar tool 选择和排列希望使用的侧边栏小工具
 ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
 widgets:
-    - search
+    # - search
     - category
     # - tag
     # - recent_posts

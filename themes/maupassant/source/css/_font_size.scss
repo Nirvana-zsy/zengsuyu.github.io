@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+    Font Size style
+--------------------------------------------------------------*/
+.text-xs {
+  font-size: 0.75rem !important;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+}
+
+.text-md {
+  font-size: 1rem !important;
+}
+
+.text-lg {
+  font-size: 1.25rem !important;
+}
+
+.text-xl {
+  font-size: 1.375rem !important;
+}
+
+.text-64 {
+  font-size: 4rem !important;
+}
+
+@media (max-width:767.98px) {
+  .text-lg {
+      font-size: 1rem !important;
+  }
+
+  .text-xl {
+      font-size: 1.25rem !important;
+  }
+
+}
+
+/*--------------------------------------------------------------
+  Font line height style
+--------------------------------------------------------------*/
+.font-height-xs {
+  line-height: 1 !important;
+}
+
+.font-height-sm {
+  line-height: 1.2 !important;
+}
+
+.font-height-md {
+  line-height: 1.4 !important;
+}
+
+.font-height-lg {
+  line-height: 1.6 !important;
+}
+
+.font-height-xl {
+  line-height: 1.8 !important;
+}
+
+/*--------------------------------------------------------------
+  Font letter spacing style
+--------------------------------------------------------------*/
+.text-letter-md {
+  letter-spacing: .25rem;
+}
+
+.text-letter-lg {
+  letter-spacing: .5rem;
+}

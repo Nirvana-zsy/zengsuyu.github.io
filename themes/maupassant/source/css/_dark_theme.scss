@@ -1,0 +1,85 @@
+body.dark-theme {
+  img{
+    filter: brightness(0.5);
+  }
+  background-color: #292a2d;
+  color: #a9a9b3;
+  transition: all 0.2s ease;
+  & *,
+  #header {
+    background-color: #292a2d;
+    color: #a9a9b3;
+    transition: all 0.2s ease;
+  }
+  #header {
+    border-color: #eee;
+    .site-name #logo {
+      color: #ddd;
+    }
+    #nav-menu a {
+      border-bottom-color: #a9a9b3;
+      &:hover {
+        border-bottom-color: #fff;
+      }
+      &.current {
+        border-bottom-color: #292a2d;
+      }
+    }
+  }
+  a,
+  .post .post-content ul a,
+  .post .post-content ol a
+  {
+    color:#ccc;
+  }
+  a:hover,
+  a:active {
+    color: #eee;
+  }
+  #sidebar .widget .search-form input {
+    background-color: #292a2d;
+    color: #a9a9b3;
+    border-color: #a9a9b3;
+  }
+  .post .post-content {
+    color: #a9a9b3;
+  }
+  .post .post-title,
+  .post .post-title a {
+    color: #bbb;
+  }
+  .post .post-title:hover,
+  .post .post-title a:hover {
+    color: #eee;
+  }
+  .post-archive {
+    li a {
+      color: #ccc;
+      // font-weight: 700;
+    }
+  }
+  .realPost{
+    font-size: 16px;
+    h1.post-title {
+      color:#d8d8d8;
+    }
+    .post-content ul code,
+    .post-content p code,
+    .post-content ol code{
+      background-color:#474c4c;
+      color:#e1911b;
+    }
+    figure.highlight,
+    figure .gutter pre span,
+    .codeblock,
+    figure.highlight .gutter,
+    .codeblock .gutter{
+      background: #474c4c;
+    }
+    .gitment-editor-tab.gitment-selected,
+    .gitment-editor-body textarea{
+      background-color: #292a2d;
+      color: #a9a9b3;
+    }
+  }
+}
