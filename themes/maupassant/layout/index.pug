@@ -8,10 +8,11 @@ block title
 
 block content
   for post in page.posts.toArray()
-    .post
+    .post(style="opacity:0;")
       if post.img && theme.gallery
         .gallery
-          img.post-img(src=post.img)
+          div.post-img
+            img.nofancybox(src=post.img)
           div.right
             h1.post-title
               include _partial/helpers.pug

@@ -20,7 +20,8 @@ html(lang=config.language)
 
   body: .body_container
     #header
-      .site-name
+      .header-box
+        .site-name
         h1.hidden= current_title
         a#logo(href=url_for('.'))= config.title
         p.description= config.subtitle

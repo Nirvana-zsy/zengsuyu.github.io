@@ -18,26 +18,29 @@ html(lang=config.language)
 
   include _partial/head.pug
 
+  #global_loading_mask(style="background:rgba(255,255,255,0.8);width:100vw;height:100vh;z-index:99999;text-align:center;")
+    i.fa.fa-spinner.fa-pulse(style="font-size: 3em;margin-top: 50vh;")
+
   body: .body_container
     #header
-      .site-name
-        h1.hidden= current_title
-        img#logo_profile_photo(class='nofancybox',src='/images/profile.jpg')
-        div.right
-          a#logo(href=url_for('.'))= config.title
-          span.subtitle=config.subtitle
-          - for (var i in theme.headLinks)
-            .head-link
-              i(class='fa '+theme.headLinks[i].icon)
-              a(href=theme.headLinks[i].url title=theme.headLinks[i].title target='_blank') #{theme.headLinks[i].title}
-          input#lighter-btn(type='checkbox',name='lighter-btn')
-          label.lighter-btn(for='lighter-btn',title='暗黑模式开关')
-          != partial('_widget/search.pug', null, {cache: !config.relative_link})
-      #nav-menu
-        div(style="display:none;",id="nav-menu-btn")
-          i(class='fa fa-list')
-        - for (var i in theme.menu)
-          +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
+      .header-box
+        .site-name
+          h1.hidden= current_title
+          img#logo_profile_photo(class='nofancybox',src='/images/profile.jpg')
+          div.right
+            a#logo(href=url_for('.'))= config.title
+            span.subtitle=config.subtitle
+            - for (var i in theme.headLinks)
+              .head-link
+                i(class='fa '+theme.headLinks[i].icon)
+                a(href=theme.headLinks[i].url title=theme.headLinks[i].title target='_blank') #{theme.headLinks[i].title}
+            input#lighter-btn(type='checkbox',name='lighter-btn')
+            label.lighter-btn(for='lighter-btn',title='暗黑模式开关')
+        #nav-menu
+          div(style="display:none;",id="nav-menu-btn")
+            i(class='fa fa-list')
+          - for (var i in theme.menu)
+            +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
     #layout
       if path=='comment/index.html'

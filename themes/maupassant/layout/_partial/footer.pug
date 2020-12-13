@@ -13,7 +13,6 @@
       span#busuanzi_value_site_uv= ' '
       span='   ( Data from Busuanzi )'
   div=' © ' + date(Date.now(), 'YYYY') + ' ScarSu '
-  div=' Powered By Hexo·Theme Maupassant '
   span#blog-timer
     i(class='fa fa-clock-o')
     span.desc=''
@@ -30,6 +29,10 @@
 
       $("#nav-menu").on('click',function(e){
         $("#nav-menu").toggleClass("expand")
+        //- e.preventDefault()
+      });
+      $("#sidebar").on('click',function(e){
+        $("#sidebar").toggleClass("expand")
         //- e.preventDefault()
       });
       //- $("#nav-menu").on('mouseout',function(){
