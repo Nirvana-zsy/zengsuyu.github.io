@@ -8,7 +8,7 @@ block title
 
 block content
   for post in page.posts.toArray()
-    .post(style="opacity:0;")
+    .post(style="opacity:0;",onclick="window.open('"+url_for(post.path)+"')")
       if post.img && theme.gallery
         .gallery
           div.post-img
@@ -63,13 +63,6 @@ block content
               != theme.status.Done.content
           a(href=url_for(post.path),target='_blank')
             +title(post)
-        .post-meta= post.date.format(config.date_format)
-        if theme.disqus
-          a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
-        if theme.changyan
-          a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
-            span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
-            span= ' ' + __('Comment')
         if post.description
           .post-content
             != post.description
@@ -91,6 +84,13 @@ block content
           else
             .post-content
               != post.content.substring(0, br)
+        .post-meta= post.date.format(config.date_format)
+        if theme.disqus
+          a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
+        if theme.changyan
+          a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
+            span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
+            span= ' ' + __('Comment')
 
   include _partial/paginator.pug
   if theme.disqus

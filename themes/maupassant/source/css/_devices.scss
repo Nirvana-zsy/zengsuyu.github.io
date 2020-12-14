@@ -49,7 +49,7 @@
     margin:0 auto;
     display: flex;
     position: relative;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-bottom: 50rem;
   }
   .content_container {
@@ -204,6 +204,14 @@
       font-size: 0.9em;
     }
   }
+  // post
+  .post{
+    margin: 20px 10px 0 0;
+    padding: 20px;
+  }
+  .post .post-content{
+    padding:15px 0;
+  }
 }
 /* ========================= >1024 laptop-l/screen end */
 
@@ -281,7 +289,7 @@
         text-decoration: none;
         background-color: var(--bodyBgColor);
         font-size: 2em;
-        border-left: none;
+        // border-left: none;
         z-index: -1;
         box-shadow: -1px 1px 0px 0px rgba(0, 0, 0, 0.25);
         line-height: 80px;
@@ -313,7 +321,7 @@
       position: relative;
       box-sizing: border-box;
       left: -36px;
-      top: 5px;
+      top: 0px;
       font-style: italic;
       text-decoration: underline;
       width: fit-content;
@@ -322,12 +330,12 @@
       font-size: 16rem;
       line-height: 38px;
       cursor: pointer;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      border-right: none;
+      // border: 1px solid rgba(0, 0, 0, 0.2);
+      // border-right: none;
       border-radius: 5px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: -1px -1px 3px 0px rgba(0, 0, 0, 0.25);
       transform: rotate(-90deg);
       transform-origin: bottom;
     }
@@ -511,7 +519,7 @@
         font-size: 15rem;
         line-height: 80px;
         cursor: pointer;
-        border: 1px solid rgba(0,0,0,0.2);
+        // border: 1px solid rgba(0,0,0,0.2);
         border-radius: 5px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -526,6 +534,16 @@
     }
   }
   // post
+  .post{
+    margin: 20px 0;
+    padding: 20px;
+    .post-title{
+      font-size: 18rem;
+    }
+    .post-content{
+      font-size: 12rem;
+    }
+  }
   .post .gallery{
     &>.post-img{
       flex: 1;
@@ -539,23 +557,57 @@
         right:0;
       }
     }
-    .post-title{
-      font-size: 18rem;
-    }
-    .post-content{
-      font-size: 12rem;
-    }
   }
 
 }
 /* ========================= <=1024 laptop-l/screen 布局 end */
 
-// <480 mobile 隐藏侧边栏，显示nav按钮，to top按钮隐藏
+/* ========================= <=768 mobile-l start */
+@media (max-width: 768px) {
+  .post{
+    padding: 10px;
+  }
+  .post .post-title{
+    font-size: 15rem;
+  }
+  .post .post-content{
+    padding:5px 0;
+    line-height: 1.2;
+  }
+  .post .gallery > .right{
+    display: flex;
+    flex-direction: column;
+    .post-title{
+      flex:0;
+    }
+    .post-content{
+      flex:1;
+    }
+    .post-meta{
+      position: relative;
+      flex: 0;
+    }
+  }
+}
+/* ========================= <=768 mobile-l end */
+
+
+/* ========================= <=428 mobile start */
 @media (max-width: 480px) {
+  body {
+    font-size: 12rem;
+  }
   // 变量
   :root{
+    --headerHeight:50px;
     --sidebarWidth: 50vw;
     --sidebarWidthNeg: -50vw;
+  }
+  #sidebar::before{
+    top: 55px;
+  }
+  #header #nav-menu::before{
+    top: 55px;
   }
   // markdown style
   .realPost {
@@ -637,15 +689,39 @@
     }
   }
   #header .site-name #logo_profile_photo{
-    width:50px;
+    width:40px;
   }
   #header .site-name #logo{
-    font-size:21rem;
+    font-size:18rem;
+    margin-right: 4rem;
+  }
+  #header .site-name .head-link{
+    margin: 0 7rem;
+  }
+  #header .head-link a[title=GitHub]{
+    display: none;
+  }
+  #header .head-link i.fa-github{
+    font-size: 15rem;
   }
   #sidebar.expand::before{
     left:-44px;
   }
   // post
+  .post{
+    margin: 15px 0;
+    padding: 0;
+  }
+  .post .post-title{
+    font-size: 14rem;
+  }
+  .post .post-content{
+    font-size: 12rem;
+    padding: 10px 0;
+  }
+  .post .post-meta{
+    margin:0;
+  }
   .post .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -656,16 +732,18 @@
     &>.right{
       flex: 0 0 100%;
       position: relative;
+      padding: 10px;
       .post-meta{
         position: relative;
         margin-top:10px;
       }
     }
-    .post-title{
-      font-size: 14rem;
-    }
     .post-content{
       font-size: 12rem;
     }
+    .post-meta{
+      margin:10px 0;
+    }
   }
 }
+/* ========================= <=428 mobile end */
