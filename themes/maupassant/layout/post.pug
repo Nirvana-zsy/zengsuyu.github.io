@@ -1,28 +1,9 @@
-include _partial/helpers.pug
-
-if page.title
-  - var current_title = page.title
-else
-  - var current_title = config.title
-
-if config.feed
-  case config.feed.type
-    when 'rss2'
-      - var feed_type='application/rss+xml'
-    when 'atom'
-    default
-      - var feed_type='application/atom+xml'
+extends base
 
 block title
-    title= current_title
+  title= page.title + ' | ' + config.title
 
-doctype html
-html(lang=config.language)
-
-  include _partial/head.pug
-
-  body: .body_container
-    
+block content
   .realPost
     h1.post-title= page.title
     p.post-description= page.description
@@ -46,17 +27,17 @@ html(lang=config.language)
           span.leancloud-visitors-count=''
       input#lighter-btn(type='checkbox',name='lighter-btn')
       label.lighter-btn(for='lighter-btn',title='暗黑模式开关')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if theme.changyan
-      a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
-        span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
-        span= ' ' + __('Comment')
-      script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
-    if theme.valine.enable
-      a.disqus-comment-count( href='/' + page.path + '#vcomment')
-        span.valine-comment-count(data-xid='/' + page.path)
-        span= ' ' + __('Comment')
+      if theme.disqus
+        a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
+      if theme.changyan
+        a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
+          span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
+          span= ' ' + __('Comment')
+        script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
+      if theme.valine.enable
+        a.disqus-comment-count( href='/' + page.path + '#vcomment')
+          span.valine-comment-count(data-xid='/' + page.path)
+          span= ' ' + __('Comment')
     if page.toc
       div(class='clear')
         div(class="toc-icon")

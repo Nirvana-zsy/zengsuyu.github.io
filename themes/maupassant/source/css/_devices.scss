@@ -16,8 +16,8 @@
   // 变量
   :root{
     --headerHeight:100px;
-    --leftPercent:75%;
-    --rightPercent:22%;
+    --leftPercent:72%;
+    --rightPercent:25%;
   }
   // 布局
   .body_container {
@@ -34,7 +34,7 @@
     top:0;
     width: 100%;
     border-bottom: 1px solid rgba(0,0,0,0.1); 
-    background: rgba(255, 255, 255,1);
+    background: var(--headerBgColor);
     overflow: visible;
     .header-box{
       width: 90vw;
@@ -55,6 +55,10 @@
   .content_container {
     flex: 0 0 var(--leftPercent);
     overflow-y: visible;
+    .realPost {
+      margin: 20px 10px 0 0;
+      padding: 20px;
+    }
   }
   #sidebar {
     flex: 0 0 var(--rightPercent);
@@ -191,7 +195,7 @@
       a{
         padding:0 15px;
         &.current{
-          border: 1px solid #ddd;
+          border: 1px solid var(--borderColor);
           border-bottom-color: var(--bodyBgColor);
           background-color: var(--bodyBgColor);
         }
@@ -242,7 +246,7 @@
     width: 100%;
     padding: 0 10vw;
     border-bottom: 1px solid rgba(0,0,0,0.1); 
-    background: rgba(255, 255, 255,1);
+    background: var(--headerBgColor);
     overflow: visible;
   }
   #layout{
@@ -284,7 +288,7 @@
         height: calc(100vh - 60px);
       }
       &::before {
-        left: -48px;
+        left: -44px;
         content: "→";
         text-decoration: none;
         background-color: var(--bodyBgColor);
@@ -558,6 +562,12 @@
       }
     }
   }
+  #sidebar .widget {
+    background: inherit;
+  }
+  .realPost{
+    margin-right:0;
+  }
 
 }
 /* ========================= <=1024 laptop-l/screen 布局 end */
@@ -588,6 +598,16 @@
       flex: 0;
     }
   }
+  .realPost{
+    font-size:12rem;
+    .post-title{
+      font-size: 17rem;
+      font-weight:bold;
+    }
+    .post-content {
+      font-size: 12rem;
+    }
+  }
 }
 /* ========================= <=768 mobile-l end */
 
@@ -611,20 +631,26 @@
   }
   // markdown style
   .realPost {
+    font-size:12rem;
+    .post-title{
+      font-size:15rem;
+      font-weight: bold;
+    }
     padding: 15px 10px;
     .lighter-btn{
       display: none !important;
     }
     .post-content {
+      font-size: 12rem;
       ul{
         padding-left:20px;
       }
-      font-size: 14px;
+      font-size: 12rem;
       figcaption {
-        font-size: 12px;
+        font-size: 12rem;
       }
       p {
-        font-size: 14px;
+        font-size: 12rem;
       }
       h2 {
         background-color: #000;
@@ -638,7 +664,7 @@
         color: #fff;
       }
       h3 {
-        font-size: 15px;
+        font-size: 15rem;
       }
       img {
         box-shadow: rgba(84, 70, 35, 0.15) 0px 2px 8px, rgba(84, 70, 35, 0.15) 0px 1px 3px, rgba(255, 255, 255, 0.5) 0px 0px 0px 1px;
@@ -652,7 +678,7 @@
       }
       &:after {
         content: "- END -";
-        font-size: 15px;
+        font-size: 15rem;
         display: block;
         text-align: center;
         margin-top: 50px;
@@ -660,8 +686,14 @@
         border-bottom: 1px solid #eee;
       }
     }
+    .post-nav a{
+      font-size:12rem;
+    }
     ::-webkit-scrollbar-thumb{
       background: #5a5a5a;
+    }
+    #vcomment{
+      font-size:12rem;
     }
     .gitment-root-container,
     .gitment-editor-header,

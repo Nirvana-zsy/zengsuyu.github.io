@@ -1,31 +1,19 @@
 body.dark-theme {
+  &{
+    --fontColor: #a9a9b3;
+    --lightFontColor: #bbb;
+    --darkFontColor: #6e7173;
+    --bodyBgColor: #333438;
+    --headerBgColor: #292a2d;
+    --borderColor:#aaa
+  }
+
+  background-color: var(--bodyBgColor);
   img{
     filter: brightness(0.5);
   }
-  background-color: #292a2d;
-  color: #a9a9b3;
+  color: var(--fontColor);
   transition: all 0.2s ease;
-  & *,
-  #header {
-    background-color: #292a2d;
-    color: #a9a9b3;
-    transition: all 0.2s ease;
-  }
-  #header {
-    border-color: #eee;
-    .site-name #logo {
-      color: #ddd;
-    }
-    #nav-menu a {
-      border-bottom-color: #a9a9b3;
-      &:hover {
-        border-bottom-color: #fff;
-      }
-      &.current {
-        border-bottom-color: #292a2d;
-      }
-    }
-  }
   a,
   .post .post-content ul a,
   .post .post-content ol a
@@ -37,12 +25,33 @@ body.dark-theme {
     color: #eee;
   }
   #sidebar .widget .search-form input {
-    background-color: #292a2d;
-    color: #a9a9b3;
-    border-color: #a9a9b3;
+    background-color: var(--bodyBgColor);
+    color: var(--fontColor);
+    border-color: var(--fontColor);
+  }
+  /* & *,
+  #header {
+    background-color: var(--bodyBgColor);
+    color: var(--fontColor);
+    transition: all 0.2s ease;
+  }
+  #header {
+    border-color: #eee;
+    .site-name #logo {
+      color: #ddd;
+    }
+    #nav-menu a {
+      border-bottom-color: var(--fontColor);
+      &:hover {
+        border-bottom-color: #fff;
+      }
+      &.current {
+        border-bottom-color: var(--bodyBgColor);
+      }
+    }
   }
   .post .post-content {
-    color: #a9a9b3;
+    color: var(--fontColor);
   }
   .post .post-title,
   .post .post-title a {
@@ -57,9 +66,8 @@ body.dark-theme {
       color: #ccc;
       // font-weight: 700;
     }
-  }
+  } */
   .realPost{
-    font-size: 16px;
     h1.post-title {
       color:#d8d8d8;
     }
@@ -78,8 +86,8 @@ body.dark-theme {
     }
     .gitment-editor-tab.gitment-selected,
     .gitment-editor-body textarea{
-      background-color: #292a2d;
-      color: #a9a9b3;
+      background-color: var(--bodyBgColor);
+      color: var(--fontColor);
     }
   }
 }

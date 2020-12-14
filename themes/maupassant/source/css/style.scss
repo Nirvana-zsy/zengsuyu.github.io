@@ -4,7 +4,9 @@
   --fontColor: #555;
   --lightFontColor: #666;
   --darkFontColor: #333;
-  --bodyBgColor: #f6f6f7
+  --bodyBgColor: #f6f6f7;
+  --headerBgColor:rgba(255,255,255,1)
+  --borderColor:#ddd
 }
 html{
   font-size: 1px;
@@ -88,7 +90,7 @@ a:focus {
     border: 1px solid #ddd;
     text-align: center;
     &:hover {
-      background: #f8f8f8;
+      background: var(--headerBgColor);
       border-bottom-color: #FFC730;
     }
     &.prev {
@@ -111,7 +113,7 @@ a:focus {
     }
   }
   .current {
-    background: #f8f8f8;
+    background: var(--headerBgColor);
     border-bottom-color: #FFC730;
   }
   .space {
@@ -126,7 +128,7 @@ a:focus {
   padding: 25px 0 25px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
   cursor: pointer;
-  background: #fff;
+  background: var(--headerBgColor);
   border-radius: 3px;
   .post-title {
     margin: 0;
@@ -314,28 +316,31 @@ a:focus {
 }
 // 文章
 .realPost {
-  max-width: 680px;
-  margin: 20px auto;
-  padding: 25px 0 15px;
+  background: var(--headerBgColor);
+  margin: 20px 10px 0 0;
+  padding: 20px;
   .post-title {
     margin: 0;
-    color: #555;
+    color: var(--fontColor);
     text-align: left;
-    font: bold 2em/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+    font-size: 28rem;
+    font-weight: normal;
     a {
-      color: #555;
+      color: var(--fontColor);
     }
-    font-family: cursive, Baskerville;
-    font-weight: bold;
   }
   .post-description {
-    color: rgba(117, 117, 117, 1);
+    color: var(--fontColor);
   }
   .post-meta {
     padding: 0;
-    margin: 15px 0 0;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     color: #6e7173;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
     text-indent: 0.15em;
     &:before {
       font-family: "FontAwesome";
@@ -357,6 +362,7 @@ a:focus {
       }
     }
     #lighter-btn {
+      display: none!important;
       display: none;
       width: 0;
       height: 0;
@@ -365,6 +371,8 @@ a:focus {
       padding: 0;
     }
     #lighter-btn + label {
+      display: none!important;
+      margin-right: 20px;
       background-color: #e6e6e6;
       border-radius: 7px;
       cursor: pointer;
@@ -379,6 +387,7 @@ a:focus {
       left: 20px;
     }
     #lighter-btn + label:after {
+      display: none!important;
       background-color: #fff;
       border-radius: 50%;
       content: "";
@@ -390,20 +399,25 @@ a:focus {
       box-shadow: 0.2px 0.2px 1px 0.5px #b4b4b4;
     }
     #lighter-btn:checked + label:after {
+      display: none!important;
       left: 17px;
     }
     #lighter-btn:checked + label {
+      display: none!important;
       background-color: #ffc730;
       box-shadow: none;
     }
     input[type="checkbox"]:checked + label,
     input[type="checkbox"]:not(:checked) + label {
+      display: none!important;
       transition: all 0.2s ease;
     }
     input[type="checkbox"]:checked + label:after {
+      display: none!important;
       transition: all 0.2s ease;
     }
     input[type="checkbox"]:not(:checked) + label:after {
+      display: none!important;
       transition: all 0.2s ease;
     }
   }
@@ -424,7 +438,7 @@ a:focus {
   }
   .disqus-comment-count {
     padding: 0;
-    margin: 15px 0 0;
+    margin-left: 10px;
     color: #6e7173;
     display: inline;
     text-indent: 0.15em;
@@ -438,13 +452,11 @@ a:focus {
     }
   }
   .post-content {
-    clear: left;
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.77;
-    color: rgba(41, 41, 41, 1);
+    color: var(--fontColor);
     padding-top: 15px;
     text-align: justify;
-    text-justify: distribute;
     word-break: normal;
     h1 {
       // font-family: cursive, Baskerville;
@@ -542,6 +554,11 @@ a:focus {
         padding-right: 0.3em;
       }
     }
+  }
+  .post-copyright{
+    border-left: 5px solid #f2f2f5;
+    padding: 10px 30px;
+    background: rgba(0,0,0,0.02);
   }
 }
 .post-nav {
@@ -734,22 +751,24 @@ a:focus {
 @import './_process.scss';
 // #sidebar widget插件
 #sidebar .widget {
-  margin-bottom: 30px;
+  background: var(--headerBgColor);
+  padding: 10px;
+  margin-top: 20px;
   .widget-title {
-    color: #6e7173;
+    color: var(--fontColor);
     line-height: 2.7;
     margin-top: 0;
     font-size: 16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--borderColor);
     display: block;
     font-weight: normal;
   }
   .comments-title {
-    color: #6e7173;
+    color: var(--fontColor);
     line-height: 2.7;
     margin-top: 0;
     font-size: 16px;
-    border-bottom: 0px solid #ddd;
+    border-bottom: 0px solid var(--borderColor);
     display: block;
     font-weight: normal;
   }
