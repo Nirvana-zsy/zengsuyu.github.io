@@ -1,9 +1,9 @@
 {
-  "name": "hexo-site",
+  "name": "scarsu.com",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo clean ; hexo g",
+    "build": "hexo clean && hexo g",
     "server": "hexo s",
     "dev": "hexo g --watch"
   },
@@ -31,9 +31,6 @@
     "node-sass": "^4.9.3"
   },
   "devDependencies": {
-    "hexo-cli": "^4.2.0"
-  },
-  "engines": {
-    "node": ">=8.10.0"
+    "hexo-cli": "3.1.0"
   }
 }
