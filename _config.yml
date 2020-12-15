@@ -97,7 +97,7 @@ pagination_dir: page ## 分页目录
 # - hexo-generator-feed
     # all_minifier: true ## 压缩插件
 ## Themes: https://hexo.io/themes/
-theme: jekyll-theme-cayman
+theme: maupassant
 ## maupassant主题配置文档： https://www.haomwei.com/technology/maupassant-hexo.html
 
 #Feed Atom 0
