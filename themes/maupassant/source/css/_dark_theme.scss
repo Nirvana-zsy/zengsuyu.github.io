@@ -5,15 +5,17 @@ body.dark-theme {
     --darkFontColor: #6e7173;
     --bodyBgColor: #333438;
     --headerBgColor: #292a2d;
-    --borderColor:#aaa
+    --borderColor:#aaa;
+    --codeBgColor:#282c34;
   }
 
   background-color: var(--bodyBgColor);
   img{
-    filter: brightness(0.5);
+    filter: brightness(0.7);
   }
   color: var(--fontColor);
   transition: all 0.2s ease;
+  transition: background-color 0.1s ease;
   a,
   .post .post-content ul a,
   .post .post-content ol a
@@ -29,44 +31,6 @@ body.dark-theme {
     color: var(--fontColor);
     border-color: var(--fontColor);
   }
-  /* & *,
-  #header {
-    background-color: var(--bodyBgColor);
-    color: var(--fontColor);
-    transition: all 0.2s ease;
-  }
-  #header {
-    border-color: #eee;
-    .site-name #logo {
-      color: #ddd;
-    }
-    #nav-menu a {
-      border-bottom-color: var(--fontColor);
-      &:hover {
-        border-bottom-color: #fff;
-      }
-      &.current {
-        border-bottom-color: var(--bodyBgColor);
-      }
-    }
-  }
-  .post .post-content {
-    color: var(--fontColor);
-  }
-  .post .post-title,
-  .post .post-title a {
-    color: #bbb;
-  }
-  .post .post-title:hover,
-  .post .post-title a:hover {
-    color: #eee;
-  }
-  .post-archive {
-    li a {
-      color: #ccc;
-      // font-weight: 700;
-    }
-  } */
   .realPost{
     h1.post-title {
       color:#d8d8d8;
@@ -74,7 +38,7 @@ body.dark-theme {
     .post-content ul code,
     .post-content p code,
     .post-content ol code{
-      background-color:#474c4c;
+      background-color:var(--codeBgColor);
       color:#e1911b;
     }
     figure.highlight,
@@ -82,7 +46,7 @@ body.dark-theme {
     .codeblock,
     figure.highlight .gutter,
     .codeblock .gutter{
-      background: #474c4c;
+      background: var(--codeBgColor);
     }
     .gitment-editor-tab.gitment-selected,
     .gitment-editor-body textarea{
