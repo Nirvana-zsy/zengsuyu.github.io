@@ -20,6 +20,7 @@ body {
     "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 a,
 button.submit {
@@ -39,6 +40,7 @@ a:focus {
 }
 *{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -71,6 +73,9 @@ a:focus {
 
 
 /* ========================= 布局无关的样式 start */
+#layout{
+  scroll-behavior: smooth;
+}
 // 分页
 .page-navigator {
   list-style: none;
@@ -565,6 +570,7 @@ a:focus {
   }
   
 .toc-icon {
+  z-index:2;
   line-height: 1em;
   position: fixed;
   top: 130px;
@@ -735,6 +741,28 @@ a:focus {
   margin-left: -168px;
   height: calc(100vh - 140px);
   margin-top: 30px;
+}
+#tobottomBtn,
+#totopBtn{
+  position: fixed;
+  right: 3vw;
+  bottom: 100rem;
+  font-size: 24rem;
+  width: 30rem;
+  height: 30rem;
+  line-height: 30rem;
+  border-radius: 2px;
+  background: var(--bodyBgColor);
+  color: var(--fontColor);
+  box-shadow: 0px 0px 3px 1px var(--boxShadowColor);
+  z-index: 1;
+  &:hover{
+    background: var(--fontColor);
+    color: var(--bodyBgColor);
+  }
+}
+#tobottomBtn{
+  bottom: 50rem;
 }
 /* ========================= 布局无关的样式 end */
 

@@ -5,6 +5,10 @@
   //- a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
   //- |  by
   //- a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+  a#totopBtn(href="javascript:void(document.querySelector('#layout').scrollIntoView(true))")
+      i.fa.fa-angle-up
+  a#tobottomBtn(href="javascript:void(document.querySelector('#layout').scrollIntoView(false))")
+      i.fa.fa-angle-down
   if theme.busuanzi == true
     div(id=busuanzi_container_site_pv)
       span='本站总访问量：' 
