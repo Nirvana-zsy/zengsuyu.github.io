@@ -561,7 +561,62 @@ a:focus {
     border-left: 5px solid #f2f2f5;
     padding: 10px 30px;
     background: rgba(0,0,0,0.02);
+    word-break: break-word;
   }
+  
+.toc-icon {
+  line-height: 1em;
+  position: fixed;
+  top: 130px;
+  right: 6px;
+  background-color: var(--bodyBgColor);
+  background-clip: padding-box;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 0px 3px 1px var(--boxShadowColor);
+}
+.toc-icon:hover > #toc {
+  visibility: visible;
+}
+.toc-icon:hover > i {
+  visibility: hidden;
+}
+.toc-article {
+  padding: 0.7em 0.7em 0 0.7em;
+  width: 40vw;
+}
+.toc-title {
+  font-size: 120%;
+}
+#toc {
+  line-height: 1em;
+  position: fixed;
+  top: 130px;
+  right: 0px;
+  visibility: hidden;
+  color: var(--fontColor);
+  background-color: var(--bodyBgColor);
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 0px 3px 1px var(--boxShadowColor);
+  .toc {
+    padding: 0;
+    margin: 0.5em;
+    line-height: 1.8em;
+    li {
+      list-style-type: none;
+    }
+  }
+  .toc-child {
+    margin-left: 1em;
+    padding-left: 0;
+  }
+}
 }
 .post-nav {
   overflow: hidden;
@@ -596,62 +651,6 @@ a:focus {
       border-bottom: none;
       color: #222;
     }
-  }
-}
-.toc-icon {
-  line-height: 1em;
-  position: fixed;
-  top: 120px;
-  right: 155px;
-  color: #6e7173;
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  border-radius: 1px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
-  padding: 10px 10px;
-}
-.toc-icon:hover > i {
-  visibility: hidden;
-}
-.toc-icon:hover > #toc {
-  visibility: visible;
-}
-.toc-article {
-  border: 1px solid #bbb;
-  border-radius: 7px;
-  margin: 1.1em 0 0 2em;
-  padding: 0.7em 0.7em 0 0.7em;
-  max-width: 40%;
-}
-.toc-title {
-  font-size: 120%;
-}
-#toc {
-  line-height: 1em;
-  float: right;
-  position: fixed;
-  top: 104px;
-  right: 154px;
-  visibility: hidden;
-  color: #6e7173;
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  border-radius: 1px;
-  max-height: 200px;
-  overflow-y: auto;
-  .toc {
-    padding: 0;
-    margin: 0.5em;
-    line-height: 1.8em;
-    li {
-      list-style-type: none;
-    }
-  }
-  .toc-child {
-    margin-left: 1em;
-    padding-left: 0;
   }
 }
 // 全部文章 列表

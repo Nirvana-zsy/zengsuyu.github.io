@@ -296,35 +296,3 @@
   border-radius: 50%;
   border: 3px solid #eee;
 }
-
-// <768 tablet 隐藏侧边分类
-@media (max-width: 768px) and (min-width: 481px) {
-  .realPost {
-    margin: 20px 10px;
-  }
-  .toc-icon {
-    right: 10px;
-  }
-  #toc {
-    right: 10px;
-  }
-  #process .line {
-    right: 10px;
-  }
-  #process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-    margin-right: 30px;
-    margin-left: 45px;
-    padding: 20px;
-  }
-  #process .timeline-centered .timeline-entry {
-    margin-right: 20px;
-  }
-  #process .dot_tp,
-  #process .dot_bt {
-    right: 5px;
-  }
-  #process .present,
-  #process .born {
-    right: 35px;
-  }
-}
