@@ -85,4 +85,4 @@ top: 0
 ```
 
 -   金丝雀版 chrome - [Canary - 开发者专用的每日更新版](https://www.google.cn/chrome/canary/)
--   开发者版 chrome - [Canary - 开发者专用的每周更新版](https://www.google.cn/chrome/dev/)
+-   开发者版 chrome - [Dev - 开发者专用的每周更新版](https://www.google.cn/chrome/dev/)
