@@ -73,6 +73,7 @@ category_map: ## 分类别名(路由)
     10技术 | HTML: html
     10技术 | CSS: css
     10技术 | JavaScript: javascript
+    10技术 | 前端性能: fe-perf
     10技术 | 前端工具与工程化: fe-tools
     10技术 | 前端测试: fe-test
     10技术 | 数据库: database
