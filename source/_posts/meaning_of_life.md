@@ -38,7 +38,6 @@ top: 0
 
 ---
 
-<center><small>以下是正文，未完待续..</small></center>
 
 ## 生活的意义到底是什么
 
@@ -91,14 +90,4 @@ top: 0
 
 自卑情结
 
--
-
-> xx 引用
-
-xx
-
-![xx图](/images/xx/xx.png)
-
 ## 反思
-
-- xx
