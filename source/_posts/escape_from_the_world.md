@@ -58,12 +58,6 @@ status: Continuous Updates
 Doesn't mean I'm lonely when I'm alone
 ```
 
-## 《Cheap Thrills》Sia
-
-```plain
-I don't need dollar bills to have fun
-```
-
 ## 《Lolita》
 
 ```plain
@@ -121,3 +115,41 @@ life's like a feather。
 2. 保持一致性，无论在人群中还是独处时，知行合一，不卑不亢，不矫揉造作，不哗众取宠。心中始终有底线、有原则、有追求。时刻反省自己：what在做什么、why为什么这样做、how如何做的更好
 
 —— 尼古拉斯·鱼
+
+## 别让任何人打乱你的人生节奏
+
+- 每个人的人生都不同
+- "Not everything that counts can be counted，and not everything that's counted truly counts"
+- "并不是每件算出来的事，都有意义；也不是每件有意义的事，都能被算出来" ——爱因斯坦
+
+[@https://www.bilibili.com/video/BV1WW411F7Hx](https://www.bilibili.com/video/BV1WW411F7Hx)
+
+## 《Cheap Thrills》Sia
+
+```plain
+I don't need dollar bills to have fun
+```
+
+## 如何追求快乐
+
+```plain
+有很多快乐是放纵的快乐，是降低了人性尊严的快乐，而越能体现人性尊严的快乐，越是一种高级的快乐。
+
+追求高级的快乐并不意味着放弃低级的快乐，但是如果你的眼目永远只关注地下，你永远不知道向上看有多么的快乐。
+
+——罗翔
+```
+
+[@https://www.bilibili.com/video/BV1AE411T7p7](https://www.bilibili.com/video/BV1AE411T7p7)
+
+## 关于坚持
+
+坚持这两个字，远比你想象中的要难的多，但也比你想象中的有效的多。
+
+'You do make a difference!'
+
+[@https://www.bilibili.com/video/BV1XJ411d7Xx](https://www.bilibili.com/video/BV1XJ411d7Xx)
+
+两年，是很容易虚度过去的时长，也是足够改变自己的时长。
+
+[@https://www.bilibili.com/video/BV1NE41197sr](https://www.bilibili.com/video/BV1NE41197sr)
