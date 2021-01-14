@@ -136,7 +136,7 @@ status: Continuous Updates
 
 > 两年，是很容易虚度过去的时长，也是足够改变自己的时长。
 
-[@https://www.bilibili.com/video/BV1NE41197sr](https://www.bilibili.com/video/BV1NE41197sr
+[@https://www.bilibili.com/video/BV1NE41197sr](https://www.bilibili.com/video/BV1NE41197sr)
 
 ## 就是不想努力怎么办
 
