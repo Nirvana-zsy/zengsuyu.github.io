@@ -8,7 +8,7 @@ block title
 
 block content
   for post in page.posts.toArray()
-    .post(style="opacity:0;",onclick="window.open('"+url_for(post.path)+"')")
+    .post(style="opacity:0;",onclick="window.location.href='"+url_for(post.path)+"'")
       if post.img && theme.gallery
         .gallery
           div.post-img

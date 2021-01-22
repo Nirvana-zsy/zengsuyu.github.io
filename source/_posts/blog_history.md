@@ -1,7 +1,7 @@
 ---
 title: 本博客折腾记录 # 文章标题
 categories:
-    - 01关于 | 此博客的来世今生 # 一级分类
+    - 01关于 # 一级分类
 tags:
 comments: true #开启评论
 date: 2018-01-01

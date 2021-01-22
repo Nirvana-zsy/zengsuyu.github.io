@@ -63,7 +63,7 @@ index_generator:
 # Category & Tag
 default_category: ScarSu
 category_map: ## 分类别名(路由)
-    01关于 | 此博客的来世今生: ScarSu
+    01关于: ScarSu
     02阅读 | 我的课外书笔记: read
     03方法论 | 高效学习: learn
     04工具 | 效率MAX: tools

@@ -470,99 +470,6 @@ a:focus {
   color: var(--fontColor);
     }
   }
-  .post-content {
-    font-size: 16rem;
-    line-height: 1.77;
-    color: var(--fontColor);
-    padding-top: 15px;
-    text-align: justify;
-    word-break: normal;
-    h1 {
-      // font-family: cursive, Baskerville;
-      margin: 1.4em 0 1.1em;
-      border-bottom: 1px solid #eee;
-      overflow: hidden;
-    }
-    h2 {
-      margin: 1.4em 0 1.1em;
-      background-color: var(--fontColor);
-      color: var( --headerBgColor);
-      padding:2px 10px;
-      width:fit-content;
-      font-size:17px;
-      margin:60px auto 10px;
-      strong {
-        color:#fff;
-      }
-    }
-    pre code {
-      padding: 0 2em;
-    }
-    p {
-      margin: 0 0 1.2em;
-      code {
-        display: inline-block;
-        margin: 0 5px;
-        padding: 0 5px;
-        background: #f7f8f8;
-        font-family: Menlo, Consolas, monospace !important;
-      }
-      a {
-        color: #01579f;
-        padding-bottom: 2px;
-        word-break: normal;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-    .caption {
-      color: #888;
-      display: block;
-      font-size: 0.9em;
-      margin-top: 0.1em;
-      margin-bottom: 30px;
-      position: relative;
-      text-align: center;
-    }
-    hr {
-      margin: 2.4em auto;
-      border: none;
-      border-top: 1px solid #eee;
-      position: relative;
-    }
-    img {
-      max-width: 100%;
-      padding: 0.5em 0;
-      margin: auto;
-      display: block;
-      box-shadow: 0 1px 8px 1px #d2caca;
-      border-radius: 5px;
-    }
-    ul,
-    ol {
-      border-radius: 3px;
-      margin: 1em 0;
-      ul {
-        margin: 0;
-      }
-      code {
-        display: inline-block;
-        margin: 0 5px;
-        padding: 0px 5px;
-        background: #f7f8f8;
-        font-family: Menlo, Consolas, monospace !important;
-      }
-      a {
-        color: #01579f;
-        padding-bottom: 2px;
-        word-break: normal;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
   .tags {
     padding-bottom: 1em;
     a {
@@ -760,9 +667,9 @@ a:focus {
   right: 3vw;
   bottom: 100rem;
   font-size: 24rem;
-  width: 30rem;
-  height: 30rem;
-  line-height: 30rem;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   border-radius: 2px;
   background: var(--bodyBgColor);
   color: var(--fontColor);
@@ -777,6 +684,118 @@ a:focus {
   bottom: 50rem;
 }
 /* ========================= 布局无关的样式 end */
+
+/* ========================= 正文 md 样式 start */
+.realPost{
+  .post-content {
+    font-size: 16rem;
+    line-height: 1.77;
+    color: var(--fontColor);
+    padding-top: 15px;
+    text-align: justify;
+    word-break: normal;
+    blockquote{
+      border-left: 4px solid rgb(221, 221, 221);
+      margin: 1.2em 0;
+      padding-right: 1em;
+      padding-left: 1em;
+      color: rgb(145, 125, 125);
+    }
+    h1 {
+      // font-family: cursive, Baskerville;
+      margin: 1.4em 0 1.1em;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+    }
+    h2 {
+      margin: 1.4em 0 1.1em;
+      background-color: var(--fontColor);
+      color: var( --headerBgColor);
+      padding:2px 10px;
+      width:fit-content;
+      font-size:17px;
+      margin:60px auto 10px;
+      a{      
+        color: #999;
+        &:hover{
+          color: #eee;
+        }
+      }
+      strong {
+        color:var( --headerBgColor);
+      }
+    }
+    pre code {
+      padding: 0 2em;
+    }
+    p {
+      margin: 0 0 1.2em;
+      code {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0 5px;
+        background: #f7f8f8;
+        font-family: Menlo, Consolas, monospace !important;
+      }
+      a {
+        color: #01579f;
+        padding-bottom: 2px;
+        word-break: normal;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .caption {
+      color: #888;
+      display: block;
+      font-size: 0.9em;
+      margin-top: 0.1em;
+      margin-bottom: 30px;
+      position: relative;
+      text-align: center;
+    }
+    hr {
+      margin: 2.4em auto;
+      border: none;
+      border-top: 1px solid #eee;
+      position: relative;
+    }
+    img {
+      max-width: 100%;
+      padding: 0.5em 0;
+      margin: auto;
+      display: block;
+      box-shadow: 0 1px 8px 1px #d2caca;
+      border-radius: 5px;
+    }
+    ul,
+    ol {
+      border-radius: 3px;
+      margin: 1em 0;
+      ul {
+        margin: 0;
+      }
+      code {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0px 5px;
+        background: #f7f8f8;
+        font-family: Menlo, Consolas, monospace !important;
+      }
+      a {
+        color: #01579f;
+        padding-bottom: 2px;
+        word-break: normal;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* ========================= 正文 md 样式 end */
 
 
 

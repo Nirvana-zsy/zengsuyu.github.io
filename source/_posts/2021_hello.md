@@ -1,30 +1,15 @@
 ---
-title: 我与这世界的距离 # 文章标题
+title: 2021年，给自己来点鸡血 # 文章标题
 categories:
     - 01关于 # 一级分类
 tags:
 comments: true #开启评论
-date: 1996-06-06
-description: 一些胡言乱语
+date: 2021-01-01
+description: 及时止废
 toc: 0
-status: Continuous Updates
+status: Done
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210122174027.png
 ---
-
-## 子 瓜 犭 虫
-
-> 稚儿擎瓜柳棚下,细犬逐蝶窄巷中,人间繁华多笑语,惟我空余两鬓风。
->
-> “孤独”
->
-> 这两个字拆开看，有小孩，有水果，有走兽，有蚊蝇
->
-> 足以撑起一个盛夏傍晚的巷子口，人味十足。
->
-> 夏日的傍晚，你看着空中嗡嗡飞舞的飞虫，不远处的狗摇着尾巴穿巷而过，你手中拿着吃剩下的半块西瓜
->
-> 忽然觉得好像过了半辈子
->
-> 又好像只过了半分钟。
 
 ## 为什么要趁年轻多学习<a href="https://www.zhihu.com/question/354919014/answer/906152325"><i class="fa fa-link"></i>原文</a>
 
@@ -44,55 +29,6 @@ status: Continuous Updates
 >
 > 再烂的牌也得打下去，这就是人生
 >
-## 时光
-
-> 小时候小时候，夏天穿过山间的风，打在树梢的雨，外婆灶台上的饭香，无奈回忆真的变成了回忆。
-
-## 《stronger》kelly clarkson
-
-> Doesn't mean I'm lonely when I'm alone
-
-## 《Lolita》
-
-> 洛丽塔，我生命之光，我欲念之火。我的罪恶，我的灵魂。
-
-## 《阿甘正传》
-
-> life's like a feather
-
-## 《하루하루》
-
-> 离开时请不要回头
->
-> 以后活着也不要找我
->
-> 因为爱你
->
-> 没有一丝悔意
->
-> 所以请带着美好的回忆离去
-
-## 《安娜·卡列尼娜》列夫·托尔斯泰
-
-> “幸福的家庭总是相似的，不幸的家庭各有各的不幸。”
-
-## 阿德勒
-
-> “幸运的人一生都被童年治愈，不幸的人一生都在治愈童年。”
-
-## 享受平静才是生活的真谛
-
-> “上次我去一个朋友家玩，看到他们客厅里摆着一张很长的桌子。朋友说，每到周末，两个大人，一个孩子，还有两只猫都会围在这个桌子旁，家里很安静，只有书页翻动和画笔接触纸张的细微声音。”
-
-## 看电影/阅读的意义是什么？
-
-> 谁看到的维度越多，世界在谁的眼中便越真实。
->
-> 练习自己感动、愤怒、喜悦、震惊、欢笑、平静的能力 不被苟且的生活捆绑致死。
->
-> 认识这个世界，丰富认知维度。
->
-> 即使生活一平如水、或筋疲力尽、或颠沛流离，仍要感受这个形形色色的世界，满怀希望，拥有细腻的情感。
 
 ## 成熟的一些标志
 
@@ -179,6 +115,18 @@ status: Continuous Updates
 
 每个人的人生都不同，人生的路也没有对错之分，只是路上的酸甜苦辣，你需要独自承担
 
+## 比本文更硬核的鸡血
+
+[为什么要趁年轻多学习 - 知乎](https://www.zhihu.com/question/354919014)
+[乔布斯 斯坦福大学演讲 - bilibili](https://www.bilibili.com/video/BV1Ts411s74h)
+[前端er要向qian看 - BOSS直聘](https://www.zhipin.com/c100010000/y_8/?query=%E5%89%8D%E7%AB%AF&ka=sel-salary-8)
+[别让任何人打乱你的人生节奏 - bilibili](https://www.bilibili.com/video/BV1WW411F7Hx)
+[如何对抗平庸的生活 - 罗翔](https://www.bilibili.com/video/BV1AE411T7p7)
+[做人一定要坚持 - bilibili](https://www.bilibili.com/video/BV1XJ411d7Xx)
+[改变自己，只需要两年时间 - TED](https://www.bilibili.com/video/BV1NE41197sr)
+[真正的自律 - Will Smith](https://www.bilibili.com/video/BV1Db411w74B)
+[自信心不足? - bilibili](https://www.bilibili.com/video/BV1b7411s7sL)
+
 ---
 
-我二十多岁浅薄的人生至今，给自己未来人生树立了唯一信仰：自律 + 坚持
+2021，自律 + 坚持，一路向前
