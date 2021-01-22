@@ -1,5 +1,5 @@
 ---
-title: Vue状态管理 & Vuex总结
+title: 【Vue】Vue状态管理 & Vuex总结
 categories:
     - 10技术 | 前端工具与工程化 # 一级分类
 tags:

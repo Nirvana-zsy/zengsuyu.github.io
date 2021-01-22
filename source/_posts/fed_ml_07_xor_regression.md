@@ -1,5 +1,5 @@
 ---
-title: ML07 XOR回归训练：多层神经网络
+title: 【ML07】XOR回归训练：多层神经网络
 categories:
     - 10技术 | 前端机器学习 # 一级分类
 tags:

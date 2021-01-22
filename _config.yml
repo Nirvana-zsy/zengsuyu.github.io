@@ -9,7 +9,7 @@ description: ScarSu's blog
 keywords: ScarSu blog FED code 自律 SelfRegulation FrontEnd Development
 author: ScarSu
 language: zh-CN
-timezone: Asia/Shanghai
+# timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

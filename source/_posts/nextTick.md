@@ -1,5 +1,5 @@
 ---
-title: 结合Event Loop谈谈对Vue中nextTick的理解
+title: 【Event Loop】结合Event Loop谈谈对Vue中nextTick的理解
 categories:
     - 10技术 | JavaScript # 一级分类
 tags:

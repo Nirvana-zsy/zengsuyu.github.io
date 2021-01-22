@@ -1,5 +1,5 @@
 ---
-title: ML06 逻辑回归训练
+title: 【ML06】逻辑回归训练
 categories:
     - 10技术 | 前端机器学习 # 一级分类
 tags:

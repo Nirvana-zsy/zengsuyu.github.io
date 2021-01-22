@@ -1,5 +1,5 @@
 ---
-title: 2019年度Javascript社区-信息源聚合
+title: 【信息源聚合】2019年度Javascript社区
 categories:
     - 10技术 | JavaScript # 一级分类
 tags:

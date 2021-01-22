@@ -1,5 +1,5 @@
 ---
-title: Vue消息插件开发 & npm发布
+title: 【Vue】Vue消息插件开发 & npm发布
 categories:
     - 10技术 | JavaScript # 一级分类
 tags:

@@ -14,7 +14,7 @@ block content
     .post-archive
         //Use lodash to classify posts. See https://lodash.com/docs#groupBy
         each posts, year in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
-          h2= -year
+          h2= -year + '   ( ' + posts.length + '篇)'
           ul.listing
             for post in posts
               li
@@ -26,7 +26,7 @@ block content
                 else
                   span(class="status",title='Done')
                     != theme.status.Done.content
-                a(href=url_for(post.path), title=post.title,target='_blank',data-desc=post.description)
+                a(href=url_for(post.path), title=post.title,target='_self',data-desc=post.description)
                   +title(post)
                 i.fa.fa-info-circle.post-desc-icon(onmouseover='window.showDesc(this,event)',onmouseout='window.hideDesc(this,event)')
                 if theme.valine.enable

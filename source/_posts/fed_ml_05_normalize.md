@@ -1,5 +1,5 @@
 ---
-title: ML05 归一化
+title: 【ML05】归一化
 categories:
     - 10技术 | 前端机器学习 # 一级分类
 tags:

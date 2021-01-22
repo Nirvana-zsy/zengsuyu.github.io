@@ -1,5 +1,5 @@
 ---
-title: css变量 | css自定义属性
+title: 【css变量】css自定义属性
 categories:
     - 10技术 | CSS
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Jest + Puppeteer => Vue3 E2E测试
+title: 【Vue3 E2E测试】Jest + Puppeteer
 categories:
     - 10技术 | 前端测试 # 一级分类
 tags:

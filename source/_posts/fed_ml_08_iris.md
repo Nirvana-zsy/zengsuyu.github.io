@@ -1,5 +1,5 @@
 ---
-title: ML08 多分类问题训练：IRIS鸢尾花分类问题
+title: 【ML08】多分类问题训练：IRIS鸢尾花分类问题
 categories:
     - 10技术 | 前端机器学习 # 一级分类
 tags:

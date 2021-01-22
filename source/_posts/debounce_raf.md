@@ -1,5 +1,5 @@
 ---
-title: css-tricks译文|动画demo解释 防抖、节流、rAF
+title: 【css-tricks译文】动画demo解释 防抖、节流、rAF
 categories:
     - 10技术 | 前端性能
 tags:

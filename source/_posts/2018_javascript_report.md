@@ -1,5 +1,5 @@
 ---
-title: 2018年度javascript行业报告
+title: 【State of JS】2018年度javascript行业报告
 categories:
     - 10技术 | 行业信息
 tags:
