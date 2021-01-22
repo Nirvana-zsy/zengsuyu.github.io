@@ -645,26 +645,29 @@
     --sidebarWidth: 50vw;
     --sidebarWidthNeg: -50vw;
   }
+  #layout{
+    padding: 10px 0 50rem 0;
+  }
   #sidebar.expand{
     padding: 0;
   }
   #sidebar::before{
-    top: 125px;
+    top: 70px;
     height: 10vw;
     line-height: 10vw;
     left: calc(-10vw + -6px);
   }
   #sidebar.expand::before{
-    top: 55px;
+    top: 0;
     width: 10vw;
     left:-10vw;
   }
   #header #nav-menu.expand::before{
-    top: 55px;
+    top: 0;
     width: 10vw;
   }
   #header #nav-menu::before{
-    top: calc((50px - 10vw) + 5px);
+    top: -10vw;
     height: 10vw;
     line-height: 10vw;
   }
