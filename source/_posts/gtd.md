@@ -8,7 +8,7 @@ description: Get Things Done，简单高效的应对信息洪流
 toc: 1
 top: 0
 status: Done
-img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210127180326.png
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210127181250.png
 ---
 
 ## 优点
