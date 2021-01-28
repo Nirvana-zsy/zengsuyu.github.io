@@ -1,7 +1,7 @@
 ---
 title: Node版本管理工具 nvm for windows
 categories:
-    - 04工具 | 效率MAX # 一级分类
+    - 10技术 | 前端工具与工程化 # 一级分类
 tags:
 date: 2018-09-29
 description: node版本更新那么快，怎么才能在机子上多装几版node？还能一句命令切换？
