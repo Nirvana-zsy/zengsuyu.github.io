@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion Style Character</title>
+    <link rel="stylesheet" href="./asset/style.css" />
+    <script src="./asset/dom2img.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <input type="text" id="inp_char" placeholder="Please enter your character"/>
+    </div>
+    <div class="icon-wrap">
+      <div id="icon-border">
+        <div class="icon-up"></div>
+        <div class="icon-front"></div>
+        <div class="icon-side"></div>
+      </div>
+
+      <div id="icon-padding">
+        <div class="icon-up"></div>
+        <div class="icon-front"></div>
+        <div class="icon-side"></div>
+      </div>
+      <div id="icon-face">
+        <div class="icon-up"></div>
+        <div class="icon-front">
+          <div id="char">
+            N
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <button id="btn">Download png</button>
+    </div>
+    <script type="text/javascript">
+      const $inp = document.querySelector('#inp_char')
+      const $char = document.querySelector('#char')
+      const $btn = document.querySelector('#btn')
+      const $icon = document.querySelector('.icon-wrap')
+      $inp.addEventListener('keyup', function () {
+        $char.textContent = (this.value || 'N')[0].toUpperCase()
+      })
+      $btn.addEventListener('click', function () {
+        window.domtoimage.toPng($icon)
+          .then(function (dataUrl) {
+            const img = new Image()
+            img.src = dataUrl
+            const link = document.createElement('a')
+            link.href = dataUrl
+            link.download = `Notion${$char.textContent}.png`
+            link.click()
+          })
+          .catch(function (error) {
+            console.error('oops, something went wrong!', error)
+          })
+      })
+    </script>
+  </body>
+</html>

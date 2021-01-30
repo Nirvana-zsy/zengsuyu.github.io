@@ -2,14 +2,15 @@
 title: Apps
 ---
 
-#### [NotionX](https://github.com/scarsu/NotionX) - Browser extension that enhances Notion experience.
+#### [NotionX ( for Notion )](https://github.com/scarsu/NotionX)
+#### [Notion 风格符号图标生成器](/asset/notion-char/)
 #### <a href="/pwa/clock/index.html" target="_blank">全屏简黑时钟(PWA)</a>
 #### [计算机相关 单词本](/cs_english)
 <!-- #### [留言墙](/comment/) -->
 #### <a href="/asset/drum/index.html" target="_blank">JS Drum Kit</a>
 #### <a href="/asset/css-pic.html" target="_blank">用原生CSS box-shadow画图</a>
 
-> 还有很多个坑，还在建设中
+<!-- > 还有很多个坑，还在建设中 -->
 
 <!-- - Chrome 插件：书签同步助手(使用gist 拉取数据/上传数据/监控书签更改自动上传)
 - 浏览器书签生成器(将网址信息+链接数据，转换为浏览器可导入的html书签文件)
