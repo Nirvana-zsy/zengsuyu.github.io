@@ -4,9 +4,15 @@
 }
 *{
   font-family: semi;
+  box-sizing: border-box;
+}
+.container{
+  margin: 10vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form{
-  margin: 10vh auto;
   text-align: center;
 }
 .form input{
@@ -35,7 +41,7 @@
 .icon-wrap {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin-right: 20px;
   background: transparent;
   border-radius: 5px;
 }
@@ -157,12 +163,20 @@
   top: 58px;
   transform: skew(0deg, -2deg);
   border-radius: 5px;
+  padding: 10px;
 }
 #icon-face #char {
-  font-size: 120px;
-  line-height: 120px;
   text-align: center;
   font-family: semi;
   font-weight: bolder;
   user-select: none;
+}
+.row{
+  line-height: 1;
+  margin: 15px 0;
+}
+.row input{
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
 }
