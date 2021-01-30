@@ -24,20 +24,22 @@
         <div id="icon-face">
           <div class="icon-up"></div>
           <div class="icon-front">
-            <div id="char" contenteditable style="font-size:100px;line-height:100px;">N</div>
+            <div id="char" contenteditable style="font-size:32px;line-height:100px;">Notio</div>
           </div>
         </div>
       </div>
       <form class="form" id="fontForm" style="z-index: 9;">
         <div class="row">
           <label for="size">font-size:</label>
-          <!-- <input type="number" min="10" max="100" name="size" style="width:50px;padding:0;"/> -->
-          10<input type="range" min="10" max="100" value="100" name="size" id="fontSize">100
+          10<input type="range" min="10" max="100" value="32" name="size" id="fontSize">100
         </div>
         <div class="row">
           <label for="height">line-height:</label>
-          <!-- <input type="number" min="10" max="100" name="height" style="width:50px;padding:0;"/> -->
           10<input type="range" min="10" max="100" value="100" name="height" id="lineHeight">100
+        </div>
+        <div class="row">
+          <label for="font">color:</label>
+          <input type="text" name="color" />
         </div>
         <div class="row">
           <button id="btn">Download png</button>
@@ -49,6 +51,7 @@
       const $icon = document.querySelector('.icon-wrap')
       const $char = document.querySelector('#char')
       const $fontForm = document.querySelector('#fontForm')
+      $char.focus()
       $btn.addEventListener('click', function (e) {
         e.preventDefault();
         window.domtoimage.toPng($icon)
@@ -65,13 +68,13 @@
           })
       })
       $fontForm.addEventListener('input', function () {
-        console.log(this)
         const data = new FormData(this)
         const size = data.get('size')
         const height = data.get('height')
-        console.log({height, size})
+        const color = data.get('color') || '#000'
         $char.style.lineHeight = height + 'px'
         $char.style.fontSize = size + 'px'
+        $char.style.color = color
       })
     </script>
   </body>

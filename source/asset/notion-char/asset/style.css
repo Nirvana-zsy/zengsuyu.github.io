@@ -3,7 +3,7 @@
   src: url("./semi.ttf");
 }
 *{
-  font-family: semi;
+  font-family: semi,serif;
   box-sizing: border-box;
 }
 .container{
@@ -167,7 +167,6 @@
 }
 #icon-face #char {
   text-align: center;
-  font-family: semi;
   font-weight: bolder;
   user-select: none;
 }
