@@ -63,6 +63,7 @@ index_generator:
 # Category & Tag
 default_category: ScarSu
 category_map: ## 分类别名(路由)
+    00月刊: monthly
     01关于: ScarSu
     02阅读 | 我的课外书笔记: read
     03成长 | 自我管理: learn
