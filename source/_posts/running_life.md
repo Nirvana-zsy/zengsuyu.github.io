@@ -54,6 +54,8 @@ img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20201230194212.png
 
 ## 坚持与磨砺
 
+![目下3米，便是我当下的世界](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210201093452.png)
+
 > 无论奔跑速度降了多少，我都不走，这是原则，违背了自己顶下的原则，哪怕只有一次，以后就将违背更多原则
 
 ![](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210125114249.png)
