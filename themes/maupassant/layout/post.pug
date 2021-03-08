@@ -55,7 +55,7 @@ block content
         ul.post-copyright
           li.post-copyright-author
             strong= __('copyright_author_prefix')
-            = theme.post_copyright.author
+            a(href='https://www.scarsu.com')= theme.post_copyright.author
           li.post-copyright-link
             strong= __('copyright_link_prefix')
             a(href='/' + page.path)= page.permalink
