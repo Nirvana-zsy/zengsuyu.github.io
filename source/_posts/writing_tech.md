@@ -8,7 +8,7 @@ description: 写作能力是这个时代许多行业的基本功
 toc: 1
 top: 0
 status: Done
-img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210324155309.png
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210324160422.png
 ---
 
 ## 引言 - 写文章为什么令我痛苦
