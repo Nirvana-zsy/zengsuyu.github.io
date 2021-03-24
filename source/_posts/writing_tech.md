@@ -1,5 +1,5 @@
 ---
-title: 《麦肯锡教我的写作武器》
+title: 如何无痛写文章 - 《麦肯锡教我的写作武器》
 categories:
   - 02阅读 | 我的课外书笔记 # 一级分类
 tags:
@@ -7,7 +7,8 @@ date: 2021-02-28
 description: 写作能力是这个时代许多行业的基本功
 toc: 1
 top: 0
-status: Work in Progress
+status: Done
+img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210324155309.png
 ---
 
 ## 引言 - 写文章为什么令我痛苦
