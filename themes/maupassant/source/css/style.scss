@@ -355,10 +355,9 @@ ul{
     color: var(--fontColor);
   }
   .post-meta {
-    padding: 0;
-    line-height: 1.5em;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 0;
+    border-top: 1px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
     color: #6e7173;
     display: flex;
     flex-direction: row;
@@ -485,7 +484,7 @@ ul{
     }
   }
   .post-copyright{
-    border-left: 5px solid #f2f2f5;
+    border-left: 5px solid var(--borderColor);
     padding: 10px 30px;
     background: rgba(0,0,0,0.02);
     word-break: break-word;
@@ -552,7 +551,8 @@ ul{
   margin-bottom: 20px;
   padding: 10px;
   white-space: nowrap;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
   a {
     display: inline-block;
     line-height: 25px;
@@ -688,6 +688,9 @@ ul{
 }
 /* ========================= 布局无关的样式 end */
 
+
+
+
 /* ========================= 正文 md 样式 start */
 .realPost{
   .post-content {
@@ -697,8 +700,17 @@ ul{
     padding-top: 15px;
     text-align: justify;
     word-break: normal;
+    &:after{
+      content: '- END -';
+      font-size: 15px;
+      display: block;
+      text-align: center;
+      margin-top: 100px;
+      color: #999;
+      border-bottom: 1px solid var(--borderColor);
+    }
     blockquote{
-      border-left: 4px solid rgb(221, 221, 221);
+      border-left: 4px solid var(--borderColor);
       margin: 1.2em 0;
       padding-right: 1em;
       padding-left: 1em;
@@ -1702,6 +1714,10 @@ table {
   color: #fff;
   background-color: #999999;
   text-shadow: 0;
+}
+// vline评论
+#vcomment .vpanel .vwrap{
+  border-color: var(--borderColor);
 }
 /* ========================= 外部插件样式 end */
 
