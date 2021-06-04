@@ -3,28 +3,28 @@ blog: Blog
 albums: Albums
 categories: Categories
 tags: Tags
-fe_nav: 👍FENav
-archive: 📪Archive
+fe_nav: 👍 FENav
+archive: 📪 Archive
 self_regulation: Self Regulation
 gitbook: GitBook
 links: Links
-about: 🥰About
+about: 🥰 About
 recent: Recent
 next: Next
 previous: Previous
 notitle: No Title
 blogroll: Links
 history: History
-rss: 📅RSS
+rss: 📅 RSS
 guestbook: Guestbook
-home: 🏠Home
+home: 🏠 Home
 recent_comments: Recent Comments
 Readmore: Read More
-apps: 🔨Apps
+apps: 🔨 Apps
 belongsto: Categorized in
 contents: Contents
-cognition: 👀Cognition/Inputing
-friends: 👫Friends
+cognition: 👀 Cognition/Inputing
+friends: 👫 Friends
 shareto: Share
 backtohome: BackToHomePage
 Discuss: Discuss
@@ -36,4 +36,4 @@ copyright_declare_prefix: "Copyright Declaration: "
 copyright_default_text: "The author owns the copyright. Please indicate the source reproduced!"
 word_cnt: Words
 read_time: Minutes
-comment: 🤟Comments
+comment: 🤟 Comments
