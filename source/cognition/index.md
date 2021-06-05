@@ -12,7 +12,7 @@ subtitle: 睁开眼睛看看这世界吧
 - [《美丽新世界》](https://book.douban.com/subject/1062193/)赫胥黎
 - 邓宁-克鲁格效应([论文](http://homepages.se.edu/cvonbergen/files/2012/12/Unskilled-and-Unaware-of-It.pdf))
 
-![邓宁-克鲁格效应](/images/dunning-kruger_effect_cn.jpg)
+![邓宁-克鲁格效应](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210605131029.png)
 - [《如何阅读一本书》](https://book.douban.com/subject/1013208/)
 - [《时间简史》](https://weread.qq.com/web/reader/e5d329105b9072e5d188fd9)
 - [《人类简史》](https://weread.qq.com/web/reader/d4a322a05d0f04d4a01f0d6)
@@ -33,6 +33,7 @@ subtitle: 睁开眼睛看看这世界吧
 #### 心智成长书单
 
 - <a target="_blank" href="https://www.scarsu.com/life_courage/">《被讨厌的勇气》</a> ([豆瓣链接](https://book.douban.com/subject/26369699/))决定我们的不是过去的经历，而是我们自己赋予经历的意义 - 入门阿德勒心理学
+- <a target="_blank" href="https://book.douban.com/subject/26363229/">《亲密关系》</a>我们都是完整而独立的个体、而爱情就是拥有一个合作伙伴一起经营人生
 - [《逆商》](https://book.douban.com/subject/30458408/)如何应对坏事件
 - [《心流》](https://book.douban.com/subject/27186106/)全神贯注、投入忘我、感觉不到时间存在的状态
 - [《自卑与超越》](https://book.douban.com/subject/26989781/)阿德勒心理学读本，生活的意义到底是什么？
