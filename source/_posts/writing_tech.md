@@ -185,6 +185,8 @@ img: https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210324160422.png
 
 具体来说，需要先将零散信息分组，再通过结论法和摘要法，得到上层信息。
 
+通常我写读书笔记就是采用这种方法：看书时，标记出有收获的字句、段落，输出笔记时，聚合所有的标记、分类、向上提炼，三步套路之后，写读书笔记就能得心应手。
+
 ![由下而上](https://scarsu.oss-cn-shanghai.aliyuncs.com/picgo20210324123212.png)
 
 ### MECE：不重复不遗漏
