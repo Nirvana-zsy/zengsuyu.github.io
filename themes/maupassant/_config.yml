@@ -25,7 +25,7 @@ valine: ## https://valine.js.org
     appkey: BUMKR7vOFUL0PVOCEI3AApDe ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
     notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
     verify: true ## Validation code.
-    placeholder: 评论 ## Comment box placeholders.
+    placeholder: 欢迎留言，期待回复请留下邮箱 ## Comment box placeholders.
     avatar: "identicon" ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
     pageSize: 10 ## Number of comments per page.
     guest_info: nick,mail,link ## Attributes of reviewers.
