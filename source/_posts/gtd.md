@@ -1,7 +1,7 @@
 ---
 title: GTD时间管理
 categories:
-    - 03成长 | 自我管理
+  - 03成长 | 认知&自我管理
 tags:
 date: 2021-01-27
 description: Get Things Done，简单高效的应对信息洪流

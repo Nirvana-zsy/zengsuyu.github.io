@@ -1,7 +1,7 @@
 ---
 title: Customize VSCode
 categories:
-    - 10技术 | 前端工具与工程化 # 一级分类
+    - 10技术 | 前端 # 一级分类
 tags:
 date: 2020-04-28
 description: VSCode高效使用,来自创造VSCode的Microsoft的Azure团队的BurkeHolland的分享

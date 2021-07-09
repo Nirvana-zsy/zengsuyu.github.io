@@ -1,7 +1,7 @@
 ---
 title: 【css变量】css自定义属性
 categories:
-    - 10技术 | CSS
+    - 10技术 | 前端
 tags:
 date: 2020-09-25
 description: 原生js控制css变量、Vue3响应式css变量

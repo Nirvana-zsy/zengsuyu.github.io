@@ -1,7 +1,7 @@
 ---
 title: 【360FED课程】HTML
 categories:
-    - 10技术 | HTML # 一级分类
+    - 10技术 | 前端 # 一级分类
 tags:
     - 360fed
 date: 2018-09-02

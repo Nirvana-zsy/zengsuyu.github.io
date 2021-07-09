@@ -1,7 +1,7 @@
 ---
 title: 【Harmony OS】作为前端技术人，体验刚开源的鸿蒙OS
 categories:
-    - 10技术 | JS # 一级分类
+    - 10技术 | 前端 # 一级分类
 tags:
 date: 2020-09-12
 description: 鸿蒙OS中的轻量级响应式前端框架

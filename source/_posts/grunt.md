@@ -1,7 +1,7 @@
 ---
 title: Grunt 学习总结
 categories:
-    - 10技术 | 前端工具与工程化 # 一级分类
+    - 10技术 | 前端 # 一级分类
 tags:
 date: 2019-06-01
 description: 自动化 压缩（minification）、编译、单元测试、linting等

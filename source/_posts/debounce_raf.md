@@ -1,7 +1,7 @@
 ---
 title: 【css-tricks译文】动画demo解释 防抖、节流、rAF
 categories:
-    - 10技术 | 前端性能
+    - 10技术 | 前端
 tags:
 date: 2020-12-30
 description: 这三种技术用于优化事件处理函数，都很有用，且各有区别，互相补充。

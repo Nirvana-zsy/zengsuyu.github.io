@@ -1,7 +1,7 @@
 ---
 title: PodCast 播客简介与推荐
 categories:
-  - 03成长
+  - 03成长 | 认知&自我管理
 tags:
 date: 2021-06-30
 description: 慢消费、轻内容

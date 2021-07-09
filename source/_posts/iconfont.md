@@ -1,7 +1,7 @@
 ---
 title: 前端图标的那些事
 categories:
-    - 10技术 | CSS # 一级分类
+    - 10技术 | 前端 # 一级分类
 tags:
 date: 2021-02-13
 description: 更新svg-symbol

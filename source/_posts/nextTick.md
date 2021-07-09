@@ -1,7 +1,7 @@
 ---
 title: 【Event Loop】结合Event Loop谈谈对Vue中nextTick的理解
 categories:
-    - 10技术 | JavaScript # 一级分类
+    - 10技术 | 前端 # 一级分类
 tags:
 date: 2020-06-10
 description: tick这个词到底时什么意思😯？

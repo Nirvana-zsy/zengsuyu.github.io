@@ -1,7 +1,7 @@
 ---
 title: 用jenkins搭建前端CI流程
 categories:
-    - 10技术 | 前端工具与工程化
+    - 10技术 | 前端
 date: 2020-12-05
 description: 用jenkins搭建前端CI流程
 toc: 1
